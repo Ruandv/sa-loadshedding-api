@@ -1,0 +1,1122 @@
+[
+  {
+    "subName": "AFRICAN RENAISSANCE",
+    "blockId": "13"
+  },
+  {
+    "subName": "AlphenPark (3)",
+    "blockId": "3"
+  },
+  {
+    "subName": "AlphenPark (6)",
+    "blockId": "6"
+  },
+  {
+    "subName": "AMANDASIG",
+    "blockId": "3"
+  },
+  {
+    "subName": "ANDEON",
+    "blockId": "10"
+  },
+  {
+    "subName": "ANNLIN",
+    "blockId": "16"
+  },
+  {
+    "subName": "ANNLIN Ext",
+    "blockId": "11"
+  },
+  {
+    "subName": "ARCADIA",
+    "blockId": "3"
+  },
+  {
+    "subName": "ASANTE VILLAGE",
+    "blockId": "10"
+  },
+  {
+    "subName": "ASHLEA GARDENS",
+    "blockId": "3"
+  },
+  {
+    "subName": "ATTERIDGEVILLE",
+    "blockId": "15"
+  },
+  {
+    "subName": "BEAU RIVAGE",
+    "blockId": "5"
+  },
+  {
+    "subName": "BELLEVUE",
+    "blockId": "15"
+  },
+  {
+    "subName": "BERGTUIN",
+    "blockId": "8"
+  },
+  {
+    "subName": "BOARDWALK ",
+    "blockId": "2"
+  },
+  {
+    "subName": "BOARDWALK MANOR",
+    "blockId": "2"
+  },
+  {
+    "subName": "BOARDWALK MEANDER",
+    "blockId": "2"
+  },
+  {
+    "subName": "BOARDWALK VILLAS",
+    "blockId": "2"
+  },
+  {
+    "subName": "BOARDWALK VILLAS ext",
+    "blockId": "2"
+  },
+  {
+    "subName": "BOOYSENS",
+    "blockId": "10"
+  },
+  {
+    "subName": "BRONBERG",
+    "blockId": "2"
+  },
+  {
+    "subName": "BRONBERG CLOSE",
+    "blockId": "2"
+  },
+  {
+    "subName": "BRONBERG CLOSE ext",
+    "blockId": "2"
+  },
+  {
+    "subName": "BRONBERRIK",
+    "blockId": "14"
+  },
+  {
+    "subName": "BRONKHORSTSPRUIT",
+    "blockId": "5"
+  },
+  {
+    "subName": "BROOKLYN",
+    "blockId": "6"
+  },
+  {
+    "subName": "BRUMMERIA",
+    "blockId": "13"
+  },
+  {
+    "subName": "BRYNTIRION",
+    "blockId": "6"
+  },
+  {
+    "subName": "CAMEL VALLEY",
+    "blockId": "2"
+  },
+  {
+    "subName": "CARDINAL",
+    "blockId": "2"
+  },
+  {
+    "subName": "CELTISDAL",
+    "blockId": "14"
+  },
+  {
+    "subName": "CELTISDAL ext",
+    "blockId": "13"
+  },
+  {
+    "subName": "CHANTELLE",
+    "blockId": "3"
+  },
+  {
+    "subName": "CHRISTOBURG",
+    "blockId": "7"
+  },
+  {
+    "subName": "CLAREMONT",
+    "blockId": "10"
+  },
+  {
+    "subName": "CLARINA",
+    "blockId": "10"
+  },
+  {
+    "subName": "CLAUDIUS",
+    "blockId": "7"
+  },
+  {
+    "subName": "CLUBVIEW",
+    "blockId": "7"
+  },
+  {
+    "subName": "COLBYN",
+    "blockId": "6"
+  },
+  {
+    "subName": "CONSTANTIA PARK",
+    "blockId": "3"
+  },
+  {
+    "subName": "COUNTRY VIEW ESTATE",
+    "blockId": "2"
+  },
+  {
+    "subName": "CRANBROOKVALE",
+    "blockId": "14"
+  },
+  {
+    "subName": "CULTURA PARK",
+    "blockId": "5"
+  },
+  {
+    "subName": "DANVILLE",
+    "blockId": "6"
+  },
+  {
+    "subName": "DANVILLE ext",
+    "blockId": "14"
+  },
+  {
+    "subName": "DE BEERS",
+    "blockId": "3"
+  },
+  {
+    "subName": "DEERNESS",
+    "blockId": "6"
+  },
+  {
+    "subName": "DERDEPOORT",
+    "blockId": "8"
+  },
+  {
+    "subName": "DESPATCH",
+    "blockId": "15"
+  },
+  {
+    "subName": "DIE HOEWES",
+    "blockId": "11"
+  },
+  {
+    "subName": "DIE HOEWES ext",
+    "blockId": "7"
+  },
+  {
+    "subName": "DIE WILGERS",
+    "blockId": "13"
+  },
+  {
+    "subName": "DOORNPOORT",
+    "blockId": "16"
+  },
+  {
+    "subName": "DOORNPOORT ext",
+    "blockId": "12"
+  },
+  {
+    "subName": "DORANDIA",
+    "blockId": "10"
+  },
+  {
+    "subName": "DORINGKLOOF",
+    "blockId": "11"
+  },
+  {
+    "subName": "EAGLES LANDING",
+    "blockId": "10"
+  },
+  {
+    "subName": "EAST LYNNE",
+    "blockId": "8"
+  },
+  {
+    "subName": "EERSTERUST",
+    "blockId": "15"
+  },
+  {
+    "subName": "EKANDUSTRIA",
+    "blockId": "5"
+  },
+  {
+    "subName": "EKKLESIA",
+    "blockId": "8"
+  },
+  {
+    "subName": "ELANDSPOORT",
+    "blockId": "6"
+  },
+  {
+    "subName": "ELARDUS PARK",
+    "blockId": "8"
+  },
+  {
+    "subName": "ELDORAIGNE",
+    "blockId": "14"
+  },
+  {
+    "subName": "ELDORAIGNE ext",
+    "blockId": "13"
+  },
+  {
+    "subName": "ELDORETTE",
+    "blockId": "14"
+  },
+  {
+    "subName": "ELOFFSDAL",
+    "blockId": "16"
+  },
+  {
+    "subName": "EQUESTRIA",
+    "blockId": "13"
+  },
+  {
+    "subName": "EQUESTRIA ext",
+    "blockId": "2"
+  },
+  {
+    "subName": "ERASMIA",
+    "blockId": "7"
+  },
+  {
+    "subName": "ERASMUS",
+    "blockId": "5"
+  },
+  {
+    "subName": "ERASMUSKLOOF extension 2, 3, 4",
+    "blockId": "8"
+  },
+  {
+    "subName": "ERASMUSPARK extension 1",
+    "blockId": "8"
+  },
+  {
+    "subName": "ERASMUSRAND",
+    "blockId": "8"
+  },
+  {
+    "subName": "ESKOM Customers in Tshwane Municipal Area. ",
+    "blockId": "1 & 9"
+  },
+  {
+    "subName": "FAERIE GLEN ",
+    "blockId": "2"
+  },
+  {
+    "subName": "FAERIE GLEN ext",
+    "blockId": "3"
+  },
+  {
+    "subName": "FERNEL PARK extension 1, 2",
+    "blockId": "7"
+  },
+  {
+    "subName": "FLORAUNA",
+    "blockId": "10"
+  },
+  {
+    "subName": "GARSFONTEIN",
+    "blockId": "3"
+  },
+  {
+    "subName": "GARSFONTEIN extension 10, 11, 12, 13, 15",
+    "blockId": "7"
+  },
+  {
+    "subName": "GEORGEVILLE",
+    "blockId": "13"
+  },
+  {
+    "subName": "GEZINA",
+    "blockId": "11"
+  },
+  {
+    "subName": "GLEN LAURISTON",
+    "blockId": "14"
+  },
+  {
+    "subName": "GLEN LAURISTON ext",
+    "blockId": "7"
+  },
+  {
+    "subName": "GROENKLOOF",
+    "blockId": "6"
+  },
+  {
+    "subName": "HATFIELD",
+    "blockId": "6"
+  },
+  {
+    "subName": "HAZELWOOD",
+    "blockId": "6"
+  },
+  {
+    "subName": "HEATHERVIEW",
+    "blockId": "10"
+  },
+  {
+    "subName": "HENNOPSPARK",
+    "blockId": "14"
+  },
+  {
+    "subName": "HENNOPSPARK ext",
+    "blockId": "7"
+  },
+  {
+    "subName": "HENNOPSPARK ext B",
+    "blockId": "13"
+  },
+  {
+    "subName": "HESTEAPARK",
+    "blockId": "10"
+  },
+  {
+    "subName": "HEUWELOORD",
+    "blockId": "13"
+  },
+  {
+    "subName": "HIGHVELD",
+    "blockId": "13"
+  },
+  {
+    "subName": "HIGHVELD ext",
+    "blockId": "11"
+  },
+  {
+    "subName": "HILLCREST",
+    "blockId": "6"
+  },
+  {
+    "subName": "HONDSRIVIER",
+    "blockId": "5"
+  },
+  {
+    "subName": "IFAFI",
+    "blockId": "10"
+  },
+  {
+    "subName": "IRENE",
+    "blockId": "11"
+  },
+  {
+    "subName": "IRENE ext",
+    "blockId": "14"
+  },
+  {
+    "subName": "JAN NIEMANDPARK",
+    "blockId": "8"
+  },
+  {
+    "subName": "KAMEELDRIFT",
+    "blockId": "15"
+  },
+  {
+    "subName": "KARENPARK",
+    "blockId": "10"
+  },
+  {
+    "subName": "KARENPARK ext",
+    "blockId": "3"
+  },
+  {
+    "subName": "KILNER PARK",
+    "blockId": "8"
+  },
+  {
+    "subName": "KIRKNEY",
+    "blockId": "10"
+  },
+  {
+    "subName": "KLERKSOORD",
+    "blockId": "10"
+  },
+  {
+    "subName": "KLOOFZICHT",
+    "blockId": "14"
+  },
+  {
+    "subName": "KOEDOESPOORT",
+    "blockId": "8"
+  },
+  {
+    "subName": "KOPANONG",
+    "blockId": "3"
+  },
+  {
+    "subName": "KOSMOSDAL",
+    "blockId": "12"
+  },
+  {
+    "subName": "KRISTALPARK",
+    "blockId": "5"
+  },
+  {
+    "subName": "KWAGGASRAND",
+    "blockId": "14"
+  },
+  {
+    "subName": "LA CAMARGUE",
+    "blockId": "10"
+  },
+  {
+    "subName": "LA CONCORDE",
+    "blockId": "16"
+  },
+  {
+    "subName": "LA CONCORDE ext",
+    "blockId": "15"
+  },
+  {
+    "subName": "LA MONTAGNE",
+    "blockId": "13"
+  },
+  {
+    "subName": "LADY SELBORNE",
+    "blockId": "10"
+  },
+  {
+    "subName": "LAUDIUM",
+    "blockId": "3"
+  },
+  {
+    "subName": "LES MARAIS",
+    "blockId": "16"
+  },
+  {
+    "subName": "LINDO PARK",
+    "blockId": "8"
+  },
+  {
+    "subName": "LISDOGAN PARK",
+    "blockId": "6"
+  },
+  {
+    "subName": "LOTUS GARDENS",
+    "blockId": "14"
+  },
+  {
+    "subName": "LOUWLARDIA",
+    "blockId": "12"
+  },
+  {
+    "subName": "LYDIANA",
+    "blockId": "13"
+  },
+  {
+    "subName": "LYNNRODENE",
+    "blockId": "13"
+  },
+  {
+    "subName": "LYNNWOOD",
+    "blockId": "6"
+  },
+  {
+    "subName": "LYNNWOOD GLEN",
+    "blockId": "13"
+  },
+  {
+    "subName": "LYNNWOOD MANOR",
+    "blockId": "13"
+  },
+  {
+    "subName": "LYNNWOOD PARK",
+    "blockId": "2"
+  },
+  {
+    "subName": "LYNNWOOD RIDGE",
+    "blockId": "13"
+  },
+  {
+    "subName": "LYTTELTON MANOR",
+    "blockId": "14"
+  },
+  {
+    "subName": "LYTTELTON MANOR ext",
+    "blockId": "11"
+  },
+  {
+    "subName": "MAGALIESKRUIN",
+    "blockId": "16"
+  },
+  {
+    "subName": "MAHUBE VALLEY",
+    "blockId": "5"
+  },
+  {
+    "subName": "MAMELODI",
+    "blockId": "5"
+  },
+  {
+    "subName": "MAMELODI SUN VALLEY",
+    "blockId": "5"
+  },
+  {
+    "subName": "MAROELANA",
+    "blockId": "6"
+  },
+  {
+    "subName": "MAROELANA ext",
+    "blockId": "3"
+  },
+  {
+    "subName": "MAYVILLE",
+    "blockId": "16"
+  },
+  {
+    "subName": "MEDPARK",
+    "blockId": "5"
+  },
+  {
+    "subName": "MEERHOF",
+    "blockId": "10"
+  },
+  {
+    "subName": "MELODIE",
+    "blockId": "10"
+  },
+  {
+    "subName": "MENLO PARK",
+    "blockId": "6"
+  },
+  {
+    "subName": "MENLYN",
+    "blockId": "3"
+  },
+  {
+    "subName": "MENLYN ext",
+    "blockId": "13"
+  },
+  {
+    "subName": "MEYERSPARK",
+    "blockId": "13"
+  },
+  {
+    "subName": "MONAVONI",
+    "blockId": "14"
+  },
+  {
+    "subName": "MONAVONI ext",
+    "blockId": "13"
+  },
+  {
+    "subName": "MONTANA",
+    "blockId": "16"
+  },
+  {
+    "subName": "MONTANA ext",
+    "blockId": "12"
+  },
+  {
+    "subName": "MONTANA PARK",
+    "blockId": "12"
+  },
+  {
+    "subName": "MONTANA TUINE",
+    "blockId": "12"
+  },
+  {
+    "subName": "MONUMENTPARK",
+    "blockId": "8"
+  },
+  {
+    "subName": "MOOIKLOOF RIDGE",
+    "blockId": "7"
+  },
+  {
+    "subName": "MOREGLOED",
+    "blockId": "8"
+  },
+  {
+    "subName": "MORELETAPARK",
+    "blockId": "8"
+  },
+  {
+    "subName": "MORELETAPARK ext",
+    "blockId": "7"
+  },
+  {
+    "subName": "MORETELE VIEW",
+    "blockId": "5"
+  },
+  {
+    "subName": "MOUNTAIN VIEW",
+    "blockId": "16"
+  },
+  {
+    "subName": "MOUNTAIN VIEW ext",
+    "blockId": "10"
+  },
+  {
+    "subName": "MUCKLENEUK",
+    "blockId": "6"
+  },
+  {
+    "subName": "MURRAYFIELD",
+    "blockId": "13"
+  },
+  {
+    "subName": "NAVORS",
+    "blockId": "13"
+  },
+  {
+    "subName": "NELLMAPIUS ext",
+    "blockId": "15"
+  },
+  {
+    "subName": "NELLMAPIUS",
+    "blockId": "13"
+  },
+  {
+    "subName": "NEWLANDS",
+    "blockId": "3"
+  },
+  {
+    "subName": "NEWMARK ESTATE",
+    "blockId": "2"
+  },
+  {
+    "subName": "NIEUW MUCKLENEUK",
+    "blockId": "6"
+  },
+  {
+    "subName": "NINAPARK",
+    "blockId": "10"
+  },
+  {
+    "subName": "OLIEVENHOUTBOS",
+    "blockId": "12"
+  },
+  {
+    "subName": "OLYMPUS BOULEVARD",
+    "blockId": "7"
+  },
+  {
+    "subName": "OLYMPUS RIDGE",
+    "blockId": "7"
+  },
+  {
+    "subName": "ONDERSTEPOORT",
+    "blockId": "16"
+  },
+  {
+    "subName": "OVIPROPARK",
+    "blockId": "5"
+  },
+  {
+    "subName": "PARADISO",
+    "blockId": "2"
+  },
+  {
+    "subName": "PARAMOUNT ESTATE",
+    "blockId": "2"
+  },
+  {
+    "subName": "PARK TOWN ESTATE",
+    "blockId": "16"
+  },
+  {
+    "subName": "PEACH TREE",
+    "blockId": "14"
+  },
+  {
+    "subName": "PECANWOOD",
+    "blockId": "10"
+  },
+  {
+    "subName": "PERSEQUOR",
+    "blockId": "6"
+  },
+  {
+    "subName": "PHILIP NEL PARK",
+    "blockId": "6"
+  },
+  {
+    "subName": "PIERRE VAN RYNEVELD",
+    "blockId": "11"
+  },
+  {
+    "subName": "PORT D-AFRIQUE",
+    "blockId": "10"
+  },
+  {
+    "subName": "PRAIRIE GIANTS",
+    "blockId": "7"
+  },
+  {
+    "subName": "PRETORIA extension 10, 9",
+    "blockId": "14"
+  },
+  {
+    "subName": "PRETORIA INDUSTRIAL",
+    "blockId": "14"
+  },
+  {
+    "subName": "PRETORIA NORTH",
+    "blockId": "11"
+  },
+  {
+    "subName": "PRETORIA NORTH ext",
+    "blockId": "16"
+  },
+  {
+    "subName": "PRETORIA NORTH ext 3",
+    "blockId": "10"
+  },
+  {
+    "subName": "PRETORIUSPARK",
+    "blockId": "7"
+  },
+  {
+    "subName": "PYRAMID",
+    "blockId": "15"
+  },
+  {
+    "subName": "QUEENSWOOD",
+    "blockId": "8"
+  },
+  {
+    "subName": "QUEENSWOOD ext",
+    "blockId": "11"
+  },
+  {
+    "subName": "RASLOUW",
+    "blockId": "14"
+  },
+  {
+    "subName": "RIAMARPARK",
+    "blockId": "5"
+  },
+  {
+    "subName": "RIETFONTEIN",
+    "blockId": "11"
+  },
+  {
+    "subName": "RIETVALLEIPARK",
+    "blockId": "11"
+  },
+  {
+    "subName": "RIETVALLEIPARK ext",
+    "blockId": "8"
+  },
+  {
+    "subName": "RIETVALLEIRAND",
+    "blockId": "8"
+  },
+  {
+    "subName": "RIETVLEI",
+    "blockId": "11"
+  },
+  {
+    "subName": "RIETVLEI HEIGHTS",
+    "blockId": "11"
+  },
+  {
+    "subName": "RIVER VIEW ESTATE",
+    "blockId": "10"
+  },
+  {
+    "subName": "ROOIHUISKRAAL",
+    "blockId": "13"
+  },
+  {
+    "subName": "ROOIHUISKRAAL ext",
+    "blockId": "12"
+  },
+  {
+    "subName": "ROOIHUISKRAAL NOORD",
+    "blockId": "13"
+  },
+  {
+    "subName": "ROSEVILLE",
+    "blockId": "15"
+  },
+  {
+    "subName": "ROSEVILLE ext",
+    "blockId": "16"
+  },
+  {
+    "subName": "ROSSLYN",
+    "blockId": "3"
+  },
+  {
+    "subName": "RUA VISTA",
+    "blockId": "12"
+  },
+  {
+    "subName": "RUBENA",
+    "blockId": "10"
+  },
+  {
+    "subName": "SABLE HILLS WATERFRONT ESTATE",
+    "blockId": "15"
+  },
+  {
+    "subName": "SALIESHOEK",
+    "blockId": "13"
+  },
+  {
+    "subName": "SALVOKOP",
+    "blockId": "8"
+  },
+  {
+    "subName": "SALVOKOP ext",
+    "blockId": "14"
+  },
+  {
+    "subName": "SAMCOR PARK",
+    "blockId": "15"
+  },
+  {
+    "subName": "SAULSVILLE",
+    "blockId": "15"
+  },
+  {
+    "subName": "SAVANNAH COUNTRY ESTATE",
+    "blockId": "5"
+  },
+  {
+    "subName": "SCHOEMANSVILLE",
+    "blockId": "10"
+  },
+  {
+    "subName": "SILVER LAKES",
+    "blockId": "2"
+  },
+  {
+    "subName": "SILVER VIEW RIDGE",
+    "blockId": "2"
+  },
+  {
+    "subName": "SILVER WELL",
+    "blockId": "2"
+  },
+  {
+    "subName": "SILVER WOODS COUNTRY ESTATE",
+    "blockId": "2"
+  },
+  {
+    "subName": "SILVERTON",
+    "blockId": "15"
+  },
+  {
+    "subName": "SILVERTON ext",
+    "blockId": "8"
+  },
+  {
+    "subName": "SILVERTON ext B",
+    "blockId": "13"
+  },
+  {
+    "subName": "SILVERTONDALE",
+    "blockId": "8"
+  },
+  {
+    "subName": "SINOVILLE",
+    "blockId": "16"
+  },
+  {
+    "subName": "SIX FOUNTAINS",
+    "blockId": "7"
+  },
+  {
+    "subName": "SOSHANGUVE",
+    "blockId": "4"
+  },
+  {
+    "subName": "STERREWAG",
+    "blockId": "8"
+  },
+  {
+    "subName": "SUIDERBERG",
+    "blockId": "10"
+  },
+  {
+    "subName": "SUIDERBERG ext",
+    "blockId": "16"
+  },
+  {
+    "subName": "SUNDERLAND RIDGE",
+    "blockId": "14"
+  },
+  {
+    "subName": "SUNDERLAND RIDGE",
+    "blockId": "7"
+  },
+  {
+    "subName": "SUNNYSIDE",
+    "blockId": "3"
+  },
+  {
+    "subName": "TAMARA PARK",
+    "blockId": "7"
+  },
+  {
+    "subName": "THABA TSHWANE",
+    "blockId": "7"
+  },
+  {
+    "subName": "THE HILLS",
+    "blockId": "7"
+  },
+  {
+    "subName": "THE ISLANDS ESTATE",
+    "blockId": "10"
+  },
+  {
+    "subName": "THE ORCHARDS",
+    "blockId": "3"
+  },
+  {
+    "subName": "THE REED",
+    "blockId": "13"
+  },
+  {
+    "subName": "THERESAPARK",
+    "blockId": "10"
+  },
+  {
+    "subName": "TIJGER VALLEI",
+    "blockId": "2"
+  },
+  {
+    "subName": "TILEBA",
+    "blockId": "10"
+  },
+  {
+    "subName": "TREVENNA",
+    "blockId": "3"
+  },
+  {
+    "subName": "VAL-DE-GRACE",
+    "blockId": "13"
+  },
+  {
+    "subName": "VALHALLA",
+    "blockId": "7"
+  },
+  {
+    "subName": "VILLAROSA",
+    "blockId": "7"
+  },
+  {
+    "subName": "VILLIERIA",
+    "blockId": "11"
+  },
+  {
+    "subName": "WALTLOO",
+    "blockId": "15"
+  },
+  {
+    "subName": "WAPADRAND",
+    "blockId": "2"
+  },
+  {
+    "subName": "WAPADRAND ext",
+    "blockId": "13"
+  },
+  {
+    "subName": "WATERKLOOF",
+    "blockId": "11"
+  },
+  {
+    "subName": "WATERKLOOF GLEN",
+    "blockId": "3"
+  },
+  {
+    "subName": "WATERKLOOF GLEN ext",
+    "blockId": "3"
+  },
+  {
+    "subName": "WATERKLOOF HEIGHTS",
+    "blockId": "3"
+  },
+  {
+    "subName": "WATERKLOOF HEIGHTS ext",
+    "blockId": "8"
+  },
+  {
+    "subName": "WATERKLOOF RIDGE",
+    "blockId": "8"
+  },
+  {
+    "subName": "WATERKLOOFPARK",
+    "blockId": "3"
+  },
+  {
+    "subName": "WAVERLEY",
+    "blockId": "8"
+  },
+  {
+    "subName": "WEAVIND PARK",
+    "blockId": "8"
+  },
+  {
+    "subName": "WEST PARK",
+    "blockId": "14"
+  },
+  {
+    "subName": "WIERDAPARK",
+    "blockId": "14"
+  },
+  {
+    "subName": "WIERDAPARK ext",
+    "blockId": "13"
+  },
+  {
+    "subName": "WILLOW ACRES",
+    "blockId": "2"
+  },
+  {
+    "subName": "WILLOW PARK MANOR",
+    "blockId": "13"
+  },
+  {
+    "subName": "WILLOW PARK MANOR ext",
+    "blockId": "15"
+  },
+  {
+    "subName": "WINGATE PARK",
+    "blockId": "8"
+  },
+  {
+    "subName": "WINTERVELD",
+    "blockId": "4"
+  },
+  {
+    "subName": "WOLMER",
+    "blockId": "10"
+  },
+  {
+    "subName": "WONDERBOOM",
+    "blockId": "16"
+  },
+  {
+    "subName": "WONDERBOOM SOUTH",
+    "blockId": "11"
+  },
+  {
+    "subName": "WONDERBOOM SOUTH ext",
+    "blockId": "16"
+  },
+  {
+    "subName": "XANADU",
+    "blockId": "10"
+  },
+  {
+    "subName": "ZILKAATSNEK WILDLIFE ESTATE",
+    "blockId": "10"
+  },
+  {
+    "subName": "ZITHOBENI",
+    "blockId": "5"
+  },
+  {
+    "subName": "ZWARTKOP",
+    "blockId": "11"
+  },
+  {
+    "subName": "ZWARTKOP",
+    "blockId": "14"
+  }
+]

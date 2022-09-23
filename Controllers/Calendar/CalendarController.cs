@@ -15,6 +15,7 @@ namespace EskomCalendarApi.Controllers.Calendar
     {
         private readonly ILogger<CalendarController> _logger;
         private readonly ICalendarService _calendarService;
+
         public CalendarController(ILogger<CalendarController> logger, ICalendarService calendarService)
         {
             _logger = logger;
@@ -29,6 +30,22 @@ namespace EskomCalendarApi.Controllers.Calendar
         {
             var res = await _calendarService.GetCalendarData(calendarName);
             return Ok(res);
+        }
+
+        [HttpGet("GetCalendarSuburbs")]
+        [SwaggerOperation(Summary = "Return a list of suburbs for the given calendarName")]
+        [ProducesResponseType(typeof(string), 200)]
+        public async Task<IActionResult> GetCalendarSuburbs(string calendarName)
+        {
+            try
+            {
+                var res = await _calendarService.GetCalendarSuburbs(calendarName);
+                return Ok(res);
+            }
+            catch (CalendarSuburbsNotImplementedException ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpGet("GetMachineFriendlyInfo")]
@@ -59,6 +76,7 @@ namespace EskomCalendarApi.Controllers.Calendar
             var res = await _calendarService.GetDataByAreaDateTime(areaName, myStartDate, myEndDate);
             return Ok(res);
         }
+
     }
 
 }

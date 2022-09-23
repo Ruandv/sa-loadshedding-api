@@ -16,15 +16,18 @@ namespace EskomCalendarApi.Services.Calendar
         Task<MachineDataDto> GetMachineData(int lastRecord, int recordsToRetrieve);
         Task<MachineDataDto> GetDataByArea(string areaDescription, int lastRecord = 0, int recordsToRetrieve = 100);
         Task<MachineDataDto> GetDataByAreaDateTime(string areaDescription, DateTime startDateTime, DateTime endDateTime);
+        Task<IEnumerable<SuburbData>> GetCalendarSuburbs(string calendarName);
     }
     public class CalendarService : ICalendarService
     {
         private readonly CalendarHttpClient _httpClient;
+        private readonly IEskomService _eskomService;
         private IEnumerable<MachineData> machineFileData;
 
-        public CalendarService(CalendarHttpClient myHttpClient)
+        public CalendarService(CalendarHttpClient myHttpClient, IEskomService eskomService)
         {
             _httpClient = myHttpClient;
+            _eskomService = eskomService;
             var config = new CsvConfiguration(CultureInfo.InvariantCulture)
             {
                 NewLine = Environment.NewLine,
@@ -64,7 +67,7 @@ namespace EskomCalendarApi.Services.Calendar
                 var data = await _httpClient.GetCalendarByName(calendarName);
                 return await data.Content.ReadAsStringAsync();
             }
-            catch 
+            catch
             {
                 return string.Empty;
             }
@@ -78,6 +81,26 @@ namespace EskomCalendarApi.Services.Calendar
             dto.totalRecords = data.Count();
             dto.lastRecord = data.Count();
             return await Task.FromResult(dto);
+        }
+
+        public async Task<IEnumerable<SuburbData>> GetCalendarSuburbs(string calendarName)
+        {
+            // try to sanitize the data by province municipality blockId
+            //Currently we only support Tswane and COJ
+            if (calendarName.Contains("Gauteng-tshwane"))
+            {
+                var blockId = calendarName.Substring(calendarName.LastIndexOf("-") + 1, calendarName.Length - 4); //exclude the extension
+                return await _eskomService.GetSuburbsByMunicipality(167, int.Parse(blockId));
+            }
+            else if (calendarName.Contains("city-power"))
+            {
+                var blockId = calendarName.Substring(calendarName.LastIndexOf("-") + 1, calendarName.LastIndexOf(".") - calendarName.LastIndexOf("-") - 1); //exclude the extension
+                return await _eskomService.GetSuburbsByMunicipality(166, int.Parse(blockId));
+            }
+            else
+            {
+                throw new CalendarSuburbsNotImplementedException("The only supported calendars are Gauteng-tshwane-* and city-power-*");
+            }
         }
     }
 }
