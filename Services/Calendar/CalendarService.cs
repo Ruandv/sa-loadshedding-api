@@ -7,6 +7,7 @@ using System.Globalization;
 using System.Collections.Generic;
 using System.Linq;
 using EskomCalendarApi.Models.Calendar;
+using System.Text.Json;
 
 namespace EskomCalendarApi.Services.Calendar
 {
@@ -16,6 +17,7 @@ namespace EskomCalendarApi.Services.Calendar
         Task<MachineDataDto> GetMachineData(int lastRecord, int recordsToRetrieve);
         Task<MachineDataDto> GetDataByArea(string areaDescription, int lastRecord = 0, int recordsToRetrieve = 100);
         Task<MachineDataDto> GetDataByAreaDateTime(string areaDescription, DateTime startDateTime, DateTime endDateTime);
+        Task<Asset> GetAssetDataByCalendarName(string calendarName);
         Task<IEnumerable<SuburbData>> GetCalendarSuburbs(string calendarName);
     }
     public class CalendarService : ICalendarService
@@ -99,7 +101,7 @@ namespace EskomCalendarApi.Services.Calendar
         }
         public async Task<MachineDataDto> GetDataByAreaDateTime(string areaDescription, DateTime startDateTime, DateTime endDateTime)
         {
-            var data = machineFileData.ToList().Where(x => x.area_name == areaDescription && (DateTime.Parse(x.start).Date >= startDateTime.Date && DateTime.Parse(x.finsh).Date <= endDateTime.Date)).ToList();
+            var data = machineFileData.ToList().Where(x => x.area_name.StartsWith(areaDescription, StringComparison.InvariantCultureIgnoreCase) && (DateTime.Parse(x.start).Date >= startDateTime.Date && DateTime.Parse(x.finsh).Date <= endDateTime.Date)).ToList();
             var dto = new MachineDataDto();
             dto.data = data;
             dto.totalRecords = data.Count();
@@ -112,7 +114,7 @@ namespace EskomCalendarApi.Services.Calendar
             //Currently we only support Tswane and COJ
             if (calendarName.Contains("Gauteng-tshwane", StringComparison.InvariantCultureIgnoreCase))
             {
-                var blockId = calendarName.Substring(calendarName.LastIndexOf("-") + 1, calendarName.Length - 4); //exclude the extension
+                var blockId = calendarName.Substring(calendarName.LastIndexOf("-") + 1, calendarName.LastIndexOf(".") - calendarName.LastIndexOf("-") - 1); //exclude the extension
                 return await _eskomService.GetSuburbsByMunicipality(167, int.Parse(blockId));
             }
             else if (calendarName.Contains("city-power", StringComparison.InvariantCultureIgnoreCase))
@@ -124,6 +126,14 @@ namespace EskomCalendarApi.Services.Calendar
             {
                 throw new CalendarSuburbsNotImplementedException("The only supported calendars are Gauteng-tshwane-* and city-power-*");
             }
+        }
+
+        public async Task<Asset> GetAssetDataByCalendarName(string calendarName)
+        {
+            var data = await _httpClient.GetAssetData();
+            var gitHub = JsonSerializer.Deserialize<GitHub>(await data.Content.ReadAsStringAsync());
+            var calAsset = gitHub.assets.FirstOrDefault(x => x.name == calendarName + ".ics");
+            return await Task.FromResult(calAsset);
         }
     }
 }

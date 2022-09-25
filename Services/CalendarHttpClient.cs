@@ -2,7 +2,9 @@
 using Microsoft.Net.Http.Headers;
 using System;
 using System.IO;
+using System.Linq;
 using System.Net.Http;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace EskomCalendarApi.Services
@@ -30,5 +32,13 @@ namespace EskomCalendarApi.Services
             _httpClient.DefaultRequestHeaders.Add(HeaderNames.Accept, "text/csv");
             return await _httpClient.GetStreamAsync("machine_friendly.csv");
         }
+
+        public async Task<HttpResponseMessage> GetAssetData()
+        {
+            _httpClient.DefaultRequestHeaders.Add(HeaderNames.Accept, "application/json");
+            return await _httpClient.GetAsync("https://api.github.com/repos/beyarkay/eskom-calendar/releases/latest");
+        }
+
     }
+
 }

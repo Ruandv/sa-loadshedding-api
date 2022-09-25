@@ -296,8 +296,8 @@
     "blockId": "8"
   },
   {
-    "subName": "ESKOM Customers in Tshwane Municipal Area. ",
-    "blockId": "1 & 9"
+    "subName": "ESKOM Customers in Tshwane Municipal Area.",
+    "blockId": "1"
   },
   {
     "subName": "FAERIE GLEN ",
@@ -1118,5 +1118,9 @@
   {
     "subName": "ZWARTKOP",
     "blockId": "14"
+  },
+  {
+    "subName": "ESKOM Customers in Tshwane Municipal Area.",
+    "blockId": "9"
   }
 ]

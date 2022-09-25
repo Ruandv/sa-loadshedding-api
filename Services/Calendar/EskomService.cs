@@ -3,10 +3,7 @@ using System.Collections.Generic;
 using EskomCalendarApi.Models.Calendar;
 using System.Net.Http.Json;
 using System.Linq;
-using CsvHelper;
-using System.Globalization;
 using System.IO;
-using Newtonsoft.Json;
 
 namespace EskomCalendarApi.Services.Calendar
 {
