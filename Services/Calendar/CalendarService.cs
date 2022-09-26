@@ -13,7 +13,7 @@ namespace EskomCalendarApi.Services.Calendar
 {
     public interface ICalendarService
     {
-        Task<string> GetCalendarData(string calendarName);
+        Task<Stream> GetCalendarData(string calendarName);
         Task<MachineDataDto> GetMachineData(int lastRecord, int recordsToRetrieve);
         Task<MachineDataDto> GetDataByArea(string areaDescription, int lastRecord = 0, int recordsToRetrieve = 100);
         Task<MachineDataDto> GetDataByAreaDateTime(string areaDescription, DateTime startDateTime, DateTime endDateTime);
@@ -87,16 +87,16 @@ namespace EskomCalendarApi.Services.Calendar
             dto.lastRecord = (lastRecord + recordsToRetrieve) > data.Count() ? data.Count() : lastRecord + recordsToRetrieve;
             return await Task.FromResult(dto);
         }
-        public async Task<string> GetCalendarData(string calendarName)
+        public async Task<Stream> GetCalendarData(string calendarName)
         {
             try
             {
                 var data = await _httpClient.GetCalendarByName(calendarName);
-                return await data.Content.ReadAsStringAsync();
+                return await data.Content.ReadAsStreamAsync();
             }
             catch
             {
-                return string.Empty;
+                return null;
             }
         }
         public async Task<MachineDataDto> GetDataByAreaDateTime(string areaDescription, DateTime startDateTime, DateTime endDateTime)
