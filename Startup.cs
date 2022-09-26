@@ -37,6 +37,7 @@ namespace EskomCalendarApi
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles();
             app.UseSwagger();
             app.UseSwaggerUI();
 
@@ -44,6 +45,8 @@ namespace EskomCalendarApi
             {
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
                 options.RoutePrefix = string.Empty;
+                options.InjectJavascript ("https://www.googletagmanager.com/gtag/js?id=G-ZDC2VN33J1");
+                options.InjectJavascript("/js/analytics.js");
             });
             app.UseSwagger(options =>
             {

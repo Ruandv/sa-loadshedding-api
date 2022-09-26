@@ -23,6 +23,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\js\analytics.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Update="JSONData\Municipality_167.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
