@@ -58,6 +58,15 @@ namespace EskomCalendarApi.Controllers.Eskom
                 return BadRequest("The only supported municipalities are Tshwane (167) and city-power (166)");
             }
         }
+
+        [HttpGet("FindSuburb")]
+        [ProducesResponseType(typeof(IEnumerable<SuburbData>), 200)]
+        [SwaggerOperation(Summary = "Search for the supplied suburb name on the Eskom Site")]
+        public async Task<IActionResult> FindSuburb(string suburbname)
+        {
+                var res = await _eskomService.FindSuburb(suburbname);
+                return Ok(res);
+        }
     }
 
 }

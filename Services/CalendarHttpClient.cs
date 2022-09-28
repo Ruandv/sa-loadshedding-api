@@ -28,7 +28,6 @@ namespace EskomCalendarApi.Services
 
         public async Task<Stream> GetMachineFriendlyFile()
         {
-            //machine_friendly.csv
             _httpClient.DefaultRequestHeaders.Add(HeaderNames.Accept, "text/csv");
             return await _httpClient.GetStreamAsync("machine_friendly.csv");
         }
