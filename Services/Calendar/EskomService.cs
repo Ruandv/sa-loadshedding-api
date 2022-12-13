@@ -13,6 +13,7 @@ namespace EskomCalendarApi.Services.Calendar
         Task<IEnumerable<Municipality>> GetMunicipalities(int provinceId);
         Task<IEnumerable<SuburbData>> GetSuburbsByMunicipality(int municipalityId, int? blockId = null);
         Task<IEnumerable<SuburbSearch>> FindSuburb(string suburbName);
+        Task<int> GetStatus();
     }
 
     public class EskomService : IEskomService
@@ -36,6 +37,13 @@ namespace EskomCalendarApi.Services.Calendar
             var data = await _httpClient.GetMunicipalityList(provinceId).Result.Content.ReadFromJsonAsync<IEnumerable<Municipality>>();
             data = data.ToList().Where(x => new int[] { 166, 167 }.Contains(x.MunicipalityId));
             return await Task.FromResult(data);
+        }
+        public async Task<int> GetStatus()
+        {
+            // For now we only support COJ and Tshwane
+            var data = await _httpClient.GetStatus().Result.Content.ReadAsStringAsync();
+            var stage = int.Parse(data);
+            return await Task.FromResult(stage);
         }
 
         public async Task<IEnumerable<SuburbData>> GetSuburbsByMunicipality(int municipalityId, int? blockId)

@@ -44,6 +44,14 @@ namespace EskomCalendarApi.Services
                 HeaderNames.Accept, "application/json");
             return await _httpClient.GetAsync("GetMunicipalities?id=" + provinceId);
         }
+
+        public async Task<HttpResponseMessage> GetStatus()
+        {
+            _httpClient.DefaultRequestHeaders.Add(
+                HeaderNames.Accept, "application/json");
+            return await _httpClient.GetAsync("GetStatus");
+        }
+
         public async Task<HttpResponseMessage> FindSuburb(string suburbName)
         {
             _httpClient.DefaultRequestHeaders.Add(

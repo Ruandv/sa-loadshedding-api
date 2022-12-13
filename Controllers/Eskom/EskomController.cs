@@ -67,6 +67,16 @@ namespace EskomCalendarApi.Controllers.Eskom
                 var res = await _eskomService.FindSuburb(suburbname);
                 return Ok(res);
         }
+
+
+        [HttpGet("GetStatus")]
+        [ProducesResponseType(typeof(int), 200)]
+        [SwaggerOperation(Summary = "Get the current Loadshedding stage")]
+        public async Task<IActionResult> GetStatus()
+        {
+            var res = await _eskomService.GetStatus();
+            return Ok(res);
+        }
     }
 
 }
