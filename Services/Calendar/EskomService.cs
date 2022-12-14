@@ -4,6 +4,7 @@ using EskomCalendarApi.Models.Calendar;
 using System.Net.Http.Json;
 using System.Linq;
 using System.IO;
+using System;
 
 namespace EskomCalendarApi.Services.Calendar
 {
@@ -42,6 +43,7 @@ namespace EskomCalendarApi.Services.Calendar
         {
             // For now we only support COJ and Tshwane
             var data = await _httpClient.GetStatus().Result.Content.ReadAsStringAsync();
+            Console.WriteLine("YOU HAVE A STAGE OF " + data);
             var stage = int.Parse(data);
             return await Task.FromResult(stage);
         }
