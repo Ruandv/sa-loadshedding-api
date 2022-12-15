@@ -46,7 +46,8 @@ namespace EskomCalendarApi.Services.Calendar
             var data = await _httpClient.GetStatus();
             if (data.IsSuccessStatusCode)
             {
-                stage = await data.Content.ReadAsStringAsync();
+                // var s = await data.Content.ReadAsStream();
+                stage = 33;
                 Console.WriteLine("YOU HAVE A STAGE OF " + stage);
             }
 
