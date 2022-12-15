@@ -47,8 +47,8 @@ namespace EskomCalendarApi.Services
 
         public async Task<HttpResponseMessage> GetStatus()
         {
-            _httpClient.DefaultRequestHeaders.Add(
-                HeaderNames.Accept, "application/json");
+            //_httpClient.DefaultRequestHeaders.Add(
+            //    HeaderNames.Accept, "application/json");
             return await _httpClient.GetAsync("GetStatus");
         }
 
