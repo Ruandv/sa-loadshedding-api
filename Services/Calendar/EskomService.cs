@@ -42,9 +42,14 @@ namespace EskomCalendarApi.Services.Calendar
         public async Task<int> GetStatus()
         {
             // For now we only support COJ and Tshwane
-            var data = await _httpClient.GetStatus().Result.Content.ReadAsStringAsync();
-            Console.WriteLine("YOU HAVE A STAGE OF " + data);
-            var stage = int.Parse(data);
+            var stage = 99;
+            var data = await _httpClient.GetStatus();
+            if (data.IsSuccessStatusCode)
+            {
+                stage = int.Parse(await data.Content.ReadAsStringAsync());
+                Console.WriteLine("YOU HAVE A STAGE OF " + stage);
+            }
+
             return await Task.FromResult(stage);
         }
 
