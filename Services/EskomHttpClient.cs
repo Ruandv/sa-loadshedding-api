@@ -112,7 +112,7 @@ namespace EskomCalendarApi.Services
                         dto.Add(new ScheduleDto() { BlockId = x.Day31, DayOfMonth = DateTime.Today.Day > 31 ? new DateTime(DateTime.Today.Year, DateTime.Today.Month, 31).AddMonths(1) : new DateTime(DateTime.Today.Year, DateTime.Today.Month, 31), Stage = x.Stage, Start = x.Start.TimeOfDay, End = x.End.TimeOfDay });
                     });
                     var dayList = new List<DateTime>();
-                    for (int i = 1;i <= days;i++)
+                    for (int i = 0;i <= days;i++)
                     {
                         dayList.Add(DateTime.Today.AddDays(i));
                     }
