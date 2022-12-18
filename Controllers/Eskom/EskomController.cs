@@ -59,22 +59,22 @@ namespace EskomCalendarApi.Controllers.Eskom
             }
         }
 
+        [HttpGet("GetSchedule")]
+        [ProducesResponseType(typeof(IEnumerable<string>), 200)]
+        [SwaggerOperation(Summary = "Get the schedule for the next x days")]
+        public async Task<IActionResult> GetSchedule(int municipalityId, int blockId, int days, int stage)
+        {
+            var res = await _eskomService.GetSchedule(municipalityId, blockId, days, stage);
+            return Ok(res);
+        }
+
+
         [HttpGet("FindSuburb")]
         [ProducesResponseType(typeof(IEnumerable<SuburbData>), 200)]
         [SwaggerOperation(Summary = "Search for the supplied suburb name on the Eskom Site")]
         public async Task<IActionResult> FindSuburb(string suburbname)
         {
-                var res = await _eskomService.FindSuburb(suburbname);
-                return Ok(res);
-        }
-
-
-        [HttpGet("GetStatus")]
-        [ProducesResponseType(typeof(int), 200)]
-        [SwaggerOperation(Summary = "Get the current Loadshedding stage")]
-        public async Task<IActionResult> GetStatus()
-        {
-            var res = await _eskomService.GetStatus();
+            var res = await _eskomService.FindSuburb(suburbname);
             return Ok(res);
         }
     }

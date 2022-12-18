@@ -5,6 +5,7 @@ using System.Net.Http.Json;
 using System.Linq;
 using System.IO;
 using System;
+using EskomCalendarApi.Models.Eskom;
 
 namespace EskomCalendarApi.Services.Calendar
 {
@@ -14,7 +15,7 @@ namespace EskomCalendarApi.Services.Calendar
         Task<IEnumerable<Municipality>> GetMunicipalities(int provinceId);
         Task<IEnumerable<SuburbData>> GetSuburbsByMunicipality(int municipalityId, int? blockId = null);
         Task<IEnumerable<SuburbSearch>> FindSuburb(string suburbName);
-        Task<string> GetStatus();
+        Task<IEnumerable<ScheduleDto>> GetSchedule(int municipalityId, int blockId, int days, int stage);
     }
 
     public class EskomService : IEskomService
@@ -39,19 +40,11 @@ namespace EskomCalendarApi.Services.Calendar
             data = data.ToList().Where(x => new int[] { 166, 167 }.Contains(x.MunicipalityId));
             return await Task.FromResult(data);
         }
-        public async Task<string> GetStatus()
+        public async Task<IEnumerable<ScheduleDto>> GetSchedule(int municipalityId, int blockId, int days, int stage)
         {
-            // For now we only support COJ and Tshwane
-            var stage = "99";
-            var data = await _httpClient.GetStatus();
-            if (data.IsSuccessStatusCode)
-            {
-                var s = await data.Content.ReadAsStringAsync();
-                stage = "VV " + s+ " sss";
-                Console.WriteLine("YOU HAVE A STAGE OF " + stage);
-            }
-
-            return await Task.FromResult(stage);
+            // For now we only support COJ
+            var dt = await _httpClient.GetSchedule(blockId, municipalityId, days, stage).Result.Content.ReadAsStringAsync();
+            return (await Task.FromResult(System.Text.Json.JsonSerializer.Deserialize<List<ScheduleDto>>(dt)));
         }
 
         public async Task<IEnumerable<SuburbData>> GetSuburbsByMunicipality(int municipalityId, int? blockId)
