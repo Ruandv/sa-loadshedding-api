@@ -32,7 +32,7 @@ namespace EskomCalendarApi.Controllers.Logging
                     _logService.Installed(message);
                     break;
                 case ExtensionMessageType.UNINSTALLED:
-
+                    _logService.UnInstalled(message);
                     break;
                 case ExtensionMessageType.SUBURBADDED:
 
