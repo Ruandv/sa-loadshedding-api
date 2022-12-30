@@ -18,6 +18,7 @@ namespace Config
             services.AddSingleton<IEskomService, EskomService>();
             services.AddHttpClient<CalendarHttpClient>();
             services.AddHttpClient<EskomHttpClient>();
+            services.AddSingleton<LoggingService>();
         }
     }
 }

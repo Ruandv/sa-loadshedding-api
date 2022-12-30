@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using EskomCalendarApi;
+using System.Text.Json.Serialization;
 
 namespace Config
 {
@@ -28,6 +29,7 @@ namespace Config
             });
 
             services.AddControllers()
+                .AddJsonOptions(o => o.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()))
                 .AddApplicationPart(typeof(Startup).Assembly);
 
             services.AddCors(options =>
