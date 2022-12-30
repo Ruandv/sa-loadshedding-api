@@ -29,25 +29,26 @@ namespace EskomCalendarApi.Controllers.Logging
         public async Task<IActionResult> LogWarning(ExtensionMessageType messageType, string userToken, string message)
         {
 
+            var dta = message.Replace("\\", "");
             switch (messageType)
             {
                 case ExtensionMessageType.INSTALLED:
-                    var obj = System.Text.Json.JsonSerializer.Deserialize<InstalledItem>(message);
+                    var obj = System.Text.Json.JsonSerializer.Deserialize<InstalledItem>(dta);
                     obj.UserToken = userToken;
                     _logService.Installed(obj);
                     break;
                 case ExtensionMessageType.SUBURBADDED:
-                    var subItemA = System.Text.Json.JsonSerializer.Deserialize<SuburbItem>(message);
+                    var subItemA = System.Text.Json.JsonSerializer.Deserialize<SuburbItem>(dta);
                     subItemA.UserToken = userToken;
                     _logService.SuburbAdded(subItemA);
                     break;
                 case ExtensionMessageType.SUBURBVIEWED:
-                    var subItemV = System.Text.Json.JsonSerializer.Deserialize<SuburbItem>(message);
+                    var subItemV = System.Text.Json.JsonSerializer.Deserialize<SuburbItem>(dta);
                     subItemV.UserToken = userToken;
                     _logService.SuburbViewed(subItemV);
                     break;
                 case ExtensionMessageType.SUBURBREMOVED:
-                    var subItemRem = System.Text.Json.JsonSerializer.Deserialize<SuburbItem>(message);
+                    var subItemRem = System.Text.Json.JsonSerializer.Deserialize<SuburbItem>(dta);
                     subItemRem.UserToken = userToken;
                     _logService.SuburbAdded(subItemRem);
                     break;
