@@ -54,5 +54,15 @@ namespace EskomCalendarApi.Controllers.Logging
 
             return Ok();
         }
+
+        [HttpGet()]
+        [SwaggerOperation(Summary = "Logs the message that was send")]
+        [ProducesResponseType(typeof(string), 200)]
+        public async Task<IActionResult> Uninstalled(string message)
+        {
+            _logService.UnInstalled(message);
+
+            return Ok();
+        }
     }
 }
