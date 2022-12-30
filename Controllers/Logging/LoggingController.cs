@@ -62,7 +62,7 @@ namespace EskomCalendarApi.Controllers.Logging
         {
             _logService.UnInstalled(message);
 
-            return Ok();
+            return Redirect("https://hmpg.net/");
         }
     }
 }
