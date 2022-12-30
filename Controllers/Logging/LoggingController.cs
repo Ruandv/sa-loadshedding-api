@@ -26,30 +26,30 @@ namespace EskomCalendarApi.Controllers.Logging
         [HttpPost()]
         [SwaggerOperation(Summary = "Logs the message that was send")]
         [ProducesResponseType(typeof(string), 200)]
-        public async Task<IActionResult> LogWarning(ExtensionMessageType messageType, string userToken, string message)
+        public async Task<IActionResult> LogWarning([FromBody] MessageInformation mi)
         {
 
-            var dta = message.Replace("\\", "");
-            switch (messageType)
+            var dta = mi.message;
+            switch (mi.messageType)
             {
                 case ExtensionMessageType.INSTALLED:
                     var obj = System.Text.Json.JsonSerializer.Deserialize<InstalledItem>(dta);
-                    obj.UserToken = userToken;
+                    obj.UserToken = mi.userToken;
                     _logService.Installed(obj);
                     break;
                 case ExtensionMessageType.SUBURBADDED:
                     var subItemA = System.Text.Json.JsonSerializer.Deserialize<SuburbItem>(dta);
-                    subItemA.UserToken = userToken;
+                    subItemA.UserToken = mi.userToken;
                     _logService.SuburbAdded(subItemA);
                     break;
                 case ExtensionMessageType.SUBURBVIEWED:
                     var subItemV = System.Text.Json.JsonSerializer.Deserialize<SuburbItem>(dta);
-                    subItemV.UserToken = userToken;
+                    subItemV.UserToken = mi.userToken;
                     _logService.SuburbViewed(subItemV);
                     break;
                 case ExtensionMessageType.SUBURBREMOVED:
                     var subItemRem = System.Text.Json.JsonSerializer.Deserialize<SuburbItem>(dta);
-                    subItemRem.UserToken = userToken;
+                    subItemRem.UserToken = mi.userToken;
                     _logService.SuburbAdded(subItemRem);
                     break;
                 case ExtensionMessageType.DAYSCHANGED:
@@ -73,5 +73,12 @@ namespace EskomCalendarApi.Controllers.Logging
 
             return Redirect("https://hmpg.net/");
         }
+    }
+
+    public class MessageInformation
+    {
+        public ExtensionMessageType messageType { get; set; }
+        public string userToken { get; set; }
+        public string message { get; set; }
     }
 }
