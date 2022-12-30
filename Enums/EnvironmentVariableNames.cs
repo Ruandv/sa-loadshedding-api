@@ -28,6 +28,5 @@ namespace EskomCalendarApi.Enums
         DAYSCHANGED,
         [Description("SEARCHED")]
         SEARCHED,
-
     }
 }

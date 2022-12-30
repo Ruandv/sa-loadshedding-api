@@ -1,4 +1,5 @@
 ﻿using EskomCalendarApi.Enums;
+using EskomCalendarApi.Models.Logging;
 using EskomCalendarApi.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -14,6 +15,7 @@ namespace EskomCalendarApi.Controllers.Logging
         private ILogger<LoggingController> _logger;
         private LoggingService _logService;
 
+
         public LoggingController(ILogger<LoggingController> logger, LoggingService logService)
         {
             _logger = logger;
@@ -24,24 +26,30 @@ namespace EskomCalendarApi.Controllers.Logging
         [HttpPost()]
         [SwaggerOperation(Summary = "Logs the message that was send")]
         [ProducesResponseType(typeof(string), 200)]
-        public async Task<IActionResult> LogWarning(ExtensionMessageType messageType, string message)
+        public async Task<IActionResult> LogWarning(ExtensionMessageType messageType, string userToken, string message)
         {
+
             switch (messageType)
             {
                 case ExtensionMessageType.INSTALLED:
-                    _logService.Installed(message);
-                    break;
-                case ExtensionMessageType.UNINSTALLED:
-                    _logService.UnInstalled(message);
+                    var obj = System.Text.Json.JsonSerializer.Deserialize<InstalledItem>(message);
+                    obj.UserToken = userToken;
+                    _logService.Installed(obj);
                     break;
                 case ExtensionMessageType.SUBURBADDED:
-
+                    var subItemA = System.Text.Json.JsonSerializer.Deserialize<SuburbItem>(message);
+                    subItemA.UserToken = userToken;
+                    _logService.SuburbAdded(subItemA);
                     break;
                 case ExtensionMessageType.SUBURBVIEWED:
-
+                    var subItemV = System.Text.Json.JsonSerializer.Deserialize<SuburbItem>(message);
+                    subItemV.UserToken = userToken;
+                    _logService.SuburbViewed(subItemV);
                     break;
                 case ExtensionMessageType.SUBURBREMOVED:
-
+                    var subItemRem = System.Text.Json.JsonSerializer.Deserialize<SuburbItem>(message);
+                    subItemRem.UserToken = userToken;
+                    _logService.SuburbAdded(subItemRem);
                     break;
                 case ExtensionMessageType.DAYSCHANGED:
 
@@ -58,9 +66,9 @@ namespace EskomCalendarApi.Controllers.Logging
         [HttpGet()]
         [SwaggerOperation(Summary = "Logs the message that was send")]
         [ProducesResponseType(typeof(string), 200)]
-        public async Task<IActionResult> Uninstalled(string message)
+        public async Task<IActionResult> Uninstalled(string userToken)
         {
-            _logService.UnInstalled(message);
+            _logService.UnInstalled(new InstalledItem() { Message = "Uninstalled", UserToken = userToken });
 
             return Redirect("https://hmpg.net/");
         }

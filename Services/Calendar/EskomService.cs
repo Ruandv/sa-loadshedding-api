@@ -6,6 +6,7 @@ using System.Linq;
 using System.IO;
 using System;
 using EskomCalendarApi.Models.Eskom;
+using System.Text.Json;
 
 namespace EskomCalendarApi.Services.Calendar
 {
@@ -44,7 +45,7 @@ namespace EskomCalendarApi.Services.Calendar
         {
             // For now we only support COJ
             var dt = await _httpClient.GetSchedule(blockId, municipalityId, days, stage).Result.Content.ReadAsStringAsync();
-            return (await Task.FromResult(System.Text.Json.JsonSerializer.Deserialize<List<ScheduleDto>>(dt)));
+            return (await Task.FromResult(JsonSerializer.Deserialize<List<ScheduleDto>>(dt)));
         }
 
         public async Task<IEnumerable<SuburbData>> GetSuburbsByMunicipality(int municipalityId, int? blockId)
@@ -53,7 +54,7 @@ namespace EskomCalendarApi.Services.Calendar
             //read the file from JSONData/Municipality_[MunicipalityId].json
             using (var stream = new StreamReader("./JSONData/Municipality_" + municipalityId + ".json"))
             {
-                var s = System.Text.Json.JsonSerializer.Deserialize<List<SuburbData>>(stream.ReadToEnd());
+                var s = JsonSerializer.Deserialize<List<SuburbData>>(stream.ReadToEnd());
                 if (blockId.HasValue)
                 {
                     return await Task.FromResult(s.ToList().Where(x => int.Parse(x.BlockId) == blockId));
