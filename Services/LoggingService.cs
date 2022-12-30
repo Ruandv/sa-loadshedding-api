@@ -20,6 +20,11 @@ namespace EskomCalendarApi.Services
         public void Installed(string message)
         {
             DateTime myDate = DateTime.Now;
+            if (!Directory.Exists("./Data"))
+            {
+                var d = Directory.CreateDirectory("./Data");
+            }
+
             if (!File.Exists("./Data/installed.json"))
             {
                 var f = File.Create("./Data/installed.json");
