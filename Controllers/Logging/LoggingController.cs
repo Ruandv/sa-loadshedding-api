@@ -7,7 +7,7 @@ using Swashbuckle.AspNetCore.Annotations;
 using System.Threading.Tasks;
 
 namespace EskomCalendarApi.Controllers.Logging
-{
+{ 
     [ApiController]
     [Route("api/[controller]/")]
     public class LoggingController : ControllerBase
