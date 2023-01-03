@@ -53,7 +53,7 @@ namespace EskomCalendarApi.Services
 
         public async Task<HttpResponseMessage> GetSchedule(int blockId, int municipalityId, int days, int stage)
         {
-            var dt = GetDataTableFromCsv("./services/coj.csv", stage, blockId, days);
+            var dt = GetDataTableFromCsv("./services/"+ municipalityId + ".csv", stage, blockId, days);
             var rm = new HttpResponseMessage(System.Net.HttpStatusCode.OK);
             rm.Content = System.Net.Http.Json.JsonContent.Create(dt);
             await Task.FromResult("TST");

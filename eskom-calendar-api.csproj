@@ -6,11 +6,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Services\COJ.csv" />
+    <None Remove="Services\166.csv" />
+    <None Remove="Services\167.csv" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Services\COJ.csv">
+    <Content Include="Services\166.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Services\167.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
