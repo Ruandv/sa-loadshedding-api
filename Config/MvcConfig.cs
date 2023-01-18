@@ -38,7 +38,7 @@ namespace Config
                     builder => builder
                     .AllowAnyMethod()
                     .AllowAnyHeader()
-                    .SetIsOriginAllowed((host) => true)
+                    .SetIsOriginAllowed((host) => false)
                     .AllowCredentials());
             });
         }

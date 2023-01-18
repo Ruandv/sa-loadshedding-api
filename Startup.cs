@@ -1,4 +1,5 @@
 using Config;
+using EskomCalendarApi.Middleware;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -37,28 +38,22 @@ namespace EskomCalendarApi
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseMiddleware<HeaderValidationMiddleware>();
             app.UseStaticFiles();
-            app.UseSwagger();
-            app.UseSwaggerUI();
-
-            app.UseSwaggerUI(options =>
-            {
-                options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
-                options.RoutePrefix = string.Empty;
-                options.InjectJavascript ("https://www.googletagmanager.com/gtag/js?id=G-ZDC2VN33J1");
-                options.InjectJavascript("/js/analytics.js");
-            });
             app.UseSwagger(options =>
             {
                 options.SerializeAsV2 = true;
             });
+
+            app.UseSwaggerUI();       
             app.UseHttpsRedirection();
 
             app.UseRouting();
 
+            app.UseCors("CorsPolicy");
+
             app.UseAuthorization();
 
-            app.UseCors("CorsPolicy");
 
             app.UseEndpoints(endpoints =>
             {

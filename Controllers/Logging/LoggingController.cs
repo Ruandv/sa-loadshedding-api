@@ -1,13 +1,14 @@
 ﻿using EskomCalendarApi.Enums;
 using EskomCalendarApi.Models.Logging;
 using EskomCalendarApi.Services;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Swashbuckle.AspNetCore.Annotations;
 using System.Threading.Tasks;
 
 namespace EskomCalendarApi.Controllers.Logging
-{ 
+{
     [ApiController]
     [Route("api/[controller]/")]
     public class LoggingController : ControllerBase
