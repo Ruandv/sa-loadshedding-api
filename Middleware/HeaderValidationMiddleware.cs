@@ -12,12 +12,14 @@ namespace EskomCalendarApi.Middleware
     {
         private readonly RequestDelegate _next;
         private string allowedHosts = "default";
+        private string allowedKeys = "default";
 
         public HeaderValidationMiddleware(RequestDelegate next)
         {
             if (allowedHosts == "default")
             {
                 allowedHosts = Environment.GetEnvironmentVariable(EnvironmentVariableNames.ALLOWINGHOSTS.ToString());
+                allowedKeys = Environment.GetEnvironmentVariable(EnvironmentVariableNames.ALLOWEDKEYS.ToString());
             }
             _next = next;
         }
@@ -25,7 +27,7 @@ namespace EskomCalendarApi.Middleware
         public async Task Invoke(HttpContext httpContext)
         {
 
-            if (allowedHosts == "*" || allowedHosts.Split(";").IndexOf(httpContext.Request.Host.ToString()) >= 0 || httpContext.Request.Headers.ContainsKey("TEST") == true)
+            if (allowedHosts == "*" || (allowedHosts.Split(";").IndexOf(httpContext.Request.Host.ToString()) >= 0 && httpContext.Request.Headers["key"].ToString() == allowedKeys ))
             {
                 await _next(httpContext); // calling next middleware
             }
