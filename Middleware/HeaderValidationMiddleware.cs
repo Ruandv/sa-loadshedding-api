@@ -17,7 +17,7 @@ namespace EskomCalendarApi.Middleware
         {
             if (allowedHosts == "default")
             {
-                allowedHosts = Environment.GetEnvironmentVariable(EnvironmentVariableNames.ALLOWEDHOSTS.ToString());
+                allowedHosts = Environment.GetEnvironmentVariable(EnvironmentVariableNames.ALLOWINGHOSTS.ToString());
             }
             _next = next;
         }

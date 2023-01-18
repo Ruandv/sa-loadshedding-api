@@ -6,7 +6,7 @@ namespace EskomCalendarApi.Enums
 {
     public enum EnvironmentVariableNames
     {
-        ALLOWEDHOSTS,
+        ALLOWINGHOSTS,
         ESKOM_CALENDAR_BASE_URL,
         ESKOM_SITE_BASE_URL,
         FIREBASE_BASE_URL,
