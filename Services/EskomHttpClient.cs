@@ -53,7 +53,7 @@ namespace EskomCalendarApi.Services
 
         public async Task<HttpResponseMessage> GetSchedule(int blockId, int municipalityId, int days, int stage)
         {
-            var dt = GetDataTableFromCsv("./services/"+ municipalityId + ".csv", stage, blockId, days);
+            var dt = GetDataTableFromCsv("./services/" + municipalityId + ".csv", stage, blockId, days);
             var rm = new HttpResponseMessage(System.Net.HttpStatusCode.OK);
             rm.Content = System.Net.Http.Json.JsonContent.Create(dt);
             await Task.FromResult("TST");
@@ -107,10 +107,20 @@ namespace EskomCalendarApi.Services
                         dto.Add(new ScheduleDto() { BlockId = x.Day26, DayOfMonth = DateTime.Today.Day > 26 ? new DateTime(DateTime.Today.Year, DateTime.Today.Month, 26).AddMonths(1) : new DateTime(DateTime.Today.Year, DateTime.Today.Month, 26), Stage = x.Stage, Start = x.Start.TimeOfDay, End = x.End.TimeOfDay });
                         dto.Add(new ScheduleDto() { BlockId = x.Day27, DayOfMonth = DateTime.Today.Day > 27 ? new DateTime(DateTime.Today.Year, DateTime.Today.Month, 27).AddMonths(1) : new DateTime(DateTime.Today.Year, DateTime.Today.Month, 27), Stage = x.Stage, Start = x.Start.TimeOfDay, End = x.End.TimeOfDay });
                         dto.Add(new ScheduleDto() { BlockId = x.Day28, DayOfMonth = DateTime.Today.Day > 28 ? new DateTime(DateTime.Today.Year, DateTime.Today.Month, 28).AddMonths(1) : new DateTime(DateTime.Today.Year, DateTime.Today.Month, 28), Stage = x.Stage, Start = x.Start.TimeOfDay, End = x.End.TimeOfDay });
-                        dto.Add(new ScheduleDto() { BlockId = x.Day29, DayOfMonth = DateTime.Today.Day > 29 ? new DateTime(DateTime.Today.Year, DateTime.Today.Month, 29).AddMonths(1) : new DateTime(DateTime.Today.Year, DateTime.Today.Month, 29), Stage = x.Stage, Start = x.Start.TimeOfDay, End = x.End.TimeOfDay });
-                        dto.Add(new ScheduleDto() { BlockId = x.Day30, DayOfMonth = DateTime.Today.Day > 30 ? new DateTime(DateTime.Today.Year, DateTime.Today.Month, 30).AddMonths(1) : new DateTime(DateTime.Today.Year, DateTime.Today.Month, 30), Stage = x.Stage, Start = x.Start.TimeOfDay, End = x.End.TimeOfDay });
-                        dto.Add(new ScheduleDto() { BlockId = x.Day31, DayOfMonth = DateTime.Today.Day > 31 ? new DateTime(DateTime.Today.Year, DateTime.Today.Month, 31).AddMonths(1) : new DateTime(DateTime.Today.Year, DateTime.Today.Month, 31), Stage = x.Stage, Start = x.Start.TimeOfDay, End = x.End.TimeOfDay });
+                        if (DateTime.DaysInMonth(DateTime.Today.Year, DateTime.Today.Month) > 28)
+                        {
+                            dto.Add(new ScheduleDto() { BlockId = x.Day29, DayOfMonth = DateTime.Today.Day > 29 ? new DateTime(DateTime.Today.Year, DateTime.Today.Month, 29).AddMonths(1) : new DateTime(DateTime.Today.Year, DateTime.Today.Month, 29), Stage = x.Stage, Start = x.Start.TimeOfDay, End = x.End.TimeOfDay });
+                            if (DateTime.DaysInMonth(DateTime.Today.Year, DateTime.Today.Month) > 29)
+                            {
+                                dto.Add(new ScheduleDto() { BlockId = x.Day30, DayOfMonth = DateTime.Today.Day > 30 ? new DateTime(DateTime.Today.Year, DateTime.Today.Month, 30).AddMonths(1) : new DateTime(DateTime.Today.Year, DateTime.Today.Month, 30), Stage = x.Stage, Start = x.Start.TimeOfDay, End = x.End.TimeOfDay });
+                            }
+                            if (DateTime.DaysInMonth(DateTime.Today.Year, DateTime.Today.Month) > 30)
+                            {
+                                dto.Add(new ScheduleDto() { BlockId = x.Day31, DayOfMonth = DateTime.Today.Day > 31 ? new DateTime(DateTime.Today.Year, DateTime.Today.Month, 31).AddMonths(1) : new DateTime(DateTime.Today.Year, DateTime.Today.Month, 31), Stage = x.Stage, Start = x.Start.TimeOfDay, End = x.End.TimeOfDay });
+                            }
+                        }
                     });
+
                     var dayList = new List<DateTime>();
                     for (int i = 0;i <= days;i++)
                     {
