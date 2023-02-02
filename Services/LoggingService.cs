@@ -45,6 +45,33 @@ namespace EskomCalendarApi.Services
             SaveFile("./Data/suburb.json", data);
         }
 
+        public void SuburbRemoved(SuburbItem message)
+        {
+            if (!File.Exists("./Data/suburb.json"))
+            {
+                var f = File.Create("./Data/suburb.json");
+                f.Close();
+                TextWriter tw = new StreamWriter("./Data/suburb.json", true);
+                tw.WriteLine("[]");
+                tw.Close();
+            }
+
+            List<SuburbItem> items = new List<SuburbItem>();
+            using (StreamReader r = new StreamReader("./Data/suburb.json"))
+            {
+                string json = r.ReadToEnd();
+                items = JsonSerializer.Deserialize<List<SuburbItem>>(json);
+            }
+
+            var idx = items.FindIndex(x => x.UserToken == message.UserToken && x.SuburbName == message.SuburbName);
+            if (idx > -1)
+            {
+                items.RemoveAt(idx);
+            }
+            var data = JsonSerializer.Serialize(items, options);
+            SaveFile("./Data/suburb.json", data);
+        }
+
         public void SuburbViewed(SuburbItem message)
         {
             if (!File.Exists("./Data/suburbViewed.json"))
@@ -62,33 +89,23 @@ namespace EskomCalendarApi.Services
                 string json = r.ReadToEnd();
                 items = JsonSerializer.Deserialize<List<SuburbItem>>(json);
             }
-            items.Add(message);
+
+            //find the item for today
+            var idx = items.Find(x => x.UserToken == message.UserToken && x.SuburbName == message.SuburbName && x.ActionDate.Date.DayOfYear == message.ActionDate.Date.DayOfYear);
+            if (idx != null)
+            {
+                idx.Viewed = idx.Viewed + 1;
+            }
+            else
+            {
+                message.Viewed = 1;
+                items.Add(message);
+            }
 
             var data = JsonSerializer.Serialize(items, options);
             SaveFile("./Data/suburbViewed.json", data);
         }
 
-        public void SuburbRemoved(SuburbItem message)
-        {
-            if (!File.Exists("./Data/suburbRemoved.json"))
-            {
-                var f = File.Create("./Data/suburbRemoved.json");
-                f.Close();
-                TextWriter tw = new StreamWriter("./Data/suburbRemoved.json", true);
-                tw.WriteLine("[]");
-                tw.Close();
-            }
-
-            List<SuburbItem> items = new List<SuburbItem>();
-            using (StreamReader r = new StreamReader("./Data/suburbRemoved.json"))
-            {
-                string json = r.ReadToEnd();
-                items = JsonSerializer.Deserialize<List<SuburbItem>>(json);
-            }
-            items.Add(message);
-            var data = JsonSerializer.Serialize(items, options);
-            SaveFile("./Data/suburbRemoved.json", data);
-        }
 
         public void Installed(InstalledItem message)
         {
@@ -107,7 +124,15 @@ namespace EskomCalendarApi.Services
                 string json = r.ReadToEnd();
                 items = JsonSerializer.Deserialize<List<InstalledItem>>(json);
             }
-            items.Add(message);
+            var idx = items.FindAll(x => x.UserToken == message.UserToken);
+            if (idx.Count > 0)
+            {
+                idx.ForEach(x => x.Message = message.Message);
+            }
+            else
+            {
+                items.Add(message);
+            }
             var data = JsonSerializer.Serialize(items, options);
             SaveFile("./Data/installed.json", data);
         }

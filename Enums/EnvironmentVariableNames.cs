@@ -18,6 +18,8 @@ namespace EskomCalendarApi.Enums
     {
         [Description("INSTALLED")]
         INSTALLED,
+        [Description("UPDATED")]
+        UPDATED,
         [Description("UNINSTALLED")]
         UNINSTALLED,
         [Description("SUBURBADDED")]

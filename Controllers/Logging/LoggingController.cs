@@ -37,26 +37,30 @@ namespace EskomCalendarApi.Controllers.Logging
                 case ExtensionMessageType.INSTALLED:
                     var obj = System.Text.Json.JsonSerializer.Deserialize<InstalledItem>(dta);
                     obj.ActionDate = DateTime.Now;
-                    obj.UserToken = mi.userToken;
                     _logService.Installed(obj);
+                    break;
+                case ExtensionMessageType.UPDATED:
+                    var obj2 = System.Text.Json.JsonSerializer.Deserialize<InstalledItem>(dta);
+                    obj2.ActionDate = DateTime.Now;
+                    _logService.Installed(obj2);
                     break;
                 case ExtensionMessageType.SUBURBADDED:
                     var subItemA = System.Text.Json.JsonSerializer.Deserialize<SuburbItem>(dta);
                     subItemA.ActionDate = DateTime.Now;
-                    subItemA.UserToken = mi.userToken;
                     _logService.SuburbAdded(subItemA);
                     break;
                 case ExtensionMessageType.SUBURBVIEWED:
                     var subItemV = System.Text.Json.JsonSerializer.Deserialize<SuburbItem>(dta);
                     subItemV.ActionDate = DateTime.Now;
-                    subItemV.UserToken = mi.userToken;
-                    _logService.SuburbViewed(subItemV);
+                    if (subItemV.SuburbName != "newSub")
+                    {
+                        _logService.SuburbViewed(subItemV);
+                    }
                     break;
                 case ExtensionMessageType.SUBURBREMOVED:
                     var subItemRem = System.Text.Json.JsonSerializer.Deserialize<SuburbItem>(dta);
                     subItemRem.ActionDate = DateTime.Now;
-                    subItemRem.UserToken = mi.userToken;
-                    _logService.SuburbAdded(subItemRem);
+                    _logService.SuburbRemoved(subItemRem);
                     break;
                 case ExtensionMessageType.DAYSCHANGED:
 
@@ -84,7 +88,6 @@ namespace EskomCalendarApi.Controllers.Logging
     public class MessageInformation
     {
         public ExtensionMessageType messageType { get; set; }
-        public string userToken { get; set; }
         public string message { get; set; }
     }
 }
