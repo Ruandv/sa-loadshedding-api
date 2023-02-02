@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Swashbuckle.AspNetCore.Annotations;
+using System;
 using System.Threading.Tasks;
 
 namespace EskomCalendarApi.Controllers.Logging
@@ -35,21 +36,25 @@ namespace EskomCalendarApi.Controllers.Logging
             {
                 case ExtensionMessageType.INSTALLED:
                     var obj = System.Text.Json.JsonSerializer.Deserialize<InstalledItem>(dta);
+                    obj.ActionDate = DateTime.Now;
                     obj.UserToken = mi.userToken;
                     _logService.Installed(obj);
                     break;
                 case ExtensionMessageType.SUBURBADDED:
                     var subItemA = System.Text.Json.JsonSerializer.Deserialize<SuburbItem>(dta);
+                    subItemA.ActionDate = DateTime.Now;
                     subItemA.UserToken = mi.userToken;
                     _logService.SuburbAdded(subItemA);
                     break;
                 case ExtensionMessageType.SUBURBVIEWED:
                     var subItemV = System.Text.Json.JsonSerializer.Deserialize<SuburbItem>(dta);
+                    subItemV.ActionDate = DateTime.Now;
                     subItemV.UserToken = mi.userToken;
                     _logService.SuburbViewed(subItemV);
                     break;
                 case ExtensionMessageType.SUBURBREMOVED:
                     var subItemRem = System.Text.Json.JsonSerializer.Deserialize<SuburbItem>(dta);
+                    subItemRem.ActionDate = DateTime.Now;
                     subItemRem.UserToken = mi.userToken;
                     _logService.SuburbAdded(subItemRem);
                     break;
@@ -70,7 +75,7 @@ namespace EskomCalendarApi.Controllers.Logging
         [ProducesResponseType(typeof(string), 200)]
         public async Task<IActionResult> Uninstalled(string userToken)
         {
-            _logService.UnInstalled(new InstalledItem() { Message = "Uninstalled", UserToken = userToken });
+            _logService.UnInstalled(new InstalledItem() { ActionDate = DateTime.Now, Message = "UNINSTALLED", UserToken = userToken });
 
             return Redirect("https://hmpg.net/");
         }

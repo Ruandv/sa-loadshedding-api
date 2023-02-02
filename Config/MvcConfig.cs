@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using EskomCalendarApi;
 using System.Text.Json.Serialization;
+using System.Text.Json;
 
 namespace Config
 {
@@ -29,7 +30,9 @@ namespace Config
             });
 
             services.AddControllers()
-                .AddJsonOptions(o => o.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()))
+                .AddJsonOptions(options => {
+                    options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+                })
                 .AddApplicationPart(typeof(Startup).Assembly);
 
             services.AddCors(options =>
@@ -38,7 +41,7 @@ namespace Config
                     builder => builder
                     .AllowAnyMethod()
                     .AllowAnyHeader()
-                    .SetIsOriginAllowed((host) => false)
+                    .SetIsOriginAllowed((host) => true)
                     .AllowCredentials());
             });
         }

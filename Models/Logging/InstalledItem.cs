@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Text.Json.Serialization;
 
 namespace EskomCalendarApi.Models.Logging
 {
     public class MessageDetails
     {
+        public DateTime ActionDate { get; set; }
         public string UserToken { get; set; }
     }
 
@@ -14,7 +16,7 @@ namespace EskomCalendarApi.Models.Logging
 
     public class InstalledItem : MessageDetails
     {
-        public DateTime ActionDate { get; set; }
+        [JsonPropertyName("message")]
         public string Message { get; set; }
     }
 }
