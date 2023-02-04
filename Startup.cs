@@ -1,5 +1,6 @@
 using Config;
 using EskomCalendarApi.Middleware;
+using EskomCalendarApi.Swagger;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -26,6 +27,7 @@ namespace EskomCalendarApi
             {
                 c.EnableAnnotations();
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+                c.OperationFilter<AddHeaderParameter>();
             });
             services.ConfigureServices(Configuration);
         }
