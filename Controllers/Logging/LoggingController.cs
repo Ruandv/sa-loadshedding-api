@@ -81,7 +81,7 @@ namespace EskomCalendarApi.Controllers.Logging
         {
             _logService.UnInstalled(new InstalledItem() { ActionDate = DateTime.Now, Message = "UNINSTALLED", UserToken = userToken });
 
-            return Redirect("https://hmpg.net/");
+            return Redirect("https://forms.gle/43hH75Vrk14woQBE9");
         }
     }
 
