@@ -8,6 +8,7 @@
   <ItemGroup>
     <None Remove="Services\166.csv" />
     <None Remove="Services\167.csv" />
+    <None Remove="Services\168.csv" />
   </ItemGroup>
 
   <ItemGroup>
@@ -15,6 +16,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Services\167.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Services\168.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
