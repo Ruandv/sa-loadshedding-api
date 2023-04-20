@@ -48,7 +48,7 @@ namespace EskomCalendarApi.Services
         {
             _httpClient.DefaultRequestHeaders.Add(
                 HeaderNames.Accept, "application/json");
-
+            Console.WriteLine("HEELLLppppp PPPPPPPPLLLLLLLEEEEAAAASSSSEEEE");
             return await _httpClient.GetAsync("GetMunicipalities?id=" + provinceId);
         }
 
