@@ -22,8 +22,8 @@ namespace EskomCalendarApi.Services
             _httpClient = httpClient;
 
             _httpClient.BaseAddress = new Uri(Environment.GetEnvironmentVariable(EnvironmentVariableNames.ESKOM_SITE_BASE_URL.ToString()));
-            _httpClient.DefaultRequestHeaders.Add(
-                HeaderNames.UserAgent, "HttpRequestsSample");
+            //_httpClient.DefaultRequestHeaders.Add(
+            //    HeaderNames.UserAgent, "HttpRequestsSample");
         }
 
         public async Task<HttpResponseMessage> GetProvinceList()
