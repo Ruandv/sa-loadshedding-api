@@ -61,9 +61,9 @@ namespace EskomCalendarApi.Services.Calendar
                 var s = JsonSerializer.Deserialize<List<SuburbData>>(stream.ReadToEnd());
                 if (blockId.HasValue)
                 {
-                    return await Task.FromResult(s.ToList().Where(x => int.Parse(x.BlockId) == blockId));
+                    return await Task.FromResult(s.ToList().Where(x => int.Parse(x.BlockId) == blockId).OrderBy(x=>x.SubName));
                 }
-                return await Task.FromResult(s);
+                return await Task.FromResult(s.OrderBy(x => x.SubName));
             }
 
         }
