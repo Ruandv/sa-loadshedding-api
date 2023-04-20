@@ -37,7 +37,11 @@ namespace EskomCalendarApi.Services.Calendar
         public async Task<IEnumerable<Municipality>> GetMunicipalities(int provinceId)
         {
             // For now we only support COJ and Tshwane
-            var data = await _httpClient.GetMunicipalityList(provinceId).Result.Content.ReadFromJsonAsync<IEnumerable<Municipality>>();
+            var datastr = await _httpClient.GetMunicipalityList(provinceId).Result.Content.ReadAsStringAsync();
+            Console.WriteLine("YAHHHHOOOO");
+            Console.WriteLine(datastr);
+            var data = JsonSerializer.Deserialize<IEnumerable<Municipality>>(datastr);
+            //var data = await _httpClient.GetMunicipalityList(provinceId).Result.Content.ReadFromJsonAsync<IEnumerable<Municipality>>();
             data = data.ToList().Where(x => new int[] { 166, 167,168}.Contains(x.MunicipalityId));
             return await Task.FromResult(data);
         }

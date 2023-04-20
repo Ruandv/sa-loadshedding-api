@@ -140,7 +140,8 @@ namespace EskomCalendarApi.Services
             }
             catch (Exception ex)
             {
-
+                Console.WriteLine(ex.Message);
+                throw;
             }
             return null;
         }
