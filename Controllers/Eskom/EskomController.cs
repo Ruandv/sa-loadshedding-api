@@ -45,7 +45,7 @@ namespace EskomCalendarApi.Controllers.Eskom
         [SwaggerOperation(Summary = "Get all municipalities as per Eskom site")]
         public async Task<IActionResult> GetSuburbList(int municipalityId, int? blockId)
         {
-            if (municipalityId == 166 || municipalityId == 167)
+            if (municipalityId == 166 || municipalityId == 167 || municipalityId == 168)
             {
                 var res = await _eskomService.GetSuburbsByMunicipality(municipalityId, blockId);
                 return Ok(res);
