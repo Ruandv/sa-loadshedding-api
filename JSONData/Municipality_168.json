@@ -1,602 +1,602 @@
 [
   {
     "subName": "Alrode",
-    "blockId": "B1"
+    "blockId": "1"
   },
   {
     "subName": "Arndhart",
-    "blockId": "B1"
+    "blockId": "1"
   },
   {
     "subName": "Meyersdal",
-    "blockId": "B1"
+    "blockId": "1"
   },
   {
     "subName": "Brackenhurst",
-    "blockId": "B1"
+    "blockId": "1"
   },
   {
     "subName": "Meyberry Park",
-    "blockId": "B1"
+    "blockId": "1"
   },
   {
     "subName": "Thokoza North",
-    "blockId": "B1"
+    "blockId": "1"
   },
   {
     "subName": "Alberts Park",
-    "blockId": "B1"
+    "blockId": "1"
   },
   {
     "subName": "Randhart",
-    "blockId": "B1"
+    "blockId": "1"
   },
   {
     "subName": "Brackendowns",
-    "blockId": "B1"
+    "blockId": "1"
   },
   {
     "subName": "Mayberry Park",
-    "blockId": "B1"
+    "blockId": "1"
   },
   {
     "subName": "Generaal Alberts Park",
-    "blockId": "B1"
+    "blockId": "1"
   },
   {
     "subName": "Activia Park",
-    "blockId": "B2"
+    "blockId": "2"
   },
   {
     "subName": "Barvallen",
-    "blockId": "B2"
+    "blockId": "2"
   },
   {
     "subName": "Dawnview",
-    "blockId": "B2"
+    "blockId": "2"
   },
   {
     "subName": "Delmore (Ulana Park)",
-    "blockId": "B2"
+    "blockId": "2"
   },
   {
     "subName": "Dukathole",
-    "blockId": "B2"
+    "blockId": "2"
   },
   {
     "subName": "Fishers Hill",
-    "blockId": "B2"
+    "blockId": "2"
   },
   {
     "subName": "Gerdview",
-    "blockId": "B2"
+    "blockId": "2"
   },
   {
     "subName": "Henville",
-    "blockId": "B2"
+    "blockId": "2"
   },
   {
     "subName": "Homestead",
-    "blockId": "B2"
+    "blockId": "2"
   },
   {
     "subName": "Knights",
-    "blockId": "B2"
+    "blockId": "2"
   },
   {
     "subName": "Marlands",
-    "blockId": "B2"
+    "blockId": "2"
   },
   {
     "subName": "Meadowbrook",
-    "blockId": "B2"
+    "blockId": "2"
   },
   {
     "subName": "Rustivia",
-    "blockId": "B2"
+    "blockId": "2"
   },
   {
     "subName": "South Germiston",
-    "blockId": "B2"
+    "blockId": "2"
   },
   {
     "subName": "Sunnyridge",
-    "blockId": "B2"
+    "blockId": "2"
   },
   {
     "subName": "Sunnyrock",
-    "blockId": "B2"
+    "blockId": "2"
   },
   {
     "subName": "Symhurst",
-    "blockId": "B2"
+    "blockId": "2"
   },
   {
     "subName": "Wannenburg",
-    "blockId": "B2"
+    "blockId": "2"
   },
   {
     "subName": "Wannenburg Hoogte",
-    "blockId": "B2"
+    "blockId": "2"
   },
   {
     "subName": "Wilbart",
-    "blockId": "B2"
+    "blockId": "2"
   },
   {
     "subName": "Witfield",
-    "blockId": "B2"
+    "blockId": "2"
   },
   {
     "subName": "Woodmere",
-    "blockId": "B2"
+    "blockId": "2"
   },
   {
     "subName": "Bredell",
-    "blockId": "B3"
+    "blockId": "3"
   },
   {
     "subName": "Brentwood Park",
-    "blockId": "B3"
+    "blockId": "3"
   },
   {
     "subName": "Glen Marais Ext 49/52/89/98",
-    "blockId": "B3"
+    "blockId": "3"
   },
   {
     "subName": "Serengeti",
-    "blockId": "B3"
+    "blockId": "3"
   },
   {
     "subName": "Kaalfontein",
-    "blockId": "B3"
+    "blockId": "3"
   },
   {
     "subName": "Esselen Park",
-    "blockId": "B3"
+    "blockId": "3"
   },
   {
     "subName": "Welgedacht Town",
-    "blockId": "B3"
+    "blockId": "3"
   },
   {
     "subName": "Boksburg East",
-    "blockId": "B4"
+    "blockId": "4"
   },
   {
     "subName": "Boksburg South Boksburg CBD",
-    "blockId": "B4"
+    "blockId": "4"
   },
   {
     "subName": "Parkrand",
-    "blockId": "B4"
+    "blockId": "4"
   },
   {
     "subName": "Farrar Park",
-    "blockId": "B4"
+    "blockId": "4"
   },
   {
     "subName": "Parkdene",
-    "blockId": "B4"
+    "blockId": "4"
   },
   {
     "subName": "Cinderella",
-    "blockId": "B4"
+    "blockId": "4"
   },
   {
     "subName": "Sunward Park",
-    "blockId": "B4"
+    "blockId": "4"
   },
   {
     "subName": "Freeway Park",
-    "blockId": "B4"
+    "blockId": "4"
   },
   {
     "subName": "Van Dyk Park",
-    "blockId": "B4"
+    "blockId": "4"
   },
   {
     "subName": "Salfin",
-    "blockId": "B4"
+    "blockId": "4"
   },
   {
     "subName": "Welgadacht",
-    "blockId": "B4"
+    "blockId": "4"
   },
   {
     "subName": "Presida",
-    "blockId": "B4"
+    "blockId": "4"
   },
   {
     "subName": "Slovo Park",
-    "blockId": "B4"
+    "blockId": "4"
   },
   {
     "subName": "Lazerus",
-    "blockId": "B4"
+    "blockId": "4"
   },
   {
     "subName": "Dunnottar",
-    "blockId": "B4"
+    "blockId": "4"
   },
   {
     "subName": "Palm Ridge",
-    "blockId": "B4"
+    "blockId": "4"
   },
   {
     "subName": "Dawn Park",
-    "blockId": "B5"
+    "blockId": "5"
   },
   {
     "subName": "Groeneweide",
-    "blockId": "B5"
+    "blockId": "5"
   },
   {
     "subName": "Klipportjie",
-    "blockId": "B5"
+    "blockId": "5"
   },
   {
     "subName": "Villa Liza",
-    "blockId": "B5"
+    "blockId": "5"
   },
   {
     "subName": "Windmill Park",
-    "blockId": "B5"
+    "blockId": "5"
   },
   {
     "subName": "Germiston CBD",
-    "blockId": "B5"
+    "blockId": "5"
   },
   {
     "subName": "Lampton",
-    "blockId": "B5"
+    "blockId": "5"
   },
   {
     "subName": "GeorgeTown",
-    "blockId": "B5"
+    "blockId": "5"
   },
   {
     "subName": "Simmerfield",
-    "blockId": "B5"
+    "blockId": "5"
   },
   {
     "subName": "Driehoek",
-    "blockId": "B5"
+    "blockId": "5"
   },
   {
     "subName": "Clayville ",
-    "blockId": "B6"
+    "blockId": "6"
   },
   {
     "subName": "Olifantsfontein and Winnie Mandela",
-    "blockId": "B6"
+    "blockId": "6"
   },
   {
     "subName": "Anderbolt",
-    "blockId": "B7"
+    "blockId": "7"
   },
   {
     "subName": "Atlasville",
-    "blockId": "B7"
+    "blockId": "7"
   },
   {
     "subName": "Bardene",
-    "blockId": "B7"
+    "blockId": "7"
   },
   {
     "subName": "Bartletts",
-    "blockId": "B7"
+    "blockId": "7"
   },
   {
     "subName": "Beyerspark",
-    "blockId": "B7"
+    "blockId": "7"
   },
   {
     "subName": "Boksburg North",
-    "blockId": "B7"
+    "blockId": "7"
   },
   {
     "subName": "Boksburg West",
-    "blockId": "B7"
+    "blockId": "7"
   },
   {
     "subName": "Clearwater Estate",
-    "blockId": "B7"
+    "blockId": "7"
   },
   {
     "subName": "Comet",
-    "blockId": "B7"
+    "blockId": "7"
   },
   {
     "subName": "Dayanglen",
-    "blockId": "B7"
+    "blockId": "7"
   },
   {
     "subName": "Delmore",
-    "blockId": "B7"
+    "blockId": "7"
   },
   {
     "subName": "Hughes",
-    "blockId": "B7"
+    "blockId": "7"
   },
   {
     "subName": "Impala Park",
-    "blockId": "B7"
+    "blockId": "7"
   },
   {
     "subName": "Jansen Park",
-    "blockId": "B7"
+    "blockId": "7"
   },
   {
     "subName": "Janmutsville",
-    "blockId": "B7"
+    "blockId": "7"
   },
   {
     "subName": "Jetpark",
-    "blockId": "B7"
+    "blockId": "7"
   },
   {
     "subName": "Lilliaton",
-    "blockId": "B7"
+    "blockId": "7"
   },
   {
     "subName": "Plantation",
-    "blockId": "B7"
+    "blockId": "7"
   },
   {
     "subName": "Ravensklip",
-    "blockId": "B7"
+    "blockId": "7"
   },
   {
     "subName": "Ravenswood",
-    "blockId": "B7"
+    "blockId": "7"
   },
   {
     "subName": "Westwood",
-    "blockId": "B7"
+    "blockId": "7"
   },
   {
     "subName": "Witfield",
-    "blockId": "B7"
+    "blockId": "7"
   },
   {
     "subName": "Witkoppie Ridge",
-    "blockId": "B7"
+    "blockId": "7"
   },
   {
     "subName": "Bedfordview",
-    "blockId": "B8"
+    "blockId": "8"
   },
   {
     "subName": "Springs and New Era",
-    "blockId": "B8"
+    "blockId": "8"
   },
   {
     "subName": "Horwood",
-    "blockId": "B9"
+    "blockId": "9"
   },
   {
     "subName": "Edenvale",
-    "blockId": "B9"
+    "blockId": "9"
   },
   {
     "subName": "Selcourt",
-    "blockId": "B9"
+    "blockId": "9"
   },
   {
     "subName": "Petit",
-    "blockId": "B10"
+    "blockId": "10"
   },
   {
     "subName": "Putfontein",
-    "blockId": "B10"
+    "blockId": "10"
   },
   {
     "subName": "Hillcrest",
-    "blockId": "B10"
+    "blockId": "10"
   },
   {
     "subName": "Lillyvale",
-    "blockId": "B10"
+    "blockId": "10"
   },
   {
     "subName": "Benoni AH",
-    "blockId": "B10"
+    "blockId": "10"
   },
   {
     "subName": "Marister Benoni North",
-    "blockId": "B10"
+    "blockId": "10"
   },
   {
     "subName": "Fairleads",
-    "blockId": "B10"
+    "blockId": "10"
   },
   {
     "subName": "Cloverdene",
-    "blockId": "B10"
+    "blockId": "10"
   },
   {
     "subName": "Chief A Park",
-    "blockId": "B10"
+    "blockId": "10"
   },
   {
     "subName": "Rynfield",
-    "blockId": "B10"
+    "blockId": "10"
   },
   {
     "subName": "Northmead",
-    "blockId": "B10"
+    "blockId": "10"
   },
   {
     "subName": "Brentwood Park",
-    "blockId": "B10"
+    "blockId": "10"
   },
   {
     "subName": "Daveyton",
-    "blockId": "B10"
+    "blockId": "10"
   },
   {
     "subName": "Etwatwa",
-    "blockId": "B10"
+    "blockId": "10"
   },
   {
     "subName": "Kingsway",
-    "blockId": "B10"
+    "blockId": "10"
   },
   {
     "subName": "Vezi",
-    "blockId": "B10"
+    "blockId": "10"
   },
   {
     "subName": "Kunene.",
-    "blockId": "B10"
+    "blockId": "10"
   },
   {
     "subName": "Thembisa ",
-    "blockId": "B11"
+    "blockId": "11"
   },
   {
     "subName": "Birch Arces Ext 23-32",
-    "blockId": "B11"
+    "blockId": "11"
   },
   {
     "subName": "Alrode (B12)",
-    "blockId": "B12"
+    "blockId": "12"
   },
   {
     "subName": "Reiger Park and Mapleton",
-    "blockId": "B12"
+    "blockId": "12"
   },
   {
     "subName": "Brakpan CBD",
-    "blockId": "B13"
+    "blockId": "13"
   },
   {
     "subName": "Terenure",
-    "blockId": "B14"
+    "blockId": "14"
   },
   {
     "subName": "Edleen",
-    "blockId": "B14"
+    "blockId": "14"
   },
   {
     "subName": "Van Riebeeck Park",
-    "blockId": "B14"
+    "blockId": "14"
   },
   {
     "subName": "Birch Acres",
-    "blockId": "B14"
+    "blockId": "14"
   },
   {
     "subName": "Kempton West",
-    "blockId": "B14"
+    "blockId": "14"
   },
   {
     "subName": "Glen Marais",
-    "blockId": "B14"
+    "blockId": "14"
   },
   {
     "subName": "Allen Grove",
-    "blockId": "B14"
+    "blockId": "14"
   },
   {
     "subName": "Bonaero Park",
-    "blockId": "B14"
+    "blockId": "14"
   },
   {
     "subName": "Nimrod Park",
-    "blockId": "B14"
+    "blockId": "14"
   },
   {
     "subName": "Aston Manor",
-    "blockId": "B14"
+    "blockId": "14"
   },
   {
     "subName": "Kempton Park",
-    "blockId": "B14"
+    "blockId": "14"
   },
   {
     "subName": "Glen Erasmia",
-    "blockId": "B14"
+    "blockId": "14"
   },
   {
     "subName": "Birchleigh",
-    "blockId": "B14"
+    "blockId": "14"
   },
   {
     "subName": "Rhodesfield",
-    "blockId": "B14"
+    "blockId": "14"
   },
   {
     "subName": "Cresslawn",
-    "blockId": "B14"
+    "blockId": "14"
   },
   {
     "subName": "Kelvin Estate",
-    "blockId": "B14"
+    "blockId": "14"
   },
   {
     "subName": "Croydon",
-    "blockId": "B14"
+    "blockId": "14"
   },
   {
     "subName": "Spartan",
-    "blockId": "B14"
+    "blockId": "14"
   },
   {
     "subName": "KwaThema",
-    "blockId": "B15"
+    "blockId": "15"
   },
   {
     "subName": "Albertsdal",
-    "blockId": "B15"
+    "blockId": "15"
   },
   {
     "subName": "Wadeville",
-    "blockId": "B16"
+    "blockId": "16"
   },
   {
     "subName": "Buhle Park",
-    "blockId": "B16"
+    "blockId": "16"
   },
   {
     "subName": "Phumula",
-    "blockId": "B16"
+    "blockId": "16"
   },
   {
     "subName": "Roodekop",
-    "blockId": "B16"
+    "blockId": "16"
   },
   {
     "subName": "Rondebult",
-    "blockId": "B16"
+    "blockId": "16"
   },
   {
     "subName": "Albermale",
-    "blockId": "B16"
+    "blockId": "16"
   },
   {
     "subName": "Norton Small farm",
-    "blockId": "B16"
+    "blockId": "16"
   },
   {
     "subName": "Benoni CBD",
-    "blockId": "B16"
+    "blockId": "16"
   },
   {
     "subName": "Mackenzie park",
-    "blockId": "B16"
+    "blockId": "16"
   },
   {
     "subName": "Lakefield",
-    "blockId": "B16"
+    "blockId": "16"
   },
   {
     "subName": "Farrarmere",
-    "blockId": "B16"
+    "blockId": "16"
   },
   {
     "subName": "Northmead (B16)",
-    "blockId": "B16"
-  },
+    "blockId": "16"
+  }
 ]
