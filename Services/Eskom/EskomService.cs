@@ -15,7 +15,6 @@ namespace Services.Eskom
     {
         Task<IEnumerable<Province>> GetProvinces();
         Task<IEnumerable<Municipality>> GetMunicipalities(int provinceId);
-        Task<IEnumerable<SuburbData>> GetSuburbsByMunicipality(int municipalityId, int? blockId = null);
         Task<IEnumerable<SuburbSearch>> FindSuburb(string suburbName);
         Task<IEnumerable<ScheduleDto>> GetSchedule(int municipalityId, int blockId, int days, int stage);
     }
