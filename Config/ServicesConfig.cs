@@ -1,8 +1,10 @@
 ﻿using System;
 using EskomCalendarApi.Services;
 using EskomCalendarApi.Services.Calendar;
+using HttpClients;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Services.Eskom;
 
 namespace Config
 {

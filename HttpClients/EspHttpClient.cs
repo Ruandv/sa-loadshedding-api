@@ -13,7 +13,7 @@ using System.Net.Http.Json;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace EskomCalendarApi.Services
+namespace HttpClients
 {
     public class EspHttpClient
     {
@@ -38,16 +38,16 @@ namespace EskomCalendarApi.Services
         {
             _httpClient.DefaultRequestHeaders.Add("token", token);
             var data = await _httpClient.GetAsync("areas_search?text=" + searchText).Result.Content.ReadAsStringAsync();
-           
+
             dynamic dynamicObje3ct = System.Text.Json.JsonSerializer.Deserialize<dynamic>(data);
             return dynamicObje3ct;
         }
 
         public async Task<dynamic> AreaInformation(string token, string id)
         {
-            
+
             _httpClient.DefaultRequestHeaders.Add("token", token);
-            var data = await _httpClient.GetAsync("area?id="+id+"").Result.Content.ReadAsStringAsync();
+            var data = await _httpClient.GetAsync("area?id=" + id + "").Result.Content.ReadAsStringAsync();
             dynamic dynamicObje3ct = System.Text.Json.JsonSerializer.Deserialize<dynamic>(data);
             return dynamicObje3ct;
         }

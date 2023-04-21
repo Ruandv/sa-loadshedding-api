@@ -7,8 +7,9 @@ using System.IO;
 using System;
 using EskomCalendarApi.Models.Eskom;
 using System.Text.Json;
+using HttpClients;
 
-namespace EskomCalendarApi.Services.Calendar
+namespace Services.Eskom
 {
     public interface IEskomService
     {
@@ -45,24 +46,9 @@ namespace EskomCalendarApi.Services.Calendar
         {
             // For now we only support COJ
             var dt = await _httpClient.GetSchedule(blockId, municipalityId, days, stage).Result.Content.ReadAsStringAsync();
-            return (await Task.FromResult(JsonSerializer.Deserialize<List<ScheduleDto>>(dt)));
+            return await Task.FromResult(JsonSerializer.Deserialize<List<ScheduleDto>>(dt));
         }
 
-        public async Task<IEnumerable<SuburbData>> GetSuburbsByMunicipality(int municipalityId, int? blockId)
-        {
-
-            //read the file from JSONData/Municipality_[MunicipalityId].json
-            using (var stream = new StreamReader("./JSONData/Municipality_" + municipalityId + ".json"))
-            {
-                var s = JsonSerializer.Deserialize<List<SuburbData>>(stream.ReadToEnd());
-                if (blockId.HasValue)
-                {
-                    return await Task.FromResult(s.ToList().Where(x => int.Parse(x.BlockId) == blockId).OrderBy(x=>x.SubName));
-                }
-                return await Task.FromResult(s.OrderBy(x => x.SubName));
-            }
-
-        }
         public async Task<IEnumerable<SuburbSearch>> FindSuburb(string suburbName)
         {
             var data = await _httpClient.FindSuburb(suburbName).Result.Content.ReadFromJsonAsync<IEnumerable<SuburbSearch>>();

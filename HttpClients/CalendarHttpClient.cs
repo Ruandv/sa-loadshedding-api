@@ -7,7 +7,7 @@ using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace EskomCalendarApi.Services
+namespace HttpClients
 {
     public class CalendarHttpClient
     {

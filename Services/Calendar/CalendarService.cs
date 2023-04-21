@@ -8,6 +8,8 @@ using System.Collections.Generic;
 using System.Linq;
 using EskomCalendarApi.Models.Calendar;
 using System.Text.Json;
+using Services.Eskom;
+using HttpClients;
 
 namespace EskomCalendarApi.Services.Calendar
 {

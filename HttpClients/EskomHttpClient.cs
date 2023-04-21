@@ -12,7 +12,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace EskomCalendarApi.Services
+namespace HttpClients
 {
     public class EskomHttpClient
     {
@@ -48,13 +48,26 @@ namespace EskomCalendarApi.Services
         {
             _httpClient.DefaultRequestHeaders.Add(
                 HeaderNames.Accept, "application/json");
-            Console.WriteLine("HEELLLppppp PPPPPPPPLLLLLLLEEEEAAAASSSSEEEE");
             return await _httpClient.GetAsync("GetMunicipalities?id=" + provinceId);
         }
 
+        public async Task<HttpResponseMessage> SearchSuburb(string searchTerm, int municipalityId)
+        {
+            _httpClient.DefaultRequestHeaders.Add(
+            HeaderNames.Accept, "application/json");
+            return await _httpClient.GetAsync("/GetSurburbData/?pageSize=100&pageNum=1&searchTerm=" + searchTerm + "&id=" + municipalityId);
+        }
+
+        //public async Task<HttpResponseMessage> GetSuburbList(int municipalityId)
+        //{
+        //    _httpClient.DefaultRequestHeaders.Add(
+        //        HeaderNames.Accept, "application/json");
+        //    return await _httpClient.GetAsync("/GetSurburbData/?pageSize=297&pageNum=3&id=" + municipalityId);
+        //}
+
         public async Task<HttpResponseMessage> GetSchedule(int blockId, int municipalityId, int days, int stage)
         {
-            var dt = GetDataTableFromCsv("./services/" + municipalityId + ".csv", stage, blockId, days);
+            var dt = GetDataTableFromCsv("./services/data/" + municipalityId + ".csv", stage, blockId, days);
             var rm = new HttpResponseMessage(System.Net.HttpStatusCode.OK);
             rm.Content = System.Net.Http.Json.JsonContent.Create(dt);
             await Task.FromResult("TST");

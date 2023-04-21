@@ -1,7 +1,7 @@
 ﻿using EskomCalendarApi.Models.Calendar;
-using EskomCalendarApi.Services.Calendar;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Services.Eskom;
 using Swashbuckle.AspNetCore.Annotations;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -45,15 +45,15 @@ namespace EskomCalendarApi.Controllers.Eskom
         [SwaggerOperation(Summary = "Get all municipalities as per Eskom site")]
         public async Task<IActionResult> GetSuburbList(int municipalityId, int? blockId)
         {
-            if (municipalityId == 166 || municipalityId == 167 || municipalityId == 168)
-            {
+            //if (municipalityId == 166 || municipalityId == 167 || municipalityId == 168)
+            //{
                 var res = await _eskomService.GetSuburbsByMunicipality(municipalityId, blockId);
                 return Ok(res);
-            }
-            else
-            {
-                return BadRequest("The only supported municipalities are Tshwane (167) and city-power (166)");
-            }
+            //}
+            //else
+            //{
+            //    return BadRequest("The only supported municipalities are Tshwane (167) and city-power (166)");
+            //}
         }
 
         [HttpGet("GetSchedule")]

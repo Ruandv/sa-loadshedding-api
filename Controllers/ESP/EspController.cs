@@ -1,7 +1,7 @@
 ﻿using EskomCalendarApi.Models.Calendar;
-using EskomCalendarApi.Services;
 using EskomCalendarApi.Services.Calendar;
 using EskomCalendarApi.Swagger;
+using HttpClients;
 using Microsoft.AspNetCore.Mvc;
 using Models.Esp;
 using Swashbuckle.AspNetCore.Annotations;
