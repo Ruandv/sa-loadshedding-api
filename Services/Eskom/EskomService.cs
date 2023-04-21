@@ -15,6 +15,7 @@ namespace Services.Eskom
     {
         Task<IEnumerable<Province>> GetProvinces();
         Task<IEnumerable<Municipality>> GetMunicipalities(int provinceId);
+        Task<IEnumerable<SuburbData>> GetSuburbsByMunicipality(int municipalityId, int? blockId = null);
         Task<IEnumerable<SuburbSearch>> FindSuburb(string suburbName);
         Task<IEnumerable<ScheduleDto>> GetSchedule(int municipalityId, int blockId, int days, int stage);
     }
@@ -48,6 +49,19 @@ namespace Services.Eskom
             return await Task.FromResult(JsonSerializer.Deserialize<List<ScheduleDto>>(dt));
         }
 
+        public async Task<IEnumerable<SuburbData>> GetSuburbsByMunicipality(int municipalityId, int? blockId)
+        {
+            //read the file from JSONData/Municipality_[MunicipalityId].json
+            using (var stream = new StreamReader("./JSONData/Municipality_" + municipalityId + ".json"))
+            {
+                var s = JsonSerializer.Deserialize<List<SuburbData>>(stream.ReadToEnd());
+                if (blockId.HasValue)
+                {
+                    return await Task.FromResult(s.ToList().Where(x => int.Parse(x.BlockId) == blockId).OrderBy(x => x.SubName));
+                }
+                return await Task.FromResult(s.OrderBy(x => x.SubName));
+            }
+        }
         public async Task<IEnumerable<SuburbSearch>> FindSuburb(string suburbName)
         {
             var data = await _httpClient.FindSuburb(suburbName).Result.Content.ReadFromJsonAsync<IEnumerable<SuburbSearch>>();
