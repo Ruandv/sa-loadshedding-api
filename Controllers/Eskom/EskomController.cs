@@ -1,6 +1,6 @@
-﻿using EskomCalendarApi.Models.Calendar;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Models.Eskom;
 using Services.Eskom;
 using Swashbuckle.AspNetCore.Annotations;
 using System.Collections.Generic;
@@ -40,21 +40,22 @@ namespace EskomCalendarApi.Controllers.Eskom
             return Ok(res);
         }
 
-        [HttpGet("GetSuburbList")]
-        [ProducesResponseType(typeof(IEnumerable<SuburbData>), 200)]
-        [SwaggerOperation(Summary = "Get all municipalities as per Eskom site")]
-        public async Task<IActionResult> GetSuburbList(int municipalityId, int? blockId)
-        {
-            if (municipalityId == 166 || municipalityId == 167 || municipalityId == 168)
-            {
-                var res = await _eskomService.GetSuburbsByMunicipality(municipalityId, blockId);
-                return Ok(res);
-            }
-            else
-            {
-                return BadRequest("The only supported municipalities are Tshwane (167) and city-power (166)");
-            }
-        }
+        //[HttpGet("GetSuburbList")]
+        //[ProducesResponseType(typeof(IEnumerable<SuburbData>), 200)]
+        //[SwaggerOperation(Summary = "Get all municipalities as per Eskom site")]
+        //public async Task<IActionResult> GetSuburbList(int municipalityId, int? blockId)
+        //{
+        //    if (municipalityId == 166 || municipalityId == 167 || municipalityId == 168)
+        //    {
+        //        var res = await _eskomService.GetSuburbsByMunicipality(municipalityId, blockId);
+        //        return Ok(res);
+        //    }
+        //    else
+        //    {
+
+        //        return BadRequest("The only supported municipalities are Tshwane (167) and city-power (166)");
+        //    }
+        //}
 
         [HttpGet("GetSchedule")]
         [ProducesResponseType(typeof(IEnumerable<string>), 200)]

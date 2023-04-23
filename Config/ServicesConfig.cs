@@ -1,6 +1,7 @@
 ﻿using System;
+using EskomCalendarApi.Mappings;
 using EskomCalendarApi.Services;
-using EskomCalendarApi.Services.Calendar;
+using EskomCalendarApi.Mappings;
 using HttpClients;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,14 +15,13 @@ namespace Config
         {
             _ = services ?? throw new ArgumentNullException(nameof(services));
             _ = configuration ?? throw new ArgumentNullException(nameof(configuration));
-
             // Add Services
-            services.AddSingleton<ICalendarService, CalendarService>();
             services.AddSingleton<IEskomService, EskomService>();
-            services.AddHttpClient<CalendarHttpClient>();
             services.AddHttpClient<EskomHttpClient>();
+            services.AddHttpClient<EskomHttpClient2>();
             services.AddHttpClient<EspHttpClient>();
             services.AddSingleton<LoggingService>();
+            services.AddAutoMapper(typeof(AutoMapperProfiles));
         }
     }
 }

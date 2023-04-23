@@ -1,4 +1,4 @@
-﻿namespace EskomCalendarApi.Models.Calendar
+﻿namespace Models.Eskom
 {
     public class Province
     {
