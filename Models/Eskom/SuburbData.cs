@@ -1,4 +1,6 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace Models.Eskom
 {
@@ -8,6 +10,21 @@ namespace Models.Eskom
         public string SubName { get; set; }
         [JsonPropertyName("blockId")]
         public string BlockId { get; set; }
+    }
+
+    public class SuburbDataResult
+    {
+        public IEnumerable<Suburb> Results { get; set; }
+    }
+
+    public class Suburb
+    {
+        [JsonPropertyName("id")]
+        public int Id { get; set; }
+        [JsonPropertyName("text")]
+        public string Name { get; set; }
+        [JsonPropertyName("tot")]
+        public int Total { get; set; }
     }
 
     public class SuburbSearch

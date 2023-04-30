@@ -1,4 +1,5 @@
-﻿using EskomCalendarApi.Enums;
+﻿using HtmlAgilityPack;
+using EskomCalendarApi.Enums;
 using Microsoft.Net.Http.Headers;
 using Models.Eskom;
 using System;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace HttpClients
 {
@@ -15,7 +17,6 @@ namespace HttpClients
         private readonly HttpClient _httpClient;
         private List<Province> provinceList = new List<Province>();
         private Dictionary<int, IEnumerable<Municipality>> provinceMunicipalityDictionary = new Dictionary<int, IEnumerable<Municipality>>();
-
 
         public EskomHttpClient2(HttpClient httpClient)
         {
@@ -77,13 +78,40 @@ namespace HttpClients
                HeaderNames.Accept, "application/json");
             return await _httpClient.GetAsync("FindSuburbs?searchText=" + suburbName + "&maxResults=300");
         }
+        public async Task<HttpResponseMessage> GetSuburbListByMunicipality(int municipalityId)
+        {
+            _httpClient.DefaultRequestHeaders.Add(
+            HeaderNames.Accept, "application/json");
+            return await _httpClient.GetAsync("GetSurburbData/?pageSize=9200&pageNum=1&id="+municipalityId);
+        }
+        public async Task<HttpResponseMessage> IsEskomClient(int suburbId, string provinceName, int x, int total)
+        {
+            _httpClient.DefaultRequestHeaders.Add(HeaderNames.Accept, "application/json");
+            var res = await _httpClient.GetAsync(string.Format("GetScheduleM/{0}/{1}/{2}/{3}", suburbId, 4, provinceName, total)).Result.Content.ReadAsStringAsync();
+            var b = res.Contains("We regret that we could not");
+            var resp = new HttpResponseMessage(System.Net.HttpStatusCode.NotFound);
+            if (!b)
+            {
+                resp = new HttpResponseMessage(System.Net.HttpStatusCode.OK);
+            }
+            return await Task.FromResult(resp);
 
-        //public async Task<HttpResponseMessage> SearchSuburb(string searchTerm, int municipalityId)
-        //{
-        //    _httpClient.DefaultRequestHeaders.Add(
-        //    HeaderNames.Accept, "application/json");
-        //    return await _httpClient.GetAsync("/GetSurburbData/?pageSize=100&pageNum=1&searchTerm=" + searchTerm + "&id=" + municipalityId);
-        //}
+        }
 
+        public async Task<HttpResponseMessage> GetSchedule(int blockId, int stage)
+        {
+            _httpClient.DefaultRequestHeaders.Add(HeaderNames.Accept, "application/json");
+            var res = await _httpClient.GetAsync(string.Format("GetScheduleM/{0}/{1}/_/1", blockId, stage));
+            var resp = new HttpResponseMessage(System.Net.HttpStatusCode.OK);
+            if ((await res.Content.ReadAsStringAsync()).Contains("We regret that we could not"))
+            {
+                resp = new HttpResponseMessage(System.Net.HttpStatusCode.NotFound);
+            }
+            else
+            {
+                resp.Content = res.Content;
+            }
+            return await Task.FromResult(resp);
+        }
     }
 }

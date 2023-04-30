@@ -40,22 +40,24 @@ namespace EskomCalendarApi.Controllers.Eskom
             return Ok(res);
         }
 
-        //[HttpGet("GetSuburbList")]
-        //[ProducesResponseType(typeof(IEnumerable<SuburbData>), 200)]
-        //[SwaggerOperation(Summary = "Get all municipalities as per Eskom site")]
-        //public async Task<IActionResult> GetSuburbList(int municipalityId, int? blockId)
-        //{
-        //    if (municipalityId == 166 || municipalityId == 167 || municipalityId == 168)
-        //    {
-        //        var res = await _eskomService.GetSuburbsByMunicipality(municipalityId, blockId);
-        //        return Ok(res);
-        //    }
-        //    else
-        //    {
+        [HttpGet("GetSuburbList")]
+        [ProducesResponseType(typeof(IEnumerable<SuburbData>), 200)]
+        [SwaggerOperation(Summary = "Get all Suburbs as per Eskom site")]
+        public async Task<IActionResult> GetSuburbList(int provinceId, int municipalityId)
+        {
+            var res = await _eskomService.GetSuburbListByMunicipality(provinceId, municipalityId);
+            return Ok(res);
+        }
 
-        //        return BadRequest("The only supported municipalities are Tshwane (167) and city-power (166)");
-        //    }
-        //}
+        [HttpGet("FindSuburb")]
+        [ProducesResponseType(typeof(IEnumerable<SuburbData>), 200)]
+        [SwaggerOperation(Summary = "Search for the supplied suburb name on the Eskom Site")]
+        public async Task<IActionResult> FindSuburb(string suburbname, int? municipalityId)
+        {
+            var res = await _eskomService.FindSuburb(suburbname, municipalityId);
+            return Ok(res);
+        }
+
 
         [HttpGet("GetSchedule")]
         [ProducesResponseType(typeof(IEnumerable<string>), 200)]
@@ -63,16 +65,6 @@ namespace EskomCalendarApi.Controllers.Eskom
         public async Task<IActionResult> GetSchedule(int municipalityId, int blockId, int days, int stage)
         {
             var res = await _eskomService.GetSchedule(municipalityId, blockId, days, stage);
-            return Ok(res);
-        }
-
-
-        [HttpGet("FindSuburb")]
-        [ProducesResponseType(typeof(IEnumerable<SuburbData>), 200)]
-        [SwaggerOperation(Summary = "Search for the supplied suburb name on the Eskom Site")]
-        public async Task<IActionResult> FindSuburb(string suburbname)
-        {
-            var res = await _eskomService.FindSuburb(suburbname);
             return Ok(res);
         }
     }
