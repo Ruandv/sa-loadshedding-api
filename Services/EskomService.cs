@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Http;
 using System.Net;
 using Utilities;
 using Microsoft.EntityFrameworkCore.Internal;
+using Microsoft.Extensions.Logging;
 
 namespace Services.Eskom
 {
@@ -43,11 +44,13 @@ namespace Services.Eskom
     {
         private readonly EskomHttpClient2 _httpClient;
         private readonly IMapper _mapper;
+        private readonly ILogger<EskomService> _logger;
 
-        public EskomService(EskomHttpClient2 myHttpClient, IMapper mapper)
+        public EskomService(EskomHttpClient2 myHttpClient, IMapper mapper, ILogger<EskomService> logger)
         {
             _httpClient = myHttpClient;
             _mapper = mapper;
+            _logger = logger;
         }
 
         public async Task<IEnumerable<Province>> GetProvinces()
@@ -56,7 +59,10 @@ namespace Services.Eskom
         }
         public async Task<IEnumerable<Municipality>> GetMunicipalities(int provinceId)
         {
-            return await _httpClient.GetMunicipalityList(provinceId).Result.Content.ReadFromJsonAsync<IEnumerable<Municipality>>();
+            var res = await _httpClient.GetMunicipalityList(provinceId).Result.Content.ReadAsStringAsync();
+            _logger.LogInformation("GetMunicipalityList Result : " + res);
+            var dta =  System.Text.Json.JsonSerializer.Deserialize<IEnumerable<Municipality>>(res);
+            return dta;
         }
         public async Task<IEnumerable<SuburbSearchResponseDto>> GetSuburbListByMunicipality(int provinceId, int municipalityId)
         {
