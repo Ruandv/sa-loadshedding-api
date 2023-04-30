@@ -24,9 +24,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     <PackageReference Include="CSVFile" Version="3.1.0" />
     <PackageReference Include="CsvHelper" Version="28.0.1" />
     <PackageReference Include="DotNetEnv" Version="2.3.0" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.46" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.25" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.25">
@@ -46,10 +49,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="JSONData\Municipality_167.json">
+    <Content Update="Services\Data\JSONData\Municipality_167.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Update="JSONData\Municipality_166.json">
+    <Content Update="Services\Data\JSONData\Municipality_166.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

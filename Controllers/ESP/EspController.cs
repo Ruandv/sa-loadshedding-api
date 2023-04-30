@@ -1,11 +1,7 @@
-﻿using EskomCalendarApi.Models.Calendar;
-using EskomCalendarApi.Services.Calendar;
-using EskomCalendarApi.Swagger;
-using HttpClients;
+﻿using HttpClients;
 using Microsoft.AspNetCore.Mvc;
 using Models.Esp;
 using Swashbuckle.AspNetCore.Annotations;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace EskomCalendarApi.Controllers.Eskom
