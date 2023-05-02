@@ -163,7 +163,7 @@ namespace Services.Eskom
             }
             else
             {
-                throw new BadHttpRequestException("Suburb not supported yet.");
+                return new List<ScheduleDto>();
             }
         }
     }

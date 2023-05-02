@@ -30,7 +30,6 @@ namespace EskomCalendarApi.Controllers.Logging
         [ProducesResponseType(typeof(string), 200)]
         public async Task<IActionResult> LogWarning([FromBody] MessageInformation mi)
         {
-
             var dta = mi.message;
             switch (mi.messageType)
             {
