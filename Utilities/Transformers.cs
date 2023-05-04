@@ -1,80 +1,49 @@
 ﻿using CSVFile;
-using EskomCalendarApi.Enums;
-using EskomCalendarApi.Models.Calendar;
 using EskomCalendarApi.Models.Eskom;
-using Microsoft.EntityFrameworkCore.Internal;
-using Microsoft.Net.Http.Headers;
+using HtmlAgilityPack;
+using Models.Eskom;
 using System;
 using System.Collections.Generic;
-using System.Data;
+using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Net.Http;
-using System.Threading.Tasks;
+using System.Text.Json;
 
-namespace HttpClients
+namespace Utilities
 {
-    public class EskomHttpClient
+    public static class Transformers
     {
-        private readonly HttpClient _httpClient;
-        public EskomHttpClient(HttpClient httpClient)
+        public static IEnumerable<ScheduleDto> HtmlDataToJson(string htmlData, int stage, int blockId, int numberOfDays)
         {
-            _httpClient = httpClient;
+            List<ScheduleDto> resultList = new List<ScheduleDto>();
+            HtmlDocument doc = new HtmlDocument();
+            doc.LoadHtml(htmlData);
+            var days = doc.DocumentNode.Descendants("div").Where(d => d.HasClass("scheduleDay"));
+            days.Take(numberOfDays).ToList().ForEach(d =>
+            {
+                var dateNode = d.Descendants("div").FirstOrDefault(d => d.HasClass("dayMonth"));
+                var dateString = dateNode.InnerText.Trim();
+                DateTime result = DateTime.ParseExact(dateString, "ddd, dd MMM", CultureInfo.InvariantCulture);
+                var slotNodes = d.Descendants("a").Where(d => d.HasAttributes && d.Attributes["onclick"] != null);
+                slotNodes.ToList().ForEach(s =>
+                {
+                    var slotData = s.InnerText.Split(" - ");
 
-            _httpClient.BaseAddress = new Uri(Environment.GetEnvironmentVariable(EnvironmentVariableNames.ESKOM_SITE_BASE_URL.ToString()));
-            //_httpClient.DefaultRequestHeaders.Add(
-            //    HeaderNames.UserAgent, "HttpRequestsSample");
+                    var start = new DateTime().AddHours(double.Parse(slotData[0].Split(":")[0])).AddMinutes(double.Parse(slotData[0].Split(":")[1]));
+                    var end = new DateTime().AddHours(double.Parse(slotData[1].Split(":")[0])).AddMinutes(double.Parse(slotData[1].Split(":")[1]));
+                    if (short.Parse(slotData[1].Split(":")[0]) < start.Hour)
+                    {
+                        var v = double.Parse(slotData[1].Split(":")[0]);
+                        var v2 = double.Parse(slotData[1].Split(":")[1]);
+                        end = new DateTime().AddHours(v).AddMinutes(v2);
+                    }
+                    resultList.Add(new ScheduleDto { BlockId = blockId, Stage = stage, DayOfMonth = result, Start = start.TimeOfDay, End = end.TimeOfDay });
+                });
+            });
+            return resultList;
         }
 
-        public async Task<HttpResponseMessage> GetProvinceList()
-        {
-            // For now the API only support Gauteng
-            List<Province> provinceList = new List<Province>();
-            provinceList.Add(new Province() { ProvinceId = 1, ProvinceName = "Eastern Cape" });
-            provinceList.Add(new Province() { ProvinceId = 2, ProvinceName = "Free State" });
-            provinceList.Add(new Province() { ProvinceId = 3, ProvinceName = "Gauteng" });
-            provinceList.Add(new Province() { ProvinceId = 4, ProvinceName = "KwaZulu-Natal" });
-            provinceList.Add(new Province() { ProvinceId = 5, ProvinceName = "Limpopo" });
-            provinceList.Add(new Province() { ProvinceId = 6, ProvinceName = "Mpumalanga" });
-            provinceList.Add(new Province() { ProvinceId = 7, ProvinceName = "North West" });
-            provinceList.Add(new Province() { ProvinceId = 8, ProvinceName = "Northern Cape" });
-            provinceList.Add(new Province() { ProvinceId = 9, ProvinceName = "Western Cape" });
-            var resp = new HttpResponseMessage(System.Net.HttpStatusCode.OK);
-            resp.Content = System.Net.Http.Json.JsonContent.Create<IEnumerable<Province>>(provinceList);
-            return await Task.FromResult(resp);
-        }
-
-        public async Task<HttpResponseMessage> GetMunicipalityList(int provinceId)
-        {
-            _httpClient.DefaultRequestHeaders.Add(
-                HeaderNames.Accept, "application/json");
-            return await _httpClient.GetAsync("GetMunicipalities?id=" + provinceId);
-        }
-
-        public async Task<HttpResponseMessage> SearchSuburb(string searchTerm, int municipalityId)
-        {
-            _httpClient.DefaultRequestHeaders.Add(
-            HeaderNames.Accept, "application/json");
-            return await _httpClient.GetAsync("/GetSurburbData/?pageSize=100&pageNum=1&searchTerm=" + searchTerm + "&id=" + municipalityId);
-        }
-
-        //public async Task<HttpResponseMessage> GetSuburbList(int municipalityId)
-        //{
-        //    _httpClient.DefaultRequestHeaders.Add(
-        //        HeaderNames.Accept, "application/json");
-        //    return await _httpClient.GetAsync("/GetSurburbData/?pageSize=297&pageNum=3&id=" + municipalityId);
-        //}
-
-        public async Task<HttpResponseMessage> GetSchedule(int blockId, int municipalityId, int days, int stage)
-        {
-            var dt = GetDataTableFromCsv("./services/data/" + municipalityId + ".csv", stage, blockId, days);
-            var rm = new HttpResponseMessage(System.Net.HttpStatusCode.OK);
-            rm.Content = System.Net.Http.Json.JsonContent.Create(dt);
-            await Task.FromResult("TST");
-            return rm;
-        }
-
-        static IEnumerable<ScheduleDto> GetDataTableFromCsv(string path, int stage, int blockId, int days)
+        public static IEnumerable<ScheduleDto> GetDataTableFromCsv(string path, int? stage, int? blockId, int? days)
         {
             var settings = new CSVSettings()
             {
@@ -136,16 +105,35 @@ namespace HttpClients
                     });
 
                     var dayList = new List<DateTime>();
-                    for (int i = 0;i <= days;i++)
+                    if (days.HasValue)
                     {
-                        dayList.Add(DateTime.Today.AddDays(i));
+                        for (int i = 0;i <= days.Value;i++)
+                        {
+                            dayList.Add(DateTime.Today.AddDays(i));
+                        }
+                    }
+                    else
+                    {
+                        dayList.Add(DateTime.Today.AddDays(1));
                     }
 
-                    var rees = dto.Where(x => x.BlockId == blockId && x.Stage <= stage && dayList.IndexOf(x.DayOfMonth) >= 0).Distinct()
+                    var rees = dto.ToList();
+
+                    if (blockId.HasValue)
+                    {
+                        rees = rees.Where(x => x.BlockId == blockId.Value).ToList();
+                    }
+
+                    if (stage.HasValue)
+                    {
+                        rees = rees.Where(x => x.Stage <= stage.Value).ToList();
+                    }
+
+                    rees = rees.Where(x => dayList.IndexOf(x.DayOfMonth) >= 0).Distinct()
                         .OrderBy(x => x.DayOfMonth.Year)
                         .ThenBy(x => x.DayOfMonth.Month)
                         .ThenBy(x => x.DayOfMonth.Day)
-                        .ThenBy(x => x.Start)
+                        .ThenBy(x => x.Start).ToList()
                         ;
                     return rees;
 
@@ -159,16 +147,16 @@ namespace HttpClients
             return null;
         }
 
-        private static bool AddOrUpdate(List<ScheduleDto> dto, int blockId)
+        public static IEnumerable<SuburbData> GetBlockIdFromJSON(string path, string suburbName)
         {
-            return dto.Find(x => x.BlockId == blockId) == null;
-        }
+            String jsonString = new StreamReader(path).ReadToEnd();
 
-        public async Task<HttpResponseMessage> FindSuburb(string suburbName)
-        {
-            _httpClient.DefaultRequestHeaders.Add(
-               HeaderNames.Accept, "application/json");
-            return await _httpClient.GetAsync("FindSuburbs?searchText=" + suburbName + "&maxResults=300");
+            // use below syntax to access JSON file
+            var res = JsonSerializer.Deserialize<List<SuburbData>>(jsonString).Where(x => x.SubName.Contains(suburbName));
+            if(res.Count()<1)
+                return null;
+            return res;
+
         }
     }
 }

@@ -1,16 +1,7 @@
 ﻿using EskomCalendarApi.Enums;
-using EskomCalendarApi.Models.Calendar;
 using Microsoft.Net.Http.Headers;
-using Models.Esp;
-using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.IO;
-using System.Linq;
 using System.Net.Http;
-using System.Net.Http.Json;
-using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace HttpClients
