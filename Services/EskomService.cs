@@ -99,6 +99,10 @@ namespace Services.Eskom
                     suburbResponseDto.Add(result);
                 }
             }
+            if (new List<int> { 166, 167, 168 }.Contains(municipalityId)){
+                // check if there are any suburbs that is in the file thats not listed in the current array. 
+                suburbResponseDto.AddRange(Transformers.MergeEskomData("./services/Data/JSONData/Municipality_" + municipalityId + ".json", suburbResponseDto));
+            }
             return suburbResponseDto.DistinctBy(x => x.Name);
         }
 

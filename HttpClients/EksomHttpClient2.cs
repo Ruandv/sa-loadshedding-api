@@ -39,7 +39,7 @@ namespace HttpClients
         {
             // For now the API only support Gauteng
             var resp = new HttpResponseMessage(System.Net.HttpStatusCode.OK);
-            resp.Content = System.Net.Http.Json.JsonContent.Create<IEnumerable<Province>>(provinceList);
+            resp.Content = JsonContent.Create<IEnumerable<Province>>(provinceList);
             return await Task.FromResult(resp);
         }
         public async Task<HttpResponseMessage> GetProvinceByName(string provinceName)
