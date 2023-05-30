@@ -2,6 +2,7 @@
 using EskomCalendarApi.Models.Eskom;
 using HtmlAgilityPack;
 using Models.Eskom;
+using Models.Eskom.ResponseDto;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -152,11 +153,24 @@ namespace Utilities
             String jsonString = new StreamReader(path).ReadToEnd();
 
             // use below syntax to access JSON file
-            var res = JsonSerializer.Deserialize<List<SuburbData>>(jsonString).Where(x => x.SubName.Contains(suburbName));
-            if(res.Count()<1)
+            var res = JsonSerializer.Deserialize<List<SuburbData>>(jsonString).Where(x => x.SubName.Trim().Contains(suburbName));
+            if (res.Count() < 1)
                 return null;
             return res;
 
+        }
+
+        public static IEnumerable<SuburbSearchResponseDto> MergeEskomData(string path, List<SuburbSearchResponseDto> suburbData)
+        {
+            String jsonString = new StreamReader(path).ReadToEnd();
+
+            var jsonData = JsonSerializer.Deserialize<List<SuburbData>>(jsonString);
+            var subData = suburbData.Select(x => x.Name).ToList();
+            foreach (var sub in subData)
+            {
+                jsonData.RemoveAll(x => x.SubName == sub);
+            }
+            return jsonData.Select(x => new SuburbSearchResponseDto() { BlockId = Int16.Parse(x.BlockId), IsEskomClient = false, Name = x.SubName, Municipality = suburbData[0].Municipality, Province = suburbData[0].Province, Total = 999 });
         }
     }
 }
