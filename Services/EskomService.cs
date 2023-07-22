@@ -31,6 +31,7 @@ namespace Services
   public interface INationalService
   {
     Task<IEnumerable<Province>> GetProvinces();
+    Task<int> GetStatus();
   }
 
   public interface IEskomService : INationalService, IProvincialService, IMunicipalService
@@ -199,6 +200,25 @@ namespace Services
       else
       {
         return new List<ScheduleDto>();
+      }
+    }
+
+    public async Task<int> GetStatus()
+    {
+      try
+      {
+        var res = await _httpClient.GetStatus().Result.Content.ReadAsStringAsync();
+        int.TryParse(res, out int intValue);
+        _cacheService.SetCache("GetStatus", System.Text.Json.JsonSerializer.Serialize<int>(intValue));
+        return intValue;
+      }
+      catch (AggregateException ex)
+      {
+        // log the issue
+        _logger.LogError(ex.Message);
+        var res = _cacheService.GetCache("GetStatus");
+        var dta = System.Text.Json.JsonSerializer.Deserialize<int>(res);
+        return dta;
       }
     }
   }

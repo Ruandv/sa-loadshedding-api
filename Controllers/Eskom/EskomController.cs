@@ -58,6 +58,14 @@ namespace Controllers.Eskom
       return Ok(res);
     }
 
+    [HttpGet("GetStatus")]
+    [ProducesResponseType(typeof(int), 200)]
+    [SwaggerOperation(Summary = "Get the current stage")]
+    public async Task<IActionResult> GetStatus()
+    {
+      var res = await _eskomService.GetStatus();
+      return Ok(res);
+    }
 
     [HttpGet("GetSchedule")]
     [ProducesResponseType(typeof(IEnumerable<string>), 200)]
