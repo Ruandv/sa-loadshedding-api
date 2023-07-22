@@ -208,6 +208,7 @@ namespace Services
       try
       {
         var res = await _httpClient.GetStatus().Result.Content.ReadAsStringAsync();
+        _logger.LogInformation(res);
         int.TryParse(res, out int intValue);
         _cacheService.SetCache("GetStatus", System.Text.Json.JsonSerializer.Serialize<int>(intValue));
         return intValue;
