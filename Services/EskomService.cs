@@ -132,7 +132,7 @@ namespace Services
       {
         // log the issue
         _logger.LogError(ex.Message);
-        var res = _cacheService.GetCache("GetSuburbListByMunicipality_" + provinceId);
+        var res = _cacheService.GetCache("GetSuburbListByMunicipality_" + provinceId + "_" + municipalityId);
         var dta = System.Text.Json.JsonSerializer.Deserialize<IEnumerable<SuburbSearchResponseDto>>(res);
         return dta;
       }
