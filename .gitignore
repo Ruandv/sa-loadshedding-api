@@ -352,3 +352,4 @@ MigrationBackup/
 /Data/installed.json
 /Data/uninstalled.json
 /Data/*.*
+/Cache/*.*

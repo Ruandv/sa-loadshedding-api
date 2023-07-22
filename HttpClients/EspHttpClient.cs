@@ -1,4 +1,4 @@
-﻿using EskomCalendarApi.Enums;
+﻿using Enums;
 using Microsoft.Net.Http.Headers;
 using System;
 using System.Net.Http;
@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HttpClients
 {
-    public class EspHttpClient
+  public class EspHttpClient
     {
         private readonly HttpClient _httpClient;
         public EspHttpClient(HttpClient httpClient)

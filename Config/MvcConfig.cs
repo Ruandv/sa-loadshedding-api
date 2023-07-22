@@ -10,9 +10,8 @@ using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using EskomCalendarApi;
+using SaLoadsheddingApi;
 using System.Text.Json.Serialization;
-using System.Text.Json;
 
 namespace Config
 {

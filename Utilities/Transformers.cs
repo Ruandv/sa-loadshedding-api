@@ -1,5 +1,4 @@
 ﻿using CSVFile;
-using EskomCalendarApi.Models.Eskom;
 using HtmlAgilityPack;
 using Models.Eskom;
 using Models.Eskom.ResponseDto;
@@ -12,7 +11,7 @@ using System.Text.Json;
 
 namespace Utilities
 {
-    public static class Transformers
+  public static class Transformers
     {
         public static IEnumerable<ScheduleDto> HtmlDataToJson(string htmlData, int stage, int blockId, int numberOfDays)
         {

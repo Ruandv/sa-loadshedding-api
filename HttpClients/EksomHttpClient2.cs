@@ -1,5 +1,4 @@
 ﻿using HtmlAgilityPack;
-using EskomCalendarApi.Enums;
 using Microsoft.Net.Http.Headers;
 using Models.Eskom;
 using System;
@@ -8,11 +7,11 @@ using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
-using System.Diagnostics;
+using Enums;
 
 namespace HttpClients
 {
-    public class EskomHttpClient2
+  public class EskomHttpClient2
     {
         private readonly HttpClient _httpClient;
         private List<Province> provinceList = new List<Province>();

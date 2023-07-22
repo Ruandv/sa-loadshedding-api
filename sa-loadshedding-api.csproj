@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <StartupObject>EskomCalendarApi.Program</StartupObject>
+    <StartupObject>SaLoadsheddingApi.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>

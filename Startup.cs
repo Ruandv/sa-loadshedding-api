@@ -1,16 +1,16 @@
 using Config;
-using EskomCalendarApi.Middleware;
-using EskomCalendarApi.Swagger;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Middleware;
+using Swagger;
 
-namespace EskomCalendarApi
+namespace SaLoadsheddingApi
 {
-    public class Startup
+  public class Startup
     {
         public Startup(IConfiguration configuration)
         {
