@@ -8,20 +8,20 @@ using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
 using Enums;
-using System.Reflection.Metadata;
-using System.Xml.Linq;
-using Microsoft.AspNetCore.Html;
+using Microsoft.Extensions.Logging;
 
 namespace HttpClients
 {
   public class EskomHttpClient2
   {
+    private readonly ILogger<EskomHttpClient2> _logger;
     private readonly HttpClient _httpClient;
     private List<Province> provinceList = new List<Province>();
     private Dictionary<int, IEnumerable<Municipality>> provinceMunicipalityDictionary = new Dictionary<int, IEnumerable<Municipality>>();
 
-    public EskomHttpClient2(HttpClient httpClient)
+    public EskomHttpClient2(HttpClient httpClient,ILogger<EskomHttpClient2> logger)
     {
+      _logger = logger;
       _httpClient = httpClient;
 
       _httpClient.BaseAddress = new Uri(Environment.GetEnvironmentVariable(EnvironmentVariableNames.ESKOM_SITE_BASE_URL.ToString()));
@@ -118,6 +118,7 @@ namespace HttpClients
     public async Task<HttpResponseMessage> GetStatus()
     {
       var htmlContent = await _httpClient.GetAsync("GetStatus").Result.Content.ReadAsStringAsync();
+      _logger.LogInformation(htmlContent);
       // var htmlContent = "<html><head><meta name = \"color-scheme\" content = \"light dark\"></head><body><pre style = \"word-wrap: break-word; white-space: pre-wrap;\" > 5 </pre></body></html>";
       // Find the index of the closing "</pre>" tag
       int endIndex = htmlContent.IndexOf("</pre>");
