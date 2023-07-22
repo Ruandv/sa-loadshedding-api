@@ -17,7 +17,7 @@ namespace Controllers.Logging
     private ILoggingService _logService;
 
 
-    public LoggingController(ILogger<LoggingController> logger, LoggingService logService)
+    public LoggingController(ILogger<LoggingController> logger, ILoggingService logService)
     {
       _logger = logger;
       _logger.LogInformation("Init LoggingController");
