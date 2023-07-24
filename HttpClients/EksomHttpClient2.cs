@@ -118,6 +118,7 @@ namespace HttpClients
     public async Task<HttpResponseMessage> GetStatus()
     {
       var htmlContent = await _httpClient.GetAsync("GetStatus").Result.Content.ReadAsStringAsync();
+      _logger.LogDebug("GetStatus Response : " + htmlContent);
       int endIndex = htmlContent.IndexOf("</pre>");
 
       // Extract the text between the opening and closing tags
