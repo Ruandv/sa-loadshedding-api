@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 
 namespace Services
 {
@@ -22,8 +23,15 @@ namespace Services
       WriteFile("./Cache/" + fileName + ".json", content);
     }
 
-    public string GetCache(string fileName)
+    public string GetCache(string fileName, TimeSpan duration)
     {
+      var val = File.GetLastWriteTime("./Cache/" + fileName + ".json");
+      var today = DateTime.Now;
+      var diff = today - val;
+      if (diff.TotalMinutes > duration.TotalMinutes)
+      {
+        return null;
+      }
       return ReadFile("./Cache/" + fileName + ".json");
     }
   }

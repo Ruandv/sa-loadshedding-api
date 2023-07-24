@@ -46,6 +46,7 @@ namespace Services
     private readonly IMapper _mapper;
     private readonly ILogger<EskomService> _logger;
     private readonly ICacheService _cacheService;
+    private readonly TimeSpan _defalutTimespan = new TimeSpan(30, 0, 0, 0, 0);
     private ILoggingService _logService;
 
     public EskomService(EskomHttpClient2 myHttpClient, IMapper mapper, ILogger<EskomService> logger, ICacheService cacheService, ILoggingService logService)
@@ -76,7 +77,7 @@ namespace Services
         // log the issue
         _logger.LogError(ex.Message);
         // look in the files if we have a list of municipalities for this provinceId
-        var res = _cacheService.GetCache("GetMunicipalities_" + provinceId);
+        var res = _cacheService.GetCache("GetMunicipalities_" + provinceId, _defalutTimespan);
         var dta = System.Text.Json.JsonSerializer.Deserialize<IEnumerable<Municipality>>(res);
 
         return dta;
@@ -132,7 +133,7 @@ namespace Services
       {
         // log the issue
         _logger.LogError(ex.Message);
-        var res = _cacheService.GetCache("GetSuburbListByMunicipality_" + provinceId + "_" + municipalityId);
+        var res = _cacheService.GetCache("GetSuburbListByMunicipality_" + provinceId + "_" + municipalityId, _defalutTimespan);
         var dta = System.Text.Json.JsonSerializer.Deserialize<IEnumerable<SuburbSearchResponseDto>>(res);
         return dta;
       }
@@ -207,17 +208,23 @@ namespace Services
     {
       try
       {
-        var res = await _httpClient.GetStatus().Result.Content.ReadAsStringAsync();
-        _logger.LogInformation(res);
-        int.TryParse(res, out int intValue);
-        _cacheService.SetCache("GetStatus", System.Text.Json.JsonSerializer.Serialize<int>(intValue));
-        return intValue;
+        var res = _cacheService.GetCache("GetStatus", new TimeSpan(0,15,0));
+        if (res == null)
+        {
+          res = await _httpClient.GetStatus().Result.Content.ReadAsStringAsync();
+          _logger.LogInformation(res);
+          int.TryParse(res, out int intValue);
+          _cacheService.SetCache("GetStatus", System.Text.Json.JsonSerializer.Serialize<int>(intValue));
+          return intValue;
+        }
+        var dta = System.Text.Json.JsonSerializer.Deserialize<int>(res);
+        return dta;
       }
       catch (AggregateException ex)
       {
         // log the issue
         _logger.LogError(ex.Message);
-        var res = _cacheService.GetCache("GetStatus");
+        var res = _cacheService.GetCache("GetStatus", _defalutTimespan);
         var dta = System.Text.Json.JsonSerializer.Deserialize<int>(res);
         return dta;
       }
