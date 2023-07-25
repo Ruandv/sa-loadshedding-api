@@ -1,8 +1,8 @@
 ﻿using Enums;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
-using Microsoft.EntityFrameworkCore.Internal;
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Middleware
@@ -25,7 +25,10 @@ namespace Middleware
 
     public async Task Invoke(HttpContext httpContext)
     {
-      if ((allowedHosts == "*" || (allowedKeys=="*" && allowedHosts.Split(";").IndexOf(httpContext.Request.Host.ToString()) >= 0)) || allowedKeys.Split(",").IndexOf(httpContext.Request.Headers["key"].ToString()) >= 0)
+      //if ((allowedHosts == "*" || (allowedKeys=="*" && allowedHosts.Split(";").IndexOf(httpContext.Request.Host.ToString()) >= 0)) || allowedKeys.Split(",").IndexOf(httpContext.Request.Headers["key"].ToString()) >= 0)
+      var headerValue = httpContext.Request.Headers["Token"];
+      
+      if (!string.IsNullOrEmpty(headerValue) && headerValue.FirstOrDefault() == "f99e8c9e-372c-4699-9b63-e94d927788f2")
       {
         httpContext.Response.Headers.Add("x-myHost", httpContext.Request.Host.ToString());
         await _next(httpContext); // calling next middleware
