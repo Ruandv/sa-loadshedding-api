@@ -50,7 +50,7 @@ namespace Controllers.Logging
         case ExtensionMessageType.SUBURBVIEWED:
           var subItemV = System.Text.Json.JsonSerializer.Deserialize<SuburbItem>(dta);
           subItemV.ActionDate = DateTime.Now;
-          if (subItemV.SuburbName != "newSub")
+          if (subItemV.SuburbName != default && subItemV.SuburbName != "newSub")
           {
             _logService.SuburbViewed(subItemV);
           }

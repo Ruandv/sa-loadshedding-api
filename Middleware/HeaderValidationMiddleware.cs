@@ -25,8 +25,7 @@ namespace Middleware
 
     public async Task Invoke(HttpContext httpContext)
     {
-
-      if (allowedHosts == "*" || allowedHosts.Split(";").IndexOf(httpContext.Request.Host.ToString()) >= 0 && httpContext.Request.Headers["key"].ToString() == allowedKeys)
+      if ((allowedHosts == "*" || (allowedKeys=="*" && allowedHosts.Split(";").IndexOf(httpContext.Request.Host.ToString()) >= 0)) || allowedKeys.Split(",").IndexOf(httpContext.Request.Headers["key"].ToString()) >= 0)
       {
         httpContext.Response.Headers.Add("x-myHost", httpContext.Request.Host.ToString());
         await _next(httpContext); // calling next middleware

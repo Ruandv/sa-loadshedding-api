@@ -19,7 +19,7 @@ namespace HttpClients
     private List<Province> provinceList = new List<Province>();
     private Dictionary<int, IEnumerable<Municipality>> provinceMunicipalityDictionary = new Dictionary<int, IEnumerable<Municipality>>();
 
-    public EskomHttpClient2(HttpClient httpClient,ILogger<EskomHttpClient2> logger)
+    public EskomHttpClient2(HttpClient httpClient, ILogger<EskomHttpClient2> logger)
     {
       _logger = logger;
       _httpClient = httpClient;
@@ -119,12 +119,8 @@ namespace HttpClients
     {
       var htmlContent = await _httpClient.GetAsync("GetStatus").Result.Content.ReadAsStringAsync();
       _logger.LogDebug("GetStatus Response : " + htmlContent);
-      int endIndex = htmlContent.IndexOf("</pre>");
-
-      // Extract the text between the opening and closing tags
-      string res = htmlContent.Substring((endIndex - 2), 1).Trim();
-
-     var resp = new HttpResponseMessage(System.Net.HttpStatusCode.OK);
+      var  res = htmlContent.Trim();
+      var resp = new HttpResponseMessage(System.Net.HttpStatusCode.OK);
       resp.Content = new StringContent(res);
       return await Task.FromResult(resp);
     }

@@ -6,7 +6,6 @@ This is an API that query various sources for Loadshedding data
 
  As the time goes on this api will be updated to include various sources to reflect data that can be used for loadshedding. 
  Currently this api query the following sites : 
- - [beyarkay/eskom-calendar](https://github.com/beyarkay/eskom-calendar/releases/tag/latest) 
  - [Eskom] (https://loadshedding.eskom.co.za/loadshedding) No UI/api interface
 
 ## Getting Started

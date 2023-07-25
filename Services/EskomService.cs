@@ -18,7 +18,6 @@ namespace Services
 {
   public interface IMunicipalService
   {
-    //Task<IEnumerable<SuburbData>> GetSuburbs(int? blockId = null);
     Task<IEnumerable<SuburbSearchResponseDto>> GetSuburbListByMunicipality(int provinceId, int municipalityId);
     Task<IEnumerable<SuburbSearchResponseDto>> FindSuburb(string suburbName, int? provinceId);
     Task<IEnumerable<ScheduleDto>> GetSchedule(int municipalityId, int blockId, int days, int stage);

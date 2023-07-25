@@ -18,7 +18,7 @@ namespace Controllers.Eskom
     public EskomController(ILogger<EskomController> logger, IEskomService eskomService)
     {
       _logger = logger;
-      _logger.LogInformation("Init CalendarController");
+      _logger.LogInformation("Init EskomController");
       _eskomService = eskomService;
     }
 
