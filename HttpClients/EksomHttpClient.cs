@@ -12,18 +12,18 @@ using Microsoft.Extensions.Logging;
 
 namespace HttpClients
 {
-  public class EskomHttpClient2
+  public class EskomHttpClient
   {
-    private readonly ILogger<EskomHttpClient2> _logger;
+    private readonly ILogger<EskomHttpClient> _logger;
     private readonly HttpClient _httpClient;
     private List<Province> provinceList = new List<Province>();
     private Dictionary<int, IEnumerable<Municipality>> provinceMunicipalityDictionary = new Dictionary<int, IEnumerable<Municipality>>();
 
-    public EskomHttpClient2(HttpClient httpClient, ILogger<EskomHttpClient2> logger)
+    public EskomHttpClient(HttpClient httpClient, ILogger<EskomHttpClient> logger)
     {
       _logger = logger;
       _httpClient = httpClient;
-
+      _httpClient.Timeout = TimeSpan.FromSeconds(10);
       _httpClient.BaseAddress = new Uri(Environment.GetEnvironmentVariable(EnvironmentVariableNames.ESKOM_SITE_BASE_URL.ToString()));
       _httpClient.DefaultRequestHeaders.Add(HeaderNames.UserAgent, "Mozilla/5.0 (X11; Linux x86_64; rv:69.0) Gecko/20100101 Firefox/69.0");
 
