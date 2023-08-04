@@ -137,7 +137,7 @@ namespace Services
         }
         var res = suburbResponseDto.DistinctBy(x => x.Name);
         _cacheService.SetCache("GetSuburbListByMunicipality_" + provinceId + "_" + municipalityId, System.Text.Json.JsonSerializer.Serialize(res));
-        return res;
+        return res.OrderBy(x => x.Name);
       }
       catch (Exception ex)
       {
@@ -145,7 +145,7 @@ namespace Services
         _logger.LogError(ex.Message);
         var res = _cacheService.GetCache("GetSuburbListByMunicipality_" + provinceId + "_" + municipalityId, _defalutTimespan);
         var dta = System.Text.Json.JsonSerializer.Deserialize<IEnumerable<SuburbSearchResponseDto>>(res);
-        return dta;
+        return dta.OrderBy(x=>x.Name);
       }
     }
 
