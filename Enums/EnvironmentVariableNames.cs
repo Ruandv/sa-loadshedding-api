@@ -4,13 +4,11 @@ namespace Enums
 {
   public enum EnvironmentVariableNames
   {
+    TOKEN, 
     ALLOWINGHOSTS,
     ALLOWEDKEYS,
-    ESKOM_CALENDAR_BASE_URL,
     ESP_BASE_URL,
     ESKOM_SITE_BASE_URL,
-    FIREBASE_BASE_URL,
-    GOOGLE_APPLICATION_CREDENTIALS
   }
 
   public enum ExtensionMessageType
