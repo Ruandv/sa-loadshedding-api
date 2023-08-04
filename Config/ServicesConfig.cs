@@ -17,7 +17,7 @@ namespace Config
       services.AddSingleton<IEskomService, EskomService>();
       services.AddSingleton<ILoggingService, LoggingService>();
       services.AddSingleton<ICacheService, CacheService>();
-      services.AddHttpClient<EskomHttpClient2>();
+      services.AddHttpClient<EskomHttpClient>();
       services.AddHttpClient<EspHttpClient>();
       services.AddAutoMapper(typeof(AutoMapperProfiles));
     }

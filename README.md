@@ -11,7 +11,6 @@ This is an API that query various sources for Loadshedding data
 ## Getting Started
 - create an .env file in the root of the project with the following values in it
 ```
-ESKOM_CALENDAR_BASE_URL = "https://github.com/beyarkay/eskom-calendar/releases/download/latest/"
 ESKOM_SITE_BASE_URL="https://loadshedding.eskom.co.za/loadshedding/"
 ```
 - install all the NuGet packages for the project from the package manager

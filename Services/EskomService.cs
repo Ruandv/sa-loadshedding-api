@@ -41,14 +41,14 @@ namespace Services
 
   public class EskomService : IEskomService
   {
-    private readonly EskomHttpClient2 _httpClient;
+    private readonly EskomHttpClient _httpClient;
     private readonly IMapper _mapper;
     private readonly ILogger<EskomService> _logger;
     private readonly ICacheService _cacheService;
     private readonly TimeSpan _defalutTimespan = new TimeSpan(30, 0, 0, 0, 0);
     private ILoggingService _logService;
 
-    public EskomService(EskomHttpClient2 myHttpClient, IMapper mapper, ILogger<EskomService> logger, ICacheService cacheService, ILoggingService logService)
+    public EskomService(EskomHttpClient myHttpClient, IMapper mapper, ILogger<EskomService> logger, ICacheService cacheService, ILoggingService logService)
     {
       _httpClient = myHttpClient;
       _mapper = mapper;
@@ -90,6 +90,7 @@ namespace Services
         var municipalities = await _httpClient.GetMunicipalityList(provinceId).Result.Content.ReadFromJsonAsync<IEnumerable<Municipality>>();
         var municipality = municipalities.ToList().First(x => x.MunicipalityId == municipalityId);
         var list = await _httpClient.GetSuburbListByMunicipality(municipality.MunicipalityId).Result.Content.ReadFromJsonAsync<SuburbDataResult>();
+        var province = await _httpClient.GetProvinceList().Result.Content.ReadFromJsonAsync<Province[]>();
         foreach (var suburb in list.Results)
         {
           string input = suburb.Name;
@@ -98,26 +99,36 @@ namespace Services
 
           var result = _mapper.Map<SuburbSearchResponseDto>(suburb);
           result.IsEskomClient = suburb.Total > 0;
-          result.BlockId = suburb.Id;
           result.Name += result.IsEskomClient ? "*" : "";
-          var province = await _httpClient.GetProvinceList().Result.Content.ReadFromJsonAsync<Province[]>();
 
           result.Province = province.First(x => x.ProvinceId == provinceId);
           result.Municipality = municipality;
-
           if (new List<int> { 166, 167, 168 }.Contains(municipalityId) && result.IsEskomClient == false)
           {
             var dt = Transformers.GetBlockIdFromJSON("./services/Data/JSONData/Municipality_" + municipalityId + ".json", suburb.Name);
             if (dt == null)
               continue;
+            if (dt.Count() > 1)
+            {
+              foreach (var item in dt.Skip(1))
+              {
+                var newSub = new SuburbSearchResponseDto();
+                newSub.Total = 0;
+                newSub.IsEskomClient = false;
+                newSub.Name = item.SubName;
+                newSub.Province = result.Province;
+                newSub.BlockId = int.Parse(item.BlockId);
+                suburbResponseDto.Add(newSub);
+              }
+            }
             result.BlockId = int.Parse(dt.ToList()[0].BlockId);
-            result.IsEskomClient = true;
+            result.IsEskomClient = false;
           }
-
-          if (result.IsEskomClient)
+          else
           {
-            suburbResponseDto.Add(result);
+            result.BlockId = suburb.Id;
           }
+          suburbResponseDto.Add(result);
         }
         if (new List<int> { 166, 167, 168 }.Contains(municipalityId))
         {
@@ -207,7 +218,7 @@ namespace Services
     {
       try
       {
-        var res = _cacheService.GetCache("GetStatus", new TimeSpan(0,15,0));
+        var res = _cacheService.GetCache("GetStatus", new TimeSpan(0, 15, 0));
         if (res == null)
         {
           res = await _httpClient.GetStatus().Result.Content.ReadAsStringAsync();
