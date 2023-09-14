@@ -7,19 +7,20 @@ using Services;
 
 namespace Config
 {
-  public static class ServicesConfig
-  {
-    public static void ConfigureServices(this IServiceCollection services, IConfiguration configuration)
+    public static class ServicesConfig
     {
-      _ = services ?? throw new ArgumentNullException(nameof(services));
-      _ = configuration ?? throw new ArgumentNullException(nameof(configuration));
-      // Add Services
-      services.AddSingleton<IEskomService, EskomService>();
-      services.AddSingleton<ILoggingService, LoggingService>();
-      services.AddSingleton<ICacheService, CacheService>();
-      services.AddHttpClient<EskomHttpClient>();
-      services.AddHttpClient<EspHttpClient>();
-      services.AddAutoMapper(typeof(AutoMapperProfiles));
+        public static void ConfigureServices(this IServiceCollection services, IConfiguration configuration)
+        {
+            _ = services ?? throw new ArgumentNullException(nameof(services));
+            _ = configuration ?? throw new ArgumentNullException(nameof(configuration));
+            // Add Services
+            services.AddSingleton<IEskomService, EskomService>();
+            services.AddSingleton<IEspService, EspService>();
+            services.AddSingleton<ILoggingService, LoggingService>();
+            services.AddSingleton<ICacheService, CacheService>();
+            services.AddHttpClient<EskomHttpClient>();
+            services.AddHttpClient<EspHttpClient>();
+            services.AddAutoMapper(typeof(AutoMapperProfiles));
+        }
     }
-  }
 }
