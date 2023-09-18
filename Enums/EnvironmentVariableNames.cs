@@ -8,6 +8,7 @@ namespace Enums
     ALLOWINGHOSTS,
     ALLOWEDKEYS,
     ESP_BASE_URL,
+    ESP_TOKEN,
     ESKOM_SITE_BASE_URL,
   }
 
