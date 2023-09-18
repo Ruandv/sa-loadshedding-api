@@ -90,7 +90,7 @@ namespace Controllers.Eskom
             //var authorizationField = headerList.Get("Authorization");
 
             var res = await _eskomService.GetSchedule(municipalityId, blockId, days, 8);
-            var espStatus = await _espService.GetStatus(headerList["token"][0]);
+            var espStatus = await _espService.GetStatus();
             //find all the dates
             var dates = res.Select(x => x.DayOfMonth).ToList();
 
