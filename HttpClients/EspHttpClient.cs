@@ -1,5 +1,6 @@
 ﻿using Enums;
 using Microsoft.Net.Http.Headers;
+using Models.Esp;
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -15,14 +16,13 @@ namespace HttpClients
 
             _httpClient.BaseAddress = new Uri(Environment.GetEnvironmentVariable(EnvironmentVariableNames.ESP_BASE_URL.ToString()));
             _httpClient.DefaultRequestHeaders.Add(
-                HeaderNames.UserAgent, "HttpRequestsSample");
+                "token", Environment.GetEnvironmentVariable(EnvironmentVariableNames.ESP_TOKEN.ToString()));
         }
 
-        public async Task<dynamic> GetStatus(string token)
+        public async Task<StatusObject> GetStatus()
         {
-            _httpClient.DefaultRequestHeaders.Add("token", token);
             var c = await _httpClient.GetAsync("status").Result.Content.ReadAsStringAsync();
-            dynamic dynamicObje3ct = System.Text.Json.JsonSerializer.Deserialize<dynamic>(c);
+            dynamic dynamicObje3ct = System.Text.Json.JsonSerializer.Deserialize<StatusObject>(c);
             return dynamicObje3ct;
         }
         public async Task<dynamic> AreasSearch(string token, string searchText)

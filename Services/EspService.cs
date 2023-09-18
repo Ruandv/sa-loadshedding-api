@@ -2,14 +2,17 @@
 using System.Collections.Generic;
 using HttpClients;
 using Models.Eskom;
+using esp = Models.Esp;
 using System;
+using Models.Esp;
 
 namespace Services
 {
 
 
-    public interface IEspService : INationalService
+    public interface IEspService 
     {
+        Task<esp.StatusObject> GetStatus();
         Task<dynamic> AreasSearch(string token, string searchText);
         Task<dynamic> AreaInformation(string token, string id);
         Task<dynamic> ApiAllowance(string token, string id);
@@ -18,7 +21,12 @@ namespace Services
     public class EspService : IEspService
     {
         private readonly EspHttpClient _httpClient;
-
+        private readonly ICacheService _cacheService;
+        public EspService(EspHttpClient myHttpClient, ICacheService cacheService)
+        {
+            _httpClient = myHttpClient;
+            _cacheService = cacheService;
+        }
         public Task<dynamic> ApiAllowance(string token, string id)
         {
             throw new NotImplementedException();
@@ -39,49 +47,19 @@ namespace Services
             throw new NotImplementedException();
         }
 
-        public async Task<StatusObject> GetStatus<StatusObject>(string token)
+        public async Task<esp.StatusObject> GetStatus()
         {
-            var str = @"{
-    ""status"": {
-        ""capetown"": {
-            ""name"": ""Cape Town"",
-            ""next_stages"": [
-                {
-                    ""stage"": ""1"",
-                    ""stage_start_timestamp"": ""2022-08-08T17:00:00+02:00""
-                },
-                {
-                    ""stage"": ""0"",
-                    ""stage_start_timestamp"": ""2022-08-08T22:00:00+02:00""
-                }
-            ],
-            ""stage"": ""0"",
-            ""stage_updated"": ""2022-08-08T00:08:16.837063+02:00""
-        },
-        ""eskom"": {
-            ""name"": ""National"",
-            ""next_stages"": [
-                {
-                    ""stage"": ""2"",
-                    ""stage_start_timestamp"": ""2022-08-08T16:00:00+02:00""
-                },
-                {
-                    ""stage"": ""0"",
-                    ""stage_start_timestamp"": ""2022-08-09T00:00:00+02:00""
-                }
-            ],
-            ""stage"": ""6"",
-            ""stage_updated"": ""2022-08-08T16:12:53.725852+02:00""
-        }
-    }
-}";
-            var res = str;
-            //await _httpClient.GetStatus(token).Result.Content.ReadAsStringAsync();
+            var res = _cacheService.GetCache("ESPStatus", new TimeSpan(0, 30, 0));
+            if (res == null)
+            {
+                var cc = await _httpClient.GetStatus();
+                res = System.Text.Json.JsonSerializer.Serialize<esp.StatusObject>(cc);
+                _cacheService.SetCache("ESPStatus",res);
+
+            }
             var stages = System.Text.Json.JsonSerializer.Deserialize<StatusObject>(res);
+            
             return stages;
-            //_cacheService.SetCache("GetStatus", System.Text.Json.JsonSerializer.Serialize<int>(intValue));
-            //return intValue;
-            //return res.StatusCode;
         }
     }
 }

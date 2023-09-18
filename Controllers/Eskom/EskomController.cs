@@ -4,6 +4,7 @@ using Models.Eskom;
 using Models.Esp;
 using Services;
 using Swashbuckle.AspNetCore.Annotations;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -83,14 +84,46 @@ namespace Controllers.Eskom
         [HttpGet("GetESPSchedule")]
         [ProducesResponseType(typeof(IEnumerable<string>), 200)]
         [SwaggerOperation(Summary = "Get the schedule for the next x days but uses the ESP Status")]
-        public async Task<IActionResult> GetSchedule(int municipalityId, int blockId, int days)
+        public async Task<IActionResult> GetSchedule(int municipalityId = 166, int blockId = 15, int days = 1)
         {
+            var  headerList = Request.Headers;
+            //var authorizationField = headerList.Get("Authorization");
+
             var res = await _eskomService.GetSchedule(municipalityId, blockId, days, 8);
-            var espStatus = await _espService.GetStatus<StatusObject>("");
-            // find the highest stage 
-            var newRes = res.Where(x=>x.Stage <= int.Parse(espStatus.status.eskom.stage)).ToList();
-            return Ok(newRes);
+            var espStatus = await _espService.GetStatus(headerList["token"][0]);
+            //find all the dates
+            var dates = res.Select(x => x.DayOfMonth).ToList();
+
+            // if there are next stages get the first one
+            NextStage endstg = espStatus.status.eskom.next_stages.Count>0 ? espStatus.status.eskom.next_stages[0] : null;
+            var stage = int.Parse(espStatus.status.eskom.stage);
+            var statDate = new DateTime();// new DateTime(2023, 09, 18, 14, 0, 0);
+            var DatTimeToday = res.Where(x => x.Stage <= stage && x.DayOfMonth.AddTicks(x.Start.Ticks).AddMinutes(-31)<statDate).ToList();
+            foreach (var item in espStatus.status.eskom.next_stages.ToList())
+            {
+                var st = new List<ScheduleDto>();//= res.Where(x => x.Stage <= int.Parse(item.stage) && x.DayOfMonth.Day == item.stage_start_timestamp.Day && x.DayOfMonth.AddTicks(x.Start.Ticks)>= item.stage_start_timestamp);
+                if (int.Parse(item.stage)!= stage)
+                {
+                    //get everything where date = new date and stage == old stage;
+                    st = res.Where(x => x.Stage <= stage && x.DayOfMonth.Day == item.stage_start_timestamp.Day&& x.DayOfMonth.AddTicks(x.Start.Ticks)<item.stage_start_timestamp).ToList();
+                    // remove those already in the array
+                    DatTimeToday.ForEach(n =>
+                    {
+                        var r = st.Find(x => x==n);
+                        st.Remove(r);
+                    });
+
+                    DatTimeToday.AddRange(st);
+                    stage = int.Parse(item.stage);
+                }
+                st = res.Where(x => x.Stage <= stage && x.DayOfMonth.Day == item.stage_start_timestamp.Day && x.DayOfMonth.AddTicks(x.Start.Ticks)>= item.stage_start_timestamp).ToList();
+
+                DatTimeToday.AddRange(st);
+            }
+
+            return Ok(DatTimeToday);
         }
+         
     }
 
 }

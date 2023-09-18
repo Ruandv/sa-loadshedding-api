@@ -24,8 +24,7 @@ namespace Controllers.ESP
         [SwaggerOperation(Summary = "Get the current status on a national level")]
         public async Task<IActionResult> GetStatus()
         {
-            Request.Headers.TryGetValue("token", out var token);
-            var res = await _espService.GetStatus<StatusObject>(token);
+            var res = await _espService.GetStatus();
             return Ok(res);
         }
         [HttpGet("areas_search")]
