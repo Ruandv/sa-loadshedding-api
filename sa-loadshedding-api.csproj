@@ -51,6 +51,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Update="Services\Data\JSONData\jokes.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Update="Services\Data\JSONData\Municipality_167.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

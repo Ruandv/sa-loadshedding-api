@@ -17,6 +17,7 @@ namespace Config
             services.AddSingleton<IEskomService, EskomService>();
             services.AddSingleton<IEspService, EspService>();
             services.AddSingleton<ILoggingService, LoggingService>();
+            services.AddSingleton<IJokesService, JokeService>();
             services.AddSingleton<ICacheService, CacheService>();
             services.AddHttpClient<EskomHttpClient>();
             services.AddHttpClient<EspHttpClient>();
