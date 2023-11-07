@@ -1,10 +1,4 @@
-﻿using Controllers.Logging;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using Services;
-using Swashbuckle.AspNetCore.Annotations;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 namespace Controllers.Jokes
 {
