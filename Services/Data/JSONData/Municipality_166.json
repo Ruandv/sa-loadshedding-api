@@ -1,2482 +1,2454 @@
 [
-  {
-    "subName": "11 Shaft",
-    "blockId": "15"
-  },
-  {
-    "subName": "Abbotsford",
-    "blockId": "9"
-  },
-  {
-    "subName": "Academic Hospital",
-    "blockId": "1"
-  },
-  {
-    "subName": "Aeroton",
-    "blockId": "13"
-  },
-  {
-    "subName": "Albertskroon",
-    "blockId": "6"
-  },
-  {
-    "subName": "Albertville",
-    "blockId": "14"
-  },
-  {
-    "subName": "Alexandra",
-    "blockId": "3"
-  },
-  {
-    "subName": "Alexandra Ext",
-    "blockId": "9"
-  },
-  {
-    "subName": "Allen Lakes",
-    "blockId": "5"
-  },
-  {
-    "subName": "Allen Manor",
-    "blockId": "5"
-  },
-  {
-    "subName": "Allendale",
-    "blockId": "3"
-  },
-  {
-    "subName": "Allensnek",
-    "blockId": "11"
-  },
-  {
-    "subName": "Alvida",
-    "blockId": "14"
-  },
-  {
-    "subName": "Amalgam",
-    "blockId": "5"
-  },
-  {
-    "subName": "Amarosa",
-    "blockId": "11"
-  },
-  {
-    "subName": "Andara Park",
-    "blockId": "16"
-  },
-  {
-    "subName": "Armadale",
-    "blockId": "7"
-  },
-  {
-    "subName": "Aspen Hills",
-    "blockId": "5"
-  },
-  {
-    "subName": "Atholl",
-    "blockId": "4"
-  },
-  {
-    "subName": "Atholl Gardens",
-    "blockId": "4"
-  },
-  {
-    "subName": "Athollhurst Ext",
-    "blockId": "9"
-  },
-  {
-    "subName": "Auckland Park (7)",
-    "blockId": "7"
-  },
-  {
-    "subName": "Auckland Park (5)",
-    "blockId": "5"
-  },
-  {
-    "subName": "Auckland Park (14)",
-    "blockId": "14"
-  },
-  {
-    "subName": "Austin View",
-    "blockId": "3"
-  },
-  {
-    "subName": "Bagleyston",
-    "blockId": "4"
-  },
-  {
-    "subName": "Ballindean AH",
-    "blockId": "16"
-  },
-  {
-    "subName": "Bank Fdr",
-    "blockId": "14"
-  },
-  {
-    "subName": "Bantjies",
-    "blockId": "15"
-  },
-  {
-    "subName": "Baragwaneth",
-    "blockId": "15"
-  },
-  {
-    "subName": "Barrowdale",
-    "blockId": "4"
-  },
-  {
-    "subName": "Bassonia",
-    "blockId": "5"
-  },
-  {
-    "subName": "Belgravia",
-    "blockId": "12"
-  },
-  {
-    "subName": "Bellairspark",
-    "blockId": "10"
-  },
-  {
-    "subName": "Bellavista Estate",
-    "blockId": "12"
-  },
-  {
-    "subName": "Bellevue",
-    "blockId": "4"
-  },
-  {
-    "subName": "Benrose",
-    "blockId": "12"
-  },
-  {
-    "subName": "Berario",
-    "blockId": "2"
-  },
-  {
-    "subName": "Berea (13)",
-    "blockId": "13"
-  },
-  {
-    "subName": "Berea (1)",
-    "blockId": "1"
-  },
-  {
-    "subName": "Bergbron",
-    "blockId": "15"
-  },
-  {
-    "subName": "Bertrams",
-    "blockId": "4"
-  },
-  {
-    "subName": "Beverley Gardens",
-    "blockId": "14"
-  },
-  {
-    "subName": "Bezuidenhout Valley",
-    "blockId": "4"
-  },
-  {
-    "subName": "Birdhaven",
-    "blockId": "9"
-  },
-  {
-    "subName": "Birnam",
-    "blockId": "4"
-  },
-  {
-    "subName": "Blackheath",
-    "blockId": "2"
-  },
-  {
-    "subName": "Blairgowrie",
-    "blockId": "14"
-  },
-  {
-    "subName": "Blairgowrie South",
-    "blockId": "2"
-  },
-  {
-    "subName": "Bloubosrand",
-    "blockId": "10"
-  },
-  {
-    "subName": "Booysens",
-    "blockId": "13"
-  },
-  {
-    "subName": "Booysens Reserve",
-    "blockId": "13"
-  },
-  {
-    "subName": "Bordeaux",
-    "blockId": "14"
-  },
-  {
-    "subName": "Boschkop",
-    "blockId": "11"
-  },
-  {
-    "subName": "Boskruin",
-    "blockId": "14"
-  },
-  {
-    "subName": "Bosmont",
-    "blockId": "14"
-  },
-  {
-    "subName": "Boundary Park Ext",
-    "blockId": "11"
-  },
-  {
-    "subName": "Boundry Park",
-    "blockId": "10"
-  },
-  {
-    "subName": "Braam Park",
-    "blockId": "1"
-  },
-  {
-    "subName": "Braamfontein",
-    "blockId": "6"
-  },
-  {
-    "subName": "Braamfontein Werf",
-    "blockId": "5"
-  },
-  {
-    "subName": "Bramely",
-    "blockId": "9"
-  },
-  {
-    "subName": "Bramley Park",
-    "blockId": "4"
-  },
-  {
-    "subName": "Bramley View",
-    "blockId": "4"
-  },
-  {
-    "subName": "Breaunanda",
-    "blockId": "11"
-  },
-  {
-    "subName": "Brenthurst Clinic",
-    "blockId": "1"
-  },
-  {
-    "subName": "Brixton East (Mayfair)",
-    "blockId": "5"
-  },
-  {
-    "subName": "Brixton West (Hursthill)",
-    "blockId": "14"
-  },
-  {
-    "subName": "Bromhof",
-    "blockId": "14"
-  },
-  {
-    "subName": "Bromhof Ext",
-    "blockId": "10"
-  },
-  {
-    "subName": "Bruma",
-    "blockId": "4"
-  },
-  {
-    "subName": "Brushwood Haugh A.H",
-    "blockId": "10"
-  },
-  {
-    "subName": "Bryanbrink",
-    "blockId": "16"
-  },
-  {
-    "subName": "Bryanston (14)",
-    "blockId": "14"
-  },
-  {
-    "subName": "Bryanston (4)",
-    "blockId": "4"
-  },
-  {
-    "subName": "Bryanston North_East",
-    "blockId": "10"
-  },
-  {
-    "subName": "Burgersdorp",
-    "blockId": "6"
-  },
-  {
-    "subName": "Bush Hill",
-    "blockId": "11"
-  },
-  {
-    "subName": "Bush Hill Estate",
-    "blockId": "14"
-  },
-  {
-    "subName": "Bushkoppies",
-    "blockId": "7"
-  },
-  {
-    "subName": "Campus Square",
-    "blockId": "7"
-  },
-  {
-    "subName": "Carenvale",
-    "blockId": "15"
-  },
-  {
-    "subName": "Carlton Centre",
-    "blockId": "13"
-  },
-  {
-    "subName": "Casey Park",
-    "blockId": "9"
-  },
-  {
-    "subName": "Cheltondale",
-    "blockId": "9"
-  },
-  {
-    "subName": "Chislehurston",
-    "blockId": "9"
-  },
-  {
-    "subName": "Chrisville",
-    "blockId": "13"
-  },
-  {
-    "subName": "City And Suburban",
-    "blockId": "13"
-  },
-  {
-    "subName": "City Deep",
-    "blockId": "12"
-  },
-  {
-    "subName": "City Deep Ext",
-    "blockId": "12"
-  },
-  {
-    "subName": "City West",
-    "blockId": "6"
-  },
-  {
-    "subName": "Civic Centre",
-    "blockId": "1"
-  },
-  {
-    "subName": "Claremont",
-    "blockId": "14"
-  },
-  {
-    "subName": "Cleveland",
-    "blockId": "12"
-  },
-  {
-    "subName": "Commercia",
-    "blockId": "3"
-  },
-  {
-    "subName": "Comptonville",
-    "blockId": "14"
-  },
-  {
-    "subName": "Constantia Kloof",
-    "blockId": "11"
-  },
-  {
-    "subName": "Constitutional Court",
-    "blockId": "1"
-  },
-  {
-    "subName": "Container Depot",
-    "blockId": "12"
-  },
-  {
-    "subName": "Corlett Gardens",
-    "blockId": "4"
-  },
-  {
-    "subName": "Coronationville",
-    "blockId": "14"
-  },
-  {
-    "subName": "Cottesloe",
-    "blockId": "5"
-  },
-  {
-    "subName": "Country View",
-    "blockId": "16"
-  },
-  {
-    "subName": "Country-Life Park",
-    "blockId": "10"
-  },
-  {
-    "subName": "Craighall",
-    "blockId": "2"
-  },
-  {
-    "subName": "Craighall Park",
-    "blockId": "2"
-  },
-  {
-    "subName": "Craighall Park East",
-    "blockId": "16"
-  },
-  {
-    "subName": "Cramerview",
-    "blockId": "10"
-  },
-  {
-    "subName": "Cresta",
-    "blockId": "16"
-  },
-  {
-    "subName": "Croesus",
-    "blockId": "14"
-  },
-  {
-    "subName": "Crosby (7)",
-    "blockId": "7"
-  },
-  {
-    "subName": "Crosby (5)",
-    "blockId": "5"
-  },
-  {
-    "subName": "Crown (12)",
-    "blockId": "12"
-  },
-  {
-    "subName": "Crown (5)",
-    "blockId": "5"
-  },
-  {
-    "subName": "Crown City",
-    "blockId": "6"
-  },
-  {
-    "subName": "Crown Gardens (5)",
-    "blockId": "5"
-  },
-  {
-    "subName": "Crown Gardens (13)",
-    "blockId": "13"
-  },
-  {
-    "subName": "Crown Mines",
-    "blockId": "5"
-  },
-  {
-    "subName": "Crown Ext ",
-    "blockId": "6"
-  },
-  {
-    "subName": "Crystal Gardens",
-    "blockId": "4"
-  },
-  {
-    "subName": "Cyrildene",
-    "blockId": "4"
-  },
-  {
-    "subName": "Dainfern",
-    "blockId": "10"
-  },
-  {
-    "subName": "Daniel Brink Park",
-    "blockId": "14"
-  },
-  {
-    "subName": "Darrenwood",
-    "blockId": "16"
-  },
-  {
-    "subName": "Davidsonville",
-    "blockId": "11"
-  },
-  {
-    "subName": "De Wetshof",
-    "blockId": "4"
-  },
-  {
-    "subName": "Delarey",
-    "blockId": "15"
-  },
-  {
-    "subName": "Denver",
-    "blockId": "12"
-  },
-  {
-    "subName": "Devland",
-    "blockId": "7"
-  },
-  {
-    "subName": "Devon Valley",
-    "blockId": "11"
-  },
-  {
-    "subName": "Dimension Data",
-    "blockId": "11"
-  },
-  {
-    "subName": "Discovery",
-    "blockId": "15"
-  },
-  {
-    "subName": "Doornfontein",
-    "blockId": "13"
-  },
-  {
-    "subName": "Doornkop",
-    "blockId": "15"
-  },
-  {
-    "subName": "Douglasdale",
-    "blockId": "11"
-  },
-  {
-    "subName": "Driefontein",
-    "blockId": "16"
-  },
-  {
-    "subName": "Droste Park",
-    "blockId": "13"
-  },
-  {
-    "subName": "Dunkeld West",
-    "blockId": "1"
-  },
-  {
-    "subName": "Dunkeld",
-    "blockId": "9"
-  },
-  {
-    "subName": "Dunkeld West Ext 2",
-    "blockId": "2"
-  },
-  {
-    "subName": "Dunsevern",
-    "blockId": "4"
-  },
-  {
-    "subName": "Eagles Nest",
-    "blockId": "14"
-  },
-  {
-    "subName": "East Bank",
-    "blockId": "9"
-  },
-  {
-    "subName": "East Town",
-    "blockId": "16"
-  },
-  {
-    "subName": "Eastcliff",
-    "blockId": "12"
-  },
-  {
-    "subName": "Edgardale",
-    "blockId": "6"
-  },
-  {
-    "subName": "Elands Park",
-    "blockId": "12"
-  },
-  {
-    "subName": "ELCEDES",
-    "blockId": "12"
-  },
-  {
-    "subName": "Eldorado Estate",
-    "blockId": "7"
-  },
-  {
-    "subName": "Eldorado Park",
-    "blockId": "7"
-  },
-  {
-    "subName": "Electron",
-    "blockId": "12"
-  },
-  {
-    "subName": "Elladoone",
-    "blockId": "12"
-  },
-  {
-    "subName": "Ellias Motswaledi",
-    "blockId": "15"
-  },
-  {
-    "subName": "Ellis Park",
-    "blockId": "13"
-  },
-  {
-    "subName": "Elton Hill",
-    "blockId": "9"
-  },
-  {
-    "subName": "Emmarentia",
-    "blockId": "2"
-  },
-  {
-    "subName": "Ennerdale",
-    "blockId": "9"
-  },
-  {
-    "subName": "Erand Gardens",
-    "blockId": "16"
-  },
-  {
-    "subName": "Evans Park",
-    "blockId": "13"
-  },
-  {
-    "subName": "Fairlands",
-    "blockId": "2"
-  },
-  {
-    "subName": "Fairmount",
-    "blockId": "4"
-  },
-  {
-    "subName": "Fairvale",
-    "blockId": "4"
-  },
-  {
-    "subName": "Fairview",
-    "blockId": "13"
-  },
-  {
-    "subName": "Fairways",
-    "blockId": "9"
-  },
-  {
-    "subName": "Fairwood",
-    "blockId": "4"
-  },
-  {
-    "subName": "Far East Bank",
-    "blockId": "9"
-  },
-  {
-    "subName": "Farm Olifantsvlei",
-    "blockId": "14"
-  },
-  {
-    "subName": "Fellside",
-    "blockId": "4"
-  },
-  {
-    "subName": "Ferndale",
-    "blockId": "14"
-  },
-  {
-    "subName": "Ferndale Ext",
-    "blockId": "10"
-  },
-  {
-    "subName": "Ferreirasdorp",
-    "blockId": "6"
-  },
-  {
-    "subName": "Finetown",
-    "blockId": "9"
-  },
-  {
-    "subName": "Fleurhof",
-    "blockId": "15"
-  },
-  {
-    "subName": "Fleurhof Ext",
-    "blockId": "5"
-  },
-  {
-    "subName": "Florida",
-    "blockId": "15"
-  },
-  {
-    "subName": "Fontainbleau",
-    "blockId": "14"
-  },
-  {
-    "subName": "FORBESDALE",
-    "blockId": "4"
-  },
-  {
-    "subName": "Fordsburg",
-    "blockId": "6"
-  },
-  {
-    "subName": "Forest Hill",
-    "blockId": "12"
-  },
-  {
-    "subName": "Forest Town",
-    "blockId": "2"
-  },
-  {
-    "subName": "Founders Hill",
-    "blockId": "4"
-  },
-  {
-    "subName": "Frampton",
-    "blockId": "13"
-  },
-  {
-    "subName": "Frampton East",
-    "blockId": "12"
-  },
-  {
-    "subName": "Franklin Roosevelt Park",
-    "blockId": "2"
-  },
-  {
-    "subName": "Freedom Park",
-    "blockId": "7"
-  },
-  {
-    "subName": "Fresh Produce Market",
-    "blockId": "12"
-  },
-  {
-    "subName": "Garden City",
-    "blockId": "5"
-  },
-  {
-    "subName": "Geluksdal",
-    "blockId": "9"
-  },
-  {
-    "subName": "Georginia",
-    "blockId": "15"
-  },
-  {
-    "subName": "Gillview",
-    "blockId": "13"
-  },
-  {
-    "subName": "Glen Acres EXT 15",
-    "blockId": "16"
-  },
-  {
-    "subName": "Glen Atholl",
-    "blockId": "4"
-  },
-  {
-    "subName": "Glen Austin A H",
-    "blockId": "3"
-  },
-  {
-    "subName": "Glen Lea",
-    "blockId": "15"
-  },
-  {
-    "subName": "Glenadrienne",
-    "blockId": "8"
-  },
-  {
-    "subName": "Glenanda East",
-    "blockId": "5"
-  },
-  {
-    "subName": "Glenanda West ",
-    "blockId": "13"
-  },
-  {
-    "subName": "GLENEAGLES",
-    "blockId": "12"
-  },
-  {
-    "subName": "Glenesk",
-    "blockId": "12"
-  },
-  {
-    "subName": "Glenhazel",
-    "blockId": "4"
-  },
-  {
-    "subName": "GLENIFFER",
-    "blockId": "10"
-  },
-  {
-    "subName": "Glenkay",
-    "blockId": "4"
-  },
-  {
-    "subName": "Glensan",
-    "blockId": "9"
-  },
-  {
-    "subName": "Glenvista",
-    "blockId": "5"
-  },
-  {
-    "subName": "Golden Harvest A.H",
-    "blockId": "10"
-  },
-  {
-    "subName": "Goldev",
-    "blockId": "7"
-  },
-  {
-    "subName": "Goldreef City",
-    "blockId": "13"
-  },
-  {
-    "subName": "Goudkoppies",
-    "blockId": "7"
-  },
-  {
-    "subName": "Grassmere",
-    "blockId": "9"
-  },
-  {
-    "subName": "Greenside",
-    "blockId": "2"
-  },
-  {
-    "subName": "Greenstone Hill",
-    "blockId": "4"
-  },
-  {
-    "subName": "Gresswold",
-    "blockId": "4"
-  },
-  {
-    "subName": "Greymont",
-    "blockId": "2"
-  },
-  {
-    "subName": "Grobler Park",
-    "blockId": "11"
-  },
-  {
-    "subName": "Grosvenor",
-    "blockId": "14"
-  },
-  {
-    "subName": "Haddon",
-    "blockId": "12"
-  },
-  {
-    "subName": "Halfway Gardens",
-    "blockId": "3"
-  },
-  {
-    "subName": "HalfwayHouse",
-    "blockId": "3"
-  },
-  {
-    "subName": "Hamberg",
-    "blockId": "15"
-  },
-  {
-    "subName": "Harveston",
-    "blockId": "11"
-  },
-  {
-    "subName": "Hawkins Estate",
-    "blockId": "4"
-  },
-  {
-    "subName": "HEADWAY HILL",
-    "blockId": "3"
-  },
-  {
-    "subName": "Helderkruin",
-    "blockId": "11"
-  },
-  {
-    "subName": "Helen Joseph Hospital",
-    "blockId": "14"
-  },
-  {
-    "subName": "Heriotdale",
-    "blockId": "12"
-  },
-  {
-    "subName": "High Gate",
-    "blockId": "15"
-  },
-  {
-    "subName": "Highlands North",
-    "blockId": "4"
-  },
-  {
-    "subName": "Highpoint",
-    "blockId": "1"
-  },
-  {
-    "subName": "Hillbrow",
-    "blockId": "1"
-  },
-  {
-    "subName": "Holiday Inn",
-    "blockId": "1"
-  },
-  {
-    "subName": "Homestead Park",
-    "blockId": "5"
-  },
-  {
-    "subName": "Honey Hills",
-    "blockId": "15"
-  },
-  {
-    "subName": "Honeydew",
-    "blockId": "11"
-  },
-  {
-    "subName": "Hoogland",
-    "blockId": "10"
-  },
-  {
-    "subName": "Hopefield",
-    "blockId": "9"
-  },
-  {
-    "subName": "Horison",
-    "blockId": "11"
-  },
-  {
-    "subName": "Horison Park",
-    "blockId": "11"
-  },
-  {
-    "subName": "Horison View",
-    "blockId": "11"
-  },
-  {
-    "subName": "Hospital Hill 1",
-    "blockId": "1"
-  },
-  {
-    "subName": "Houghton",
-    "blockId": "4"
-  },
-  {
-    "subName": "Houghton Estate",
-    "blockId": "9"
-  },
-  {
-    "subName": "Houghton South",
-    "blockId": "9"
-  },
-  {
-    "subName": "Hunters Hill A.H",
-    "blockId": "10"
-  },
-  {
-    "subName": "Hurlingham",
-    "blockId": "2"
-  },
-  {
-    "subName": "Hurlingham Manor",
-    "blockId": "2"
-  },
-  {
-    "subName": "Hurst Hill",
-    "blockId": "7"
-  },
-  {
-    "subName": "Hyde Park",
-    "blockId": "1"
-  },
-  {
-    "subName": "Hyde Park Ext",
-    "blockId": "2"
-  },
-  {
-    "subName": "Hyde Park West",
-    "blockId": "16"
-  },
-  {
-    "subName": "Hyde Park East",
-    "blockId": "9"
-  },
-  {
-    "subName": "Hyperion",
-    "blockId": "10"
-  },
-  {
-    "subName": "Illovo",
-    "blockId": "9"
-  },
-  {
-    "subName": "Inanda",
-    "blockId": "9"
-  },
-  {
-    "subName": "Industria",
-    "blockId": "14"
-  },
-  {
-    "subName": "Industria North",
-    "blockId": "15"
-  },
-  {
-    "subName": "Industria West",
-    "blockId": "14"
-  },
-  {
-    "subName": "Isle of Houghton",
-    "blockId": "1"
-  },
-  {
-    "subName": "Jacanlee",
-    "blockId": "16"
-  },
-  {
-    "subName": "Jan Hofmeyer",
-    "blockId": "5"
-  },
-  {
-    "subName": "Jeppe East",
-    "blockId": "12"
-  },
-  {
-    "subName": "Jeppe West",
-    "blockId": "13"
-  },
-  {
-    "subName": "JHB Central",
-    "blockId": "1"
-  },
-  {
-    "subName": "Johannesburg CBD",
-    "blockId": "13"
-  },
-  {
-    "subName": "Johannesburg-North",
-    "blockId": "10"
-  },
-  {
-    "subName": "Joubert Park",
-    "blockId": "1"
-  },
-  {
-    "subName": "Joubert Park South",
-    "blockId": "10"
-  },
-  {
-    "subName": "Judith Paarl West",
-    "blockId": "4"
-  },
-  {
-    "subName": "Jukskei Park",
-    "blockId": "10"
-  },
-  {
-    "subName": "Jukskei Park Ext",
-    "blockId": "10"
-  },
-  {
-    "subName": "Jukskei View",
-    "blockId": "3"
-  },
-  {
-    "subName": "Kaalfontein",
-    "blockId": "3"
-  },
-  {
-    "subName": "Kazerne",
-    "blockId": "13"
-  },
-  {
-    "subName": "Kelland",
-    "blockId": "14"
-  },
-  {
-    "subName": "Kelly Ridge",
-    "blockId": "11"
-  },
-  {
-    "subName": "Kenilworth",
-    "blockId": "12"
-  },
-  {
-    "subName": "Kensington",
-    "blockId": "12"
-  },
-  {
-    "subName": "Kensington B",
-    "blockId": "16"
-  },
-  {
-    "subName": "Kensington Ext",
-    "blockId": "12"
-  },
-  {
-    "subName": "Kent Park",
-    "blockId": "9"
-  },
-  {
-    "subName": "Kent View",
-    "blockId": "9"
-  },
-  {
-    "subName": "KEVIN RIDGE",
-    "blockId": "11"
-  },
-  {
-    "subName": "Kew",
-    "blockId": "4"
-  },
-  {
-    "subName": "Kiasha Park",
-    "blockId": "9"
-  },
-  {
-    "subName": "Kibler Heights",
-    "blockId": "5"
-  },
-  {
-    "subName": "Kibler Park",
-    "blockId": "14"
-  },
-  {
-    "subName": "Killarney",
-    "blockId": "1"
-  },
-  {
-    "subName": "Killarney Mall",
-    "blockId": "9"
-  },
-  {
-    "subName": "Klevehill Park",
-    "blockId": "11"
-  },
-  {
-    "subName": "Klipfontein",
-    "blockId": "3"
-  },
-  {
-    "subName": "Klipriviersberg",
-    "blockId": "12"
-  },
-  {
-    "subName": "Klipriviersoog",
-    "blockId": "7"
-  },
-  {
-    "subName": "Klipriviersoog Estate",
-    "blockId": "7"
-  },
-  {
-    "subName": "Klipspruit West",
-    "blockId": "7"
-  },
-  {
-    "subName": "Kliptown",
-    "blockId": "7"
-  },
-  {
-    "subName": "Kloofendal",
-    "blockId": "11"
-  },
-  {
-    "subName": "Kya Sands",
-    "blockId": "10"
-  },
-  {
-    "subName": "Kya Sands Ext",
-    "blockId": "8"
-  },
-  {
-    "subName": "Kyalami Estates",
-    "blockId": "3"
-  },
-  {
-    "subName": "Kyalami Hills",
-    "blockId": "3"
-  },
-  {
-    "subName": "Kyalami Park",
-    "blockId": "3"
-  },
-  {
-    "subName": "La Rochelle",
-    "blockId": "12"
-  },
-  {
-    "subName": "Lakeview",
-    "blockId": "13"
-  },
-  {
-    "subName": "Langlaagte",
-    "blockId": "5"
-  },
-  {
-    "subName": "Laser Park",
-    "blockId": "11"
-  },
-  {
-    "subName": "Lawley",
-    "blockId": "9"
-  },
-  {
-    "subName": "Lehae",
-    "blockId": "1"
-  },
-  {
-    "subName": "Lenaron AH",
-    "blockId": "14"
-  },
-  {
-    "subName": "Lenasia ",
-    "blockId": "10"
-  },
-  {
-    "subName": "Lenasia Ext",
-    "blockId": "7"
-  },
-  {
-    "subName": "Lenasia Ext 24",
-    "blockId": "1"
-  },
-  {
-    "subName": "Lenasia South",
-    "blockId": "9"
-  },
-  {
-    "subName": "Corobric",
-    "blockId": "1"
-  },
-  {
-    "subName": "Lewisham",
-    "blockId": "11"
-  },
-  {
-    "subName": "Liefde n Vrede",
-    "blockId": "5"
-  },
-  {
-    "subName": "Lindberg Park",
-    "blockId": "12"
-  },
-  {
-    "subName": "Linden",
-    "blockId": "2"
-  },
-  {
-    "subName": "Linden Ext",
-    "blockId": "16"
-  },
-  {
-    "subName": "Lindhaven",
-    "blockId": "11"
-  },
-  {
-    "subName": "Linksfield",
-    "blockId": "4"
-  },
-  {
-    "subName": "Linksfield Ridge",
-    "blockId": "4"
-  },
-  {
-    "subName": "Linmeyer",
-    "blockId": "12"
-  },
-  {
-    "subName": "LittleFalls",
-    "blockId": "11"
-  },
-  {
-    "subName": "Lombardy East",
-    "blockId": "9"
-  },
-  {
-    "subName": "Lombardy East Ext",
-    "blockId": "4"
-  },
-  {
-    "subName": "Lombardy West",
-    "blockId": "4"
-  },
-  {
-    "subName": "Longdale",
-    "blockId": "14"
-  },
-  {
-    "subName": "Longmeadow",
-    "blockId": "4"
-  },
-  {
-    "subName": "Longmeadow Business Estate",
-    "blockId": "4"
-  },
-  {
-    "subName": "Lorentzville",
-    "blockId": "4"
-  },
-  {
-    "subName": "Lougherin",
-    "blockId": "14"
-  },
-  {
-    "subName": "Lufhering",
-    "blockId": "15"
-  },
-  {
-    "subName": "LYME PARK",
-    "blockId": "10"
-  },
-  {
-    "subName": "Lyndhurst",
-    "blockId": "4"
-  },
-  {
-    "subName": "Malanshof",
-    "blockId": "14"
-  },
-  {
-    "subName": "Malvern",
-    "blockId": "12"
-  },
-  {
-    "subName": "Manufacta",
-    "blockId": "11"
-  },
-  {
-    "subName": "Maraisburg",
-    "blockId": "15"
-  },
-  {
-    "subName": "Marlboro",
-    "blockId": "3"
-  },
-  {
-    "subName": "Marlboro Gardens",
-    "blockId": "3"
-  },
-  {
-    "subName": "Maroeladal",
-    "blockId": "10"
-  },
-  {
-    "subName": "Marshalls Town",
-    "blockId": "13"
-  },
-  {
-    "subName": "Martindale",
-    "blockId": "14"
-  },
-  {
-    "subName": "Maryvale",
-    "blockId": "4"
-  },
-  {
-    "subName": "Matholesville",
-    "blockId": "11"
-  },
-  {
-    "subName": "Mayfair",
-    "blockId": "5"
-  },
-  {
-    "subName": "Mayfield Park",
-    "blockId": "5"
-  },
-  {
-    "subName": "Meadowhurst",
-    "blockId": "10"
-  },
-  {
-    "subName": "Melrose",
-    "blockId": "9"
-  },
-  {
-    "subName": "Melrose Arch",
-    "blockId": "9"
-  },
-  {
-    "subName": "Melrose Estate",
-    "blockId": "9"
-  },
-  {
-    "subName": "Melville",
-    "blockId": "7"
-  },
-  {
-    "subName": "Melville Ext",
-    "blockId": "5"
-  },
-  {
-    "subName": "Meredale",
-    "blockId": "5"
-  },
-  {
-    "subName": "Micor",
-    "blockId": "14"
-  },
-  {
-    "subName": "Micor Industrial",
-    "blockId": "5"
-  },
-  {
-    "subName": "Mid Ennerdale",
-    "blockId": "9"
-  },
-  {
-    "subName": "Migson Manor",
-    "blockId": "9"
-  },
-  {
-    "subName": "Migson Triangle",
-    "blockId": "9"
-  },
-  {
-    "subName": "Mill Hill",
-    "blockId": "4"
-  },
-  {
-    "subName": "Mill Hill Ext",
-    "blockId": "10"
-  },
-  {
-    "subName": "Milpark",
-    "blockId": "5"
-  },
-  {
-    "subName": "Misgund",
-    "blockId": "14"
-  },
-  {
-    "subName": "Modderfontein",
-    "blockId": "4"
-  },
-  {
-    "subName": "Moffatview",
-    "blockId": "12"
-  },
-  {
-    "subName": "Mondeor",
-    "blockId": "5"
-  },
-  {
-    "subName": "Mondeor North",
-    "blockId": "13"
-  },
-  {
-    "subName": "Mongomery Park",
-    "blockId": "2"
-  },
-  {
-    "subName": "Montclare",
-    "blockId": "14"
-  },
-  {
-    "subName": "Montroux",
-    "blockId": "16"
-  },
-  {
-    "subName": "Moodey Hill",
-    "blockId": "4"
-  },
-  {
-    "subName": "Moodey Hill Ext",
-    "blockId": "9"
-  },
-  {
-    "subName": "Moret",
-    "blockId": "14"
-  },
-  {
-    "subName": "Morningside",
-    "blockId": "4"
-  },
-  {
-    "subName": "Morningside Ext",
-    "blockId": "9"
-  },
-  {
-    "subName": "Mountainview",
-    "blockId": "9"
-  },
-  {
-    "subName": "MTN Campus",
-    "blockId": "11"
-  },
-  {
-    "subName": "Mulbarton",
-    "blockId": "5"
-  },
-  {
-    "subName": "Nancefield",
-    "blockId": "7"
-  },
-  {
-    "subName": "Nasrec",
-    "blockId": "13"
-  },
-  {
-    "subName": "Naturena",
-    "blockId": "14"
-  },
-  {
-    "subName": "New Brighton",
-    "blockId": "4"
-  },
-  {
-    "subName": "New Canada",
-    "blockId": "14"
-  },
-  {
-    "subName": "New Centre",
-    "blockId": "6"
-  },
-  {
-    "subName": "New Doornfontein",
-    "blockId": "13"
-  },
-  {
-    "subName": "Newclare",
-    "blockId": "14"
-  },
-  {
-    "subName": "Newlands",
-    "blockId": "7"
-  },
-  {
-    "subName": "Newtown",
-    "blockId": "6"
-  },
-  {
-    "subName": "Noordgesig",
-    "blockId": "5"
-  },
-  {
-    "subName": "Noordhang Ext",
-    "blockId": "10"
-  },
-  {
-    "subName": "Noordwyk",
-    "blockId": "16"
-  },
-  {
-    "subName": "North Riding A.H",
-    "blockId": "10"
-  },
-  {
-    "subName": "NORTH RIDING ESTATES",
-    "blockId": "8"
-  },
-  {
-    "subName": "North Riding ",
-    "blockId": "10"
-  },
-  {
-    "subName": "Northcliff",
-    "blockId": "7"
-  },
-  {
-    "subName": "Northcliff Ext",
-    "blockId": "2"
-  },
-  {
-    "subName": "Northcliff (14)",
-    "blockId": "14"
-  },
-  {
-    "subName": "Northcliff Ext 7-9",
-    "blockId": "16"
-  },
-  {
-    "subName": "NORTHGATE",
-    "blockId": "8"
-  },
-  {
-    "subName": "Northriding",
-    "blockId": "8"
-  },
-  {
-    "subName": "North Riding Ext",
-    "blockId": "8"
-  },
-  {
-    "subName": "Northumberland",
-    "blockId": "8"
-  },
-  {
-    "subName": "Northwold",
-    "blockId": "8"
-  },
-  {
-    "subName": "Northwold Gardens",
-    "blockId": "8"
-  },
-  {
-    "subName": "Northworld Ext",
-    "blockId": "8"
-  },
-  {
-    "subName": "Norwood",
-    "blockId": "9"
-  },
-  {
-    "subName": "Oakdene",
-    "blockId": "12"
-  },
-  {
-    "subName": "Oaklands",
-    "blockId": "9"
-  },
-  {
-    "subName": "Observatory",
-    "blockId": "4"
-  },
-  {
-    "subName": "Oerder Park",
-    "blockId": "14"
-  },
-  {
-    "subName": "Oliefantsvlei",
-    "blockId": "7"
-  },
-  {
-    "subName": "Olivedale",
-    "blockId": "10"
-  },
-  {
-    "subName": "Ontdekkers Park",
-    "blockId": "11"
-  },
-  {
-    "subName": "Oospoort Ext 1",
-    "blockId": "12"
-  },
-  {
-    "subName": "Ophirton",
-    "blockId": "13"
-  },
-  {
-    "subName": "Orange Grove",
-    "blockId": "9"
-  },
-  {
-    "subName": "Orchards",
-    "blockId": "9"
-  },
-  {
-    "subName": "Orlando Ekhaya",
-    "blockId": "15"
-  },
-  {
-    "subName": "Ormonde",
-    "blockId": "13"
-  },
-  {
-    "subName": "Paarlshoop",
-    "blockId": "5"
-  },
-  {
-    "subName": "Pageview",
-    "blockId": "5"
-  },
-  {
-    "subName": "Panorama",
-    "blockId": "11"
-  },
-  {
-    "subName": "Park Central",
-    "blockId": "6"
-  },
-  {
-    "subName": "Parkhurst",
-    "blockId": "2"
-  },
-  {
-    "subName": "Parklane Clinic",
-    "blockId": "1"
-  },
-  {
-    "subName": "PARKMORE EXT.1",
-    "blockId": "10"
-  },
-  {
-    "subName": "Parkmore",
-    "blockId": "4"
-  },
-  {
-    "subName": "Parktown",
-    "blockId": "1"
-  },
-  {
-    "subName": "Parktown North",
-    "blockId": "2"
-  },
-  {
-    "subName": "Parktown West",
-    "blockId": "6"
-  },
-  {
-    "subName": "Parkview",
-    "blockId": "2"
-  },
-  {
-    "subName": "Parkwood",
-    "blockId": "1"
-  },
-  {
-    "subName": "Parkwood East",
-    "blockId": "1"
-  },
-  {
-    "subName": "Parkwood West",
-    "blockId": "2"
-  },
-  {
-    "subName": "Patlynn",
-    "blockId": "14"
-  },
-  {
-    "subName": "Patlynn AH",
-    "blockId": "5"
-  },
-  {
-    "subName": "Pennyville",
-    "blockId": "5"
-  },
-  {
-    "subName": "Percelia Estate",
-    "blockId": "4"
-  },
-  {
-    "subName": "Petervale",
-    "blockId": "10"
-  },
-  {
-    "subName": "Phomolong",
-    "blockId": "3"
-  },
-  {
-    "subName": "Pierneef Park",
-    "blockId": "2"
-  },
-  {
-    "subName": "Pine Park",
-    "blockId": "2"
-  },
-  {
-    "subName": "Pioneer",
-    "blockId": "12"
-  },
-  {
-    "subName": "Poortview",
-    "blockId": "11"
-  },
-  {
-    "subName": "President Park",
-    "blockId": "3"
-  },
-  {
-    "subName": "President Ridge",
-    "blockId": "14"
-  },
-  {
-    "subName": "Princess",
-    "blockId": "11"
-  },
-  {
-    "subName": "Production Park",
-    "blockId": "13"
-  },
-  {
-    "subName": "Prolecon",
-    "blockId": "13"
-  },
-  {
-    "subName": "Quellerina",
-    "blockId": "15"
-  },
-  {
-    "subName": "Rabie Ridge",
-    "blockId": "3"
-  },
-  {
-    "subName": "Race Course",
-    "blockId": "7"
-  },
-  {
-    "subName": "Radiokop",
-    "blockId": "11"
-  },
-  {
-    "subName": "Raedene",
-    "blockId": "4"
-  },
-  {
-    "subName": "Rand Clinic",
-    "blockId": "1"
-  },
-  {
-    "subName": "Rand Leases",
-    "blockId": "15"
-  },
-  {
-    "subName": "RandPark Ridge",
-    "blockId": "14"
-  },
-  {
-    "subName": "RandjiesPark",
-    "blockId": "16"
-  },
-  {
-    "subName": "RandPark",
-    "blockId": "14"
-  },
-  {
-    "subName": "Randpark",
-    "blockId": "16"
-  },
-  {
-    "subName": "RandPark Ridge Ext",
-    "blockId": "16"
-  },
-  {
-    "subName": "Randview",
-    "blockId": "4"
-  },
-  {
-    "subName": "Raumarais Park",
-    "blockId": "9"
-  },
-  {
-    "subName": "Reefhaven",
-    "blockId": "11"
-  },
-  {
-    "subName": "Regency",
-    "blockId": "12"
-  },
-  {
-    "subName": "Regents Park",
-    "blockId": "12"
-  },
-  {
-    "subName": "Rembrandt Park",
-    "blockId": "4"
-  },
-  {
-    "subName": "Rembrandt Ridge",
-    "blockId": "4"
-  },
-  {
-    "subName": "Residale",
-    "blockId": "2"
-  },
-  {
-    "subName": "Reuven",
-    "blockId": "12"
-  },
-  {
-    "subName": "Rewlatch",
-    "blockId": "12"
-  },
-  {
-    "subName": "Reynolds View",
-    "blockId": "4"
-  },
-  {
-    "subName": "Richmond",
-    "blockId": "5"
-  },
-  {
-    "subName": "Ridgeway",
-    "blockId": "12"
-  },
-  {
-    "subName": "Ridgeway North",
-    "blockId": "13"
-  },
-  {
-    "subName": "Ridgeway South",
-    "blockId": "12"
-  },
-  {
-    "subName": "Rietfontein AH",
-    "blockId": "7"
-  },
-  {
-    "subName": "Ris Park",
-    "blockId": "14"
-  },
-  {
-    "subName": "Ris Park AH",
-    "blockId": "5"
-  },
-  {
-    "subName": "Risana",
-    "blockId": "12"
-  },
-  {
-    "subName": "Rivasdale",
-    "blockId": "7"
-  },
-  {
-    "subName": "River Club",
-    "blockId": "4"
-  },
-  {
-    "subName": "River Park",
-    "blockId": "9"
-  },
-  {
-    "subName": "Riverbend",
-    "blockId": "10"
-  },
-  {
-    "subName": "Riverlea",
-    "blockId": "14"
-  },
-  {
-    "subName": "Riviera",
-    "blockId": "9"
-  },
-  {
-    "subName": "Robertsham",
-    "blockId": "13"
-  },
-  {
-    "subName": "Robertville",
-    "blockId": "15"
-  },
-  {
-    "subName": "Robin Acres",
-    "blockId": "16"
-  },
-  {
-    "subName": "Robindale",
-    "blockId": "16"
-  },
-  {
-    "subName": "Roodekrans",
-    "blockId": "11"
-  },
-  {
-    "subName": "Roodepoort CBD",
-    "blockId": "11"
-  },
-  {
-    "subName": "Roodepoort",
-    "blockId": "15"
-  },
-  {
-    "subName": "Roseacre",
-    "blockId": "12"
-  },
-  {
-    "subName": "Rosebank",
-    "blockId": "1"
-  },
-  {
-    "subName": "Rosebank East",
-    "blockId": "9"
-  },
-  {
-    "subName": "Rosebank Mall",
-    "blockId": "1"
-  },
-  {
-    "subName": "Rosettenville",
-    "blockId": "12"
-  },
-  {
-    "subName": "Rosherville",
-    "blockId": "12"
-  },
-  {
-    "subName": "Rossmore",
-    "blockId": "14"
-  },
-  {
-    "subName": "Rossmore Ext",
-    "blockId": "5"
-  },
-  {
-    "subName": "Rothesay Ave",
-    "blockId": "2"
-  },
-  {
-    "subName": "Rouxville",
-    "blockId": "4"
-  },
-  {
-    "subName": "Ruimsig",
-    "blockId": "11"
-  },
-  {
-    "subName": "Ruiterhof",
-    "blockId": "14"
-  },
-  {
-    "subName": "RWB Eikenhof",
-    "blockId": "14"
-  },
-  {
-    "subName": "SABC",
-    "blockId": "5"
-  },
-  {
-    "subName": "Sagewood ext.14",
-    "blockId": "16"
-  },
-  {
-    "subName": "Salisbury Claims",
-    "blockId": "13"
-  },
-  {
-    "subName": "SANDHURST",
-    "blockId": "4"
-  },
-  {
-    "subName": "SANDHURST Ext",
-    "blockId": "9"
-  },
-  {
-    "subName": "Sandringham",
-    "blockId": "4"
-  },
-  {
-    "subName": "Santa",
-    "blockId": "15"
-  },
-  {
-    "subName": "SAP 13",
-    "blockId": "15"
-  },
-  {
-    "subName": "Savoy",
-    "blockId": "4"
-  },
-  {
-    "subName": "Saxonwold East",
-    "blockId": "1"
-  },
-  {
-    "subName": "Saxonwold West",
-    "blockId": "2"
-  },
-  {
-    "subName": "Selby",
-    "blockId": "13"
-  },
-  {
-    "subName": "Selwyn",
-    "blockId": "11"
-  },
-  {
-    "subName": "Sharonlea",
-    "blockId": "8"
-  },
-  {
-    "subName": "Sharonlea Ext",
-    "blockId": "16"
-  },
-  {
-    "subName": "Siemert",
-    "blockId": "13"
-  },
-  {
-    "subName": "Silvamont",
-    "blockId": "4"
-  },
-  {
-    "subName": "Silverfields",
-    "blockId": "11"
-  },
-  {
-    "subName": "Slovo Park",
-    "blockId": "7"
-  },
-  {
-    "subName": "Soccer City",
-    "blockId": "12"
-  },
-  {
-    "subName": "Sol Ridge",
-    "blockId": "10"
-  },
-  {
-    "subName": "SonneGlans Ext",
-    "blockId": "14"
-  },
-  {
-    "subName": "SonneGlans",
-    "blockId": "10"
-  },
-  {
-    "subName": "Sophiatown",
-    "blockId": "14"
-  },
-  {
-    "subName": "South Gate",
-    "blockId": "5"
-  },
-  {
-    "subName": "South Hills",
-    "blockId": "12"
-  },
-  {
-    "subName": "South Kensington",
-    "blockId": "12"
-  },
-  {
-    "subName": "Southcrest",
-    "blockId": "12"
-  },
-  {
-    "subName": "Southdale",
-    "blockId": "13"
-  },
-  {
-    "subName": "Southfork",
-    "blockId": "14"
-  },
-  {
-    "subName": "Spes Bona",
-    "blockId": "12"
-  },
-  {
-    "subName": "Spionekop",
-    "blockId": "11"
-  },
-  {
-    "subName": "Springfield",
-    "blockId": "12"
-  },
-  {
-    "subName": "Stafford",
-    "blockId": "12"
-  },
-  {
-    "subName": "Steeldale",
-    "blockId": "12"
-  },
-  {
-    "subName": "Stormill",
-    "blockId": "15"
-  },
-  {
-    "subName": "Strubens Valley",
-    "blockId": "11"
-  },
-  {
-    "subName": "Strydom Park",
-    "blockId": "14"
-  },
-  {
-    "subName": "Suideroord",
-    "blockId": "5"
-  },
-  {
-    "subName": "Sundowner",
-    "blockId": "8"
-  },
-  {
-    "subName": "Sunningdale",
-    "blockId": "9"
-  },
-  {
-    "subName": "Sunnyside",
-    "blockId": "5"
-  },
-  {
-    "subName": "Sydenham",
-    "blockId": "4"
-  },
-  {
-    "subName": "Talboton",
-    "blockId": "4"
-  },
-  {
-    "subName": "The Gables",
-    "blockId": "12"
-  },
-  {
-    "subName": "The Gardens",
-    "blockId": "4"
-  },
-  {
-    "subName": "The Hill",
-    "blockId": "12"
-  },
-  {
-    "subName": "Theta",
-    "blockId": "13"
-  },
-  {
-    "subName": "Thorn Hill",
-    "blockId": "4"
-  },
-  {
-    "subName": "Tokyo",
-    "blockId": "14"
-  },
-  {
-    "subName": "Towerby",
-    "blockId": "12"
-  },
-  {
-    "subName": "Townsview",
-    "blockId": "12"
-  },
-  {
-    "subName": "Triomf",
-    "blockId": "14"
-  },
-  {
-    "subName": "Trojan",
-    "blockId": "12"
-  },
-  {
-    "subName": "Troyville",
-    "blockId": "13"
-  },
-  {
-    "subName": "TSHEPISONG",
-    "blockId": "5"
-  },
-  {
-    "subName": "Tulisa Park",
-    "blockId": "12"
-  },
-  {
-    "subName": "Turf Club",
-    "blockId": "12"
-  },
-  {
-    "subName": "Turffontein",
-    "blockId": "12"
-  },
-  {
-    "subName": "Uitsaaisentrum",
-    "blockId": "5"
-  },
-  {
-    "subName": "UJ Soweto",
-    "blockId": "15"
-  },
-  {
-    "subName": "Unaville",
-    "blockId": "9"
-  },
-  {
-    "subName": "Unigrey",
-    "blockId": "12"
-  },
-  {
-    "subName": "University of Johannesburg (RAU)",
-    "blockId": "7"
-  },
-  {
-    "subName": "Upper Houghton",
-    "blockId": "1"
-  },
-  {
-    "subName": "Valeriedene",
-    "blockId": "16"
-  },
-  {
-    "subName": "Vandia Grove",
-    "blockId": "10"
-  },
-  {
-    "subName": "Victoria",
-    "blockId": "4"
-  },
-  {
-    "subName": "Victory Park",
-    "blockId": "2"
-  },
-  {
-    "subName": "Victory Park Ext",
-    "blockId": "16"
-  },
-  {
-    "subName": "View Crest",
-    "blockId": "4"
-  },
-  {
-    "subName": "Village Deep",
-    "blockId": "13"
-  },
-  {
-    "subName": "Village Main",
-    "blockId": "13"
-  },
-  {
-    "subName": "Vlakfontein",
-    "blockId": "1"
-  },
-  {
-    "subName": "Vorna Valley",
-    "blockId": "3"
-  },
-  {
-    "subName": "Vrededorp",
-    "blockId": "5"
-  },
-  {
-    "subName": "Vredepark",
-    "blockId": "5"
-  },
-  {
-    "subName": "Waterval Estate",
-    "blockId": "2"
-  },
-  {
-    "subName": "Waterval Estate Ext",
-    "blockId": "16"
-  },
-  {
-    "subName": "Waverley",
-    "blockId": "4"
-  },
-  {
-    "subName": "Weadhurst",
-    "blockId": "10"
-  },
-  {
-    "subName": "Weltevreden Park",
-    "blockId": "11"
-  },
-  {
-    "subName": "Wemmer",
-    "blockId": "12"
-  },
-  {
-    "subName": "West Gate",
-    "blockId": "11"
-  },
-  {
-    "subName": "West Lake",
-    "blockId": "15"
-  },
-  {
-    "subName": "West Park",
-    "blockId": "16"
-  },
-  {
-    "subName": "West Turffontein Ext",
-    "blockId": "12"
-  },
-  {
-    "subName": "West Turffontein",
-    "blockId": "13"
-  },
-  {
-    "subName": "Westbury",
-    "blockId": "14"
-  },
-  {
-    "subName": "Westcliff Ext",
-    "blockId": "2"
-  },
-  {
-    "subName": "Westdene",
-    "blockId": "7"
-  },
-  {
-    "subName": "WestField",
-    "blockId": "4"
-  },
-  {
-    "subName": "Westgate",
-    "blockId": "6"
-  },
-  {
-    "subName": "Westlake View",
-    "blockId": "4"
-  },
-  {
-    "subName": "White Ridge",
-    "blockId": "15"
-  },
-  {
-    "subName": "Whitney Gardens",
-    "blockId": "4"
-  },
-  {
-    "subName": "Wierda Valley",
-    "blockId": "9"
-  },
-  {
-    "subName": "Wilgeheuwel",
-    "blockId": "11"
-  },
-  {
-    "subName": "Willaway",
-    "blockId": "3"
-  },
-  {
-    "subName": "Willowdene",
-    "blockId": "14"
-  },
-  {
-    "subName": "Willowild",
-    "blockId": "2"
-  },
-  {
-    "subName": "WilroPark",
-    "blockId": "11"
-  },
-  {
-    "subName": "Winchester Hills Ext",
-    "blockId": "12"
-  },
-  {
-    "subName": "Winchester Hills",
-    "blockId": "13"
-  },
-  {
-    "subName": "Windsor",
-    "blockId": "16"
-  },
-  {
-    "subName": "Windsorway",
-    "blockId": "10"
-  },
-  {
-    "subName": "Winston Ridge",
-    "blockId": "9"
-  },
-  {
-    "subName": "Witpoortjie",
-    "blockId": "11"
-  },
-  {
-    "subName": "Wits",
-    "blockId": "6"
-  },
-  {
-    "subName": "Wolhuter",
-    "blockId": "13"
-  },
-  {
-    "subName": "Wychwood",
-    "blockId": "12"
-  },
-  {
-    "subName": "Wynberg",
-    "blockId": "9"
-  },
-  {
-    "subName": "Yeoville",
-    "blockId": "4"
-  },
-  {
-    "subName": "Zakariya Park",
-    "blockId": "1"
-  },
-  {
-    "subName": "Zonkizizwe",
-    "blockId": "3"
-  }
+    {
+        "blockId": "5",
+        "subName": "11 Shaft"
+    },
+    {
+        "blockId": "8",
+        "subName": "Abbotsford"
+    },
+    {
+        "blockId": "13",
+        "subName": "Aeroton"
+    },
+    {
+        "blockId": "6",
+        "subName": "Albertskroon"
+    },
+    {
+        "blockId": "3",
+        "subName": "Albertville"
+    },
+    {
+        "blockId": "2",
+        "subName": "Albertville"
+    },
+    {
+        "blockId": "3",
+        "subName": "Albertville Ext"
+    },
+    {
+        "blockId": "9",
+        "subName": "Alexandra Ext"
+    },
+    {
+        "blockId": "9",
+        "subName": "Alexandra Mall"
+    },
+    {
+        "blockId": "14",
+        "subName": "Allandale Ext"
+    },
+    {
+        "blockId": "5",
+        "subName": "Allen Lakes"
+    },
+    {
+        "blockId": "4",
+        "subName": "Allen Lakes"
+    },
+    {
+        "blockId": "4",
+        "subName": "Allen Manor"
+    },
+    {
+        "blockId": "14",
+        "subName": "Allendale"
+    },
+    {
+        "blockId": "11",
+        "subName": "Allensnek"
+    },
+    {
+        "blockId": "11",
+        "subName": "Alsef"
+    },
+    {
+        "blockId": "15",
+        "subName": "Alvida"
+    },
+    {
+        "blockId": "5",
+        "subName": "Amalgam"
+    },
+    {
+        "blockId": "11",
+        "subName": "Amarosa"
+    },
+    {
+        "blockId": "15",
+        "subName": "Armadale"
+    },
+    {
+        "blockId": "5",
+        "subName": "Aspen Hills"
+    },
+    {
+        "blockId": "8",
+        "subName": "Atholl"
+    },
+    {
+        "blockId": "8",
+        "subName": "Atholl Gardens"
+    },
+    {
+        "blockId": "8",
+        "subName": "Athollhurst Ext"
+    },
+    {
+        "blockId": "3",
+        "subName": "Auckland Park (7)"
+    },
+    {
+        "blockId": "3",
+        "subName": "Austin View"
+    },
+    {
+        "blockId": "15",
+        "subName": "Bagleyston"
+    },
+    {
+        "blockId": "16",
+        "subName": "Ballindean AH"
+    },
+    {
+        "blockId": "12",
+        "subName": "Banfield"
+    },
+    {
+        "blockId": "14",
+        "subName": "Baragwanath Academic Hospital"
+    },
+    {
+        "blockId": "4",
+        "subName": "Barrowdale"
+    },
+    {
+        "blockId": "5",
+        "subName": "Bassonia"
+    },
+    {
+        "blockId": "3",
+        "subName": "Belgravia"
+    },
+    {
+        "blockId": "10",
+        "subName": "Bellairspark"
+    },
+    {
+        "blockId": "12",
+        "subName": "Bellavista Estate"
+    },
+    {
+        "blockId": "13",
+        "subName": "Bellevue"
+    },
+    {
+        "blockId": "5",
+        "subName": "Benrose"
+    },
+    {
+        "blockId": "2",
+        "subName": "Berario"
+    },
+    {
+        "blockId": "12",
+        "subName": "Berea (13)"
+    },
+    {
+        "blockId": "12",
+        "subName": "Bergbron"
+    },
+    {
+        "blockId": "2",
+        "subName": "Beverley Gardens"
+    },
+    {
+        "blockId": "14",
+        "subName": "Beverley Gardens"
+    },
+    {
+        "blockId": "10",
+        "subName": "Bezuidenhout Valley"
+    },
+    {
+        "blockId": "8",
+        "subName": "Birdhaven"
+    },
+    {
+        "blockId": "8",
+        "subName": "Birnam"
+    },
+    {
+        "blockId": "2",
+        "subName": "Blackheath"
+    },
+    {
+        "blockId": "15",
+        "subName": "Blairgowrie"
+    },
+    {
+        "blockId": "2",
+        "subName": "Blairgowrie South"
+    },
+    {
+        "blockId": "13",
+        "subName": "Booysens"
+    },
+    {
+        "blockId": "13",
+        "subName": "Booysens Reserve"
+    },
+    {
+        "blockId": "15",
+        "subName": "Bordeaux"
+    },
+    {
+        "blockId": "14",
+        "subName": "Boskruin"
+    },
+    {
+        "blockId": "12",
+        "subName": "Bosmont"
+    },
+    {
+        "blockId": "3",
+        "subName": "Boulders"
+    },
+    {
+        "blockId": "11",
+        "subName": "Boundary Park Ext"
+    },
+    {
+        "blockId": "1",
+        "subName": "Boundry Park"
+    },
+    {
+        "blockId": "1",
+        "subName": "Braam Park"
+    },
+    {
+        "blockId": "6",
+        "subName": "Braamfontein"
+    },
+    {
+        "blockId": "5",
+        "subName": "Braamfontein Werf"
+    },
+    {
+        "blockId": "8",
+        "subName": "Bramely"
+    },
+    {
+        "blockId": "8",
+        "subName": "Bramley Park"
+    },
+    {
+        "blockId": "8",
+        "subName": "Bramley View"
+    },
+    {
+        "blockId": "5",
+        "subName": "Breaunanda"
+    },
+    {
+        "blockId": "6",
+        "subName": "Bree Taxi Rank"
+    },
+    {
+        "blockId": "5",
+        "subName": "Brixton East"
+    },
+    {
+        "blockId": "14",
+        "subName": "Bromhof"
+    },
+    {
+        "blockId": "10",
+        "subName": "Bromhof Ext"
+    },
+    {
+        "blockId": "10",
+        "subName": "Bruma"
+    },
+    {
+        "blockId": "2",
+        "subName": "Bryanston (14)"
+    },
+    {
+        "blockId": "11",
+        "subName": "Bryanston"
+    },
+    {
+        "blockId": "11",
+        "subName": "Bryanston North_East"
+    },
+    {
+        "blockId": "11",
+        "subName": "Bush Hill"
+    },
+    {
+        "blockId": "14",
+        "subName": "Bush Hill Estate"
+    },
+    {
+        "blockId": "7",
+        "subName": "Bushkoppies"
+    },
+    {
+        "blockId": "5",
+        "subName": "Carenvale"
+    },
+    {
+        "blockId": "13",
+        "subName": "Carlton Centre"
+    },
+    {
+        "blockId": "8",
+        "subName": "Casey Park"
+    },
+    {
+        "blockId": "8",
+        "subName": "Cheltondale Ext"
+    },
+    {
+        "blockId": "15",
+        "subName": "Cheltondale"
+    },
+    {
+        "blockId": "8",
+        "subName": "Chislehurston"
+    },
+    {
+        "blockId": "13",
+        "subName": "Chrisville"
+    },
+    {
+        "blockId": "13",
+        "subName": "City And Suburban"
+    },
+    {
+        "blockId": "12",
+        "subName": "City Deep"
+    },
+    {
+        "blockId": "12",
+        "subName": "City Deep Ext"
+    },
+    {
+        "blockId": "6",
+        "subName": "City West"
+    },
+    {
+        "blockId": "1",
+        "subName": "Civic Centre"
+    },
+    {
+        "blockId": "1",
+        "subName": "Civic Theater"
+    },
+    {
+        "blockId": "3",
+        "subName": "Claremont"
+    },
+    {
+        "blockId": "11",
+        "subName": "Clearwater"
+    },
+    {
+        "blockId": "5",
+        "subName": "Cleveland"
+    },
+    {
+        "blockId": "14",
+        "subName": "Commercia"
+    },
+    {
+        "blockId": "15",
+        "subName": "Comptonville"
+    },
+    {
+        "blockId": "11",
+        "subName": "Constantia Kloof"
+    },
+    {
+        "blockId": "1",
+        "subName": "Constitutional Court"
+    },
+    {
+        "blockId": "12",
+        "subName": "Container Depot"
+    },
+    {
+        "blockId": "8",
+        "subName": "Corlett Gardens"
+    },
+    {
+        "blockId": "3",
+        "subName": "Coronation Hospital"
+    },
+    {
+        "blockId": "3",
+        "subName": "Coronationville"
+    },
+    {
+        "blockId": "5",
+        "subName": "Cottesloe"
+    },
+    {
+        "blockId": "16",
+        "subName": "Country View"
+    },
+    {
+        "blockId": "2",
+        "subName": "Craighall"
+    },
+    {
+        "blockId": "2",
+        "subName": "Craighall Park"
+    },
+    {
+        "blockId": "9",
+        "subName": "Craighall Park East"
+    },
+    {
+        "blockId": "16",
+        "subName": "Cresta"
+    },
+    {
+        "blockId": "12",
+        "subName": "Croesus"
+    },
+    {
+        "blockId": "3",
+        "subName": "Crosby"
+    },
+    {
+        "blockId": "5",
+        "subName": "Crosby Ext"
+    },
+    {
+        "blockId": "15",
+        "subName": "Crown Ext "
+    },
+    {
+        "blockId": "5",
+        "subName": "Crown City"
+    },
+    {
+        "blockId": "15",
+        "subName": "Crown Gardens"
+    },
+    {
+        "blockId": "15",
+        "subName": "Crown Mines"
+    },
+    {
+        "blockId": "5",
+        "subName": "Crown Ext "
+    },
+    {
+        "blockId": "2",
+        "subName": "Crowthorne AH"
+    },
+    {
+        "blockId": "8",
+        "subName": "Crystal Gardens"
+    },
+    {
+        "blockId": "10",
+        "subName": "Cyrildene"
+    },
+    {
+        "blockId": "2",
+        "subName": "Daniel Brink Park Ext"
+    },
+    {
+        "blockId": "14",
+        "subName": "Daniel Brink Park"
+    },
+    {
+        "blockId": "16",
+        "subName": "Darrenwood"
+    },
+    {
+        "blockId": "16",
+        "subName": "Davidsonville"
+    },
+    {
+        "blockId": "10",
+        "subName": "De Wetshof"
+    },
+    {
+        "blockId": "12",
+        "subName": "Delarey"
+    },
+    {
+        "blockId": "5",
+        "subName": "Denver"
+    },
+    {
+        "blockId": "7",
+        "subName": "Devland"
+    },
+    {
+        "blockId": "12",
+        "subName": "Devon Valley"
+    },
+    {
+        "blockId": "4",
+        "subName": "Discovery"
+    },
+    {
+        "blockId": "10",
+        "subName": "Doornfontein"
+    },
+    {
+        "blockId": "11",
+        "subName": "Douglasdale"
+    },
+    {
+        "blockId": "2",
+        "subName": "Driefontein"
+    },
+    {
+        "blockId": "12",
+        "subName": "Droste Park"
+    },
+    {
+        "blockId": "10",
+        "subName": "Droste Park"
+    },
+    {
+        "blockId": "1",
+        "subName": "Dunkeld West"
+    },
+    {
+        "blockId": "8",
+        "subName": "Dunkeld"
+    },
+    {
+        "blockId": "1",
+        "subName": "Dunkeld West Ext 2"
+    },
+    {
+        "blockId": "8",
+        "subName": "Dunsevern"
+    },
+    {
+        "blockId": "11",
+        "subName": "Eagle Canyon"
+    },
+    {
+        "blockId": "15",
+        "subName": "Eagles Nest"
+    },
+    {
+        "blockId": "9",
+        "subName": "East Bank"
+    },
+    {
+        "blockId": "16",
+        "subName": "East Town"
+    },
+    {
+        "blockId": "12",
+        "subName": "Eastcliff"
+    },
+    {
+        "blockId": "6",
+        "subName": "Edgardale"
+    },
+    {
+        "blockId": "12",
+        "subName": "Elands Park"
+    },
+    {
+        "blockId": "12",
+        "subName": "ELCEDES"
+    },
+    {
+        "blockId": "7",
+        "subName": "Eldorado Estate"
+    },
+    {
+        "blockId": "7",
+        "subName": "Eldorado Park"
+    },
+    {
+        "blockId": "12",
+        "subName": "Electron"
+    },
+    {
+        "blockId": "12",
+        "subName": "Elladoone"
+    },
+    {
+        "blockId": "10",
+        "subName": "Ellis Park"
+    },
+    {
+        "blockId": "8",
+        "subName": "Elton Hill"
+    },
+    {
+        "blockId": "2",
+        "subName": "Emmarentia"
+    },
+    {
+        "blockId": "15",
+        "subName": "Ennerdale"
+    },
+    {
+        "blockId": "16",
+        "subName": "Erand Gardens"
+    },
+    {
+        "blockId": "13",
+        "subName": "Evans Park"
+    },
+    {
+        "blockId": "2",
+        "subName": "Fairlands"
+    },
+    {
+        "blockId": "8",
+        "subName": "Fairmount"
+    },
+    {
+        "blockId": "8",
+        "subName": "Fairvale"
+    },
+    {
+        "blockId": "10",
+        "subName": "Fairview"
+    },
+    {
+        "blockId": "8",
+        "subName": "Fairways"
+    },
+    {
+        "blockId": "15",
+        "subName": "Fairwood"
+    },
+    {
+        "blockId": "9",
+        "subName": "Far East Bank"
+    },
+    {
+        "blockId": "8",
+        "subName": "Far East Bank"
+    },
+    {
+        "blockId": "15",
+        "subName": "Fellside"
+    },
+    {
+        "blockId": "14",
+        "subName": "Ferndale"
+    },
+    {
+        "blockId": "10",
+        "subName": "Ferndale Ext.15"
+    },
+    {
+        "blockId": "5",
+        "subName": "Ferreirasdorp"
+    },
+    {
+        "blockId": "11",
+        "subName": "Finetown"
+    },
+    {
+        "blockId": "4",
+        "subName": "Fleurhof Ext"
+    },
+    {
+        "blockId": "16",
+        "subName": "Fleurhof"
+    },
+    {
+        "blockId": "12",
+        "subName": "Fleurhof"
+    },
+    {
+        "blockId": "12",
+        "subName": "Florida"
+    },
+    {
+        "blockId": "4",
+        "subName": "Florida"
+    },
+    {
+        "blockId": "14",
+        "subName": "Fontainbleau"
+    },
+    {
+        "blockId": "15",
+        "subName": "FORBESDALE"
+    },
+    {
+        "blockId": "6",
+        "subName": "Fordsburg"
+    },
+    {
+        "blockId": "2",
+        "subName": "Forest Town"
+    },
+    {
+        "blockId": "6",
+        "subName": "Founders Hill"
+    },
+    {
+        "blockId": "13",
+        "subName": "Frampton"
+    },
+    {
+        "blockId": "12",
+        "subName": "Frampton East"
+    },
+    {
+        "blockId": "2",
+        "subName": "Franklin Roosevelt Park"
+    },
+    {
+        "blockId": "7",
+        "subName": "Freedom Park"
+    },
+    {
+        "blockId": "12",
+        "subName": "Fresh Produce Market"
+    },
+    {
+        "blockId": "3",
+        "subName": "Gallagher Estate"
+    },
+    {
+        "blockId": "5",
+        "subName": "Garden City"
+    },
+    {
+        "blockId": "8",
+        "subName": "Geluksdal"
+    },
+    {
+        "blockId": "4",
+        "subName": "Geluksdal"
+    },
+    {
+        "blockId": "13",
+        "subName": "Gillview"
+    },
+    {
+        "blockId": "16",
+        "subName": "Glen Acres EXT 15"
+    },
+    {
+        "blockId": "3",
+        "subName": "Glen Austin A H"
+    },
+    {
+        "blockId": "12",
+        "subName": "Glen Lea"
+    },
+    {
+        "blockId": "1",
+        "subName": "Glenadrienne"
+    },
+    {
+        "blockId": "13",
+        "subName": "Glenanda North"
+    },
+    {
+        "blockId": "5",
+        "subName": "Glenanda South"
+    },
+    {
+        "blockId": "13",
+        "subName": "Glenanda West "
+    },
+    {
+        "blockId": "12",
+        "subName": "GLENEAGLES"
+    },
+    {
+        "blockId": "12",
+        "subName": "Glenesk"
+    },
+    {
+        "blockId": "8",
+        "subName": "Glenhazel"
+    },
+    {
+        "blockId": "8",
+        "subName": "Glenkay"
+    },
+    {
+        "blockId": "8",
+        "subName": "Glensan"
+    },
+    {
+        "blockId": "5",
+        "subName": "Glenvista"
+    },
+    {
+        "blockId": "10",
+        "subName": "Golden Harvest A.H"
+    },
+    {
+        "blockId": "7",
+        "subName": "Goldev"
+    },
+    {
+        "blockId": "13",
+        "subName": "Goldreef City"
+    },
+    {
+        "blockId": "7",
+        "subName": "Goudkoppies"
+    },
+    {
+        "blockId": "12",
+        "subName": "Granville"
+    },
+    {
+        "blockId": "8",
+        "subName": "Grassmere"
+    },
+    {
+        "blockId": "2",
+        "subName": "Greenside"
+    },
+    {
+        "blockId": "6",
+        "subName": "Greenstone Hill"
+    },
+    {
+        "blockId": "8",
+        "subName": "Gresswold"
+    },
+    {
+        "blockId": "2",
+        "subName": "Greymont"
+    },
+    {
+        "blockId": "16",
+        "subName": "Grobler Park"
+    },
+    {
+        "blockId": "14",
+        "subName": "Grosvenor"
+    },
+    {
+        "blockId": "12",
+        "subName": "Haddon"
+    },
+    {
+        "blockId": "15",
+        "subName": "Haggie Steel Wire Rope"
+    },
+    {
+        "blockId": "10",
+        "subName": "HalfwayHouse"
+    },
+    {
+        "blockId": "11",
+        "subName": "Harveston"
+    },
+    {
+        "blockId": "15",
+        "subName": "Hawkins Estate"
+    },
+    {
+        "blockId": "8",
+        "subName": "Hawkins Estates"
+    },
+    {
+        "blockId": "5",
+        "subName": "Helderkruin"
+    },
+    {
+        "blockId": "3",
+        "subName": "Helen Joseph Hospital"
+    },
+    {
+        "blockId": "3",
+        "subName": "Helen Joseph Hospital (JG Strydom Hospital)"
+    },
+    {
+        "blockId": "5",
+        "subName": "Heriotdale"
+    },
+    {
+        "blockId": "8",
+        "subName": "Highlands North"
+    },
+    {
+        "blockId": "1",
+        "subName": "Hillbrow"
+    },
+    {
+        "blockId": "5",
+        "subName": "Homestead Park"
+    },
+    {
+        "blockId": "5",
+        "subName": "Honey Hills"
+    },
+    {
+        "blockId": "11",
+        "subName": "Honeydew"
+    },
+    {
+        "blockId": "15",
+        "subName": "Hopefield"
+    },
+    {
+        "blockId": "5",
+        "subName": "Horizon"
+    },
+    {
+        "blockId": "5",
+        "subName": "Horizon Park"
+    },
+    {
+        "blockId": "5",
+        "subName": "Horizon View"
+    },
+    {
+        "blockId": "4",
+        "subName": "Hospital Hill 1"
+    },
+    {
+        "blockId": "15",
+        "subName": "Houghton"
+    },
+    {
+        "blockId": "8",
+        "subName": "Houghton Estate"
+    },
+    {
+        "blockId": "8",
+        "subName": "Houghton South"
+    },
+    {
+        "blockId": "13",
+        "subName": "Houghton West"
+    },
+    {
+        "blockId": "10",
+        "subName": "Hunters Hill A.H"
+    },
+    {
+        "blockId": "2",
+        "subName": "Hurlingham"
+    },
+    {
+        "blockId": "2",
+        "subName": "Hurlingham Manor"
+    },
+    {
+        "blockId": "3",
+        "subName": "Hurst Hill"
+    },
+    {
+        "blockId": "1",
+        "subName": "Hyde Park Ext"
+    },
+    {
+        "blockId": "2",
+        "subName": "Hyde Park"
+    },
+    {
+        "blockId": "9",
+        "subName": "Hyde Park West"
+    },
+    {
+        "blockId": "8",
+        "subName": "Hyde Park East"
+    },
+    {
+        "blockId": "2",
+        "subName": "Hyde Park Ext"
+    },
+    {
+        "blockId": "10",
+        "subName": "Hyperion"
+    },
+    {
+        "blockId": "8",
+        "subName": "Illovo"
+    },
+    {
+        "blockId": "8",
+        "subName": "Inanda"
+    },
+    {
+        "blockId": "12",
+        "subName": "Industria"
+    },
+    {
+        "blockId": "4",
+        "subName": "Industria North"
+    },
+    {
+        "blockId": "12",
+        "subName": "Industria West"
+    },
+    {
+        "blockId": "9",
+        "subName": "Jacanlee"
+    },
+    {
+        "blockId": "5",
+        "subName": "Jan Hofmeyer"
+    },
+    {
+        "blockId": "5",
+        "subName": "Jeppe East"
+    },
+    {
+        "blockId": "5",
+        "subName": "Jeppe West"
+    },
+    {
+        "blockId": "10",
+        "subName": "Jeppe West"
+    },
+    {
+        "blockId": "13",
+        "subName": "Johannesburg CBD"
+    },
+    {
+        "blockId": "10",
+        "subName": "Johannesburg CBD"
+    },
+    {
+        "blockId": "15",
+        "subName": "Johannesburg Expo Centre"
+    },
+    {
+        "blockId": "10",
+        "subName": "Johannesburg High Court"
+    },
+    {
+        "blockId": "10",
+        "subName": "Johannesburg-North"
+    },
+    {
+        "blockId": "10",
+        "subName": "Jukskei Park"
+    },
+    {
+        "blockId": "10",
+        "subName": "Jukskei Park Ext"
+    },
+    {
+        "blockId": "14",
+        "subName": "Jukskei View"
+    },
+    {
+        "blockId": "14",
+        "subName": "Kaalfontein"
+    },
+    {
+        "blockId": "12",
+        "subName": "Kazerne"
+    },
+    {
+        "blockId": "14",
+        "subName": "Kelland"
+    },
+    {
+        "blockId": "11",
+        "subName": "Kelly Ridge"
+    },
+    {
+        "blockId": "12",
+        "subName": "Kenilworth"
+    },
+    {
+        "blockId": "5",
+        "subName": "Kensington"
+    },
+    {
+        "blockId": "10",
+        "subName": "Kensington"
+    },
+    {
+        "blockId": "2",
+        "subName": "Kensington B"
+    },
+    {
+        "blockId": "5",
+        "subName": "Kensington Ext"
+    },
+    {
+        "blockId": "8",
+        "subName": "Kent Park"
+    },
+    {
+        "blockId": "8",
+        "subName": "Kent View"
+    },
+    {
+        "blockId": "8",
+        "subName": "Kew"
+    },
+    {
+        "blockId": "8",
+        "subName": "Kiasha Park"
+    },
+    {
+        "blockId": "11",
+        "subName": "Kiasha Park"
+    },
+    {
+        "blockId": "11",
+        "subName": "Kiasha Park Ext"
+    },
+    {
+        "blockId": "4",
+        "subName": "Kibler Heights"
+    },
+    {
+        "blockId": "15",
+        "subName": "Kibler Park"
+    },
+    {
+        "blockId": "1",
+        "subName": "Killarney"
+    },
+    {
+        "blockId": "11",
+        "subName": "Kimbult"
+    },
+    {
+        "blockId": "10",
+        "subName": "Klipfontein View"
+    },
+    {
+        "blockId": "12",
+        "subName": "Klipriviersberg"
+    },
+    {
+        "blockId": "7",
+        "subName": "Klipriviersoog"
+    },
+    {
+        "blockId": "7",
+        "subName": "Klipriviersoog Estate"
+    },
+    {
+        "blockId": "7",
+        "subName": "Klipspruit West"
+    },
+    {
+        "blockId": "7",
+        "subName": "Kliptown"
+    },
+    {
+        "blockId": "14",
+        "subName": "Kliptown RDP"
+    },
+    {
+        "blockId": "5",
+        "subName": "Kloofendal"
+    },
+    {
+        "blockId": "1",
+        "subName": "Kya Sands Ext"
+    },
+    {
+        "blockId": "13",
+        "subName": "Kyalami Hills"
+    },
+    {
+        "blockId": "13",
+        "subName": "Kyalami Park"
+    },
+    {
+        "blockId": "12",
+        "subName": "La Rochelle"
+    },
+    {
+        "blockId": "12",
+        "subName": "Langlaagte"
+    },
+    {
+        "blockId": "5",
+        "subName": "Langlaagte"
+    },
+    {
+        "blockId": "11",
+        "subName": "Laser Park"
+    },
+    {
+        "blockId": "11",
+        "subName": "Lawley"
+    },
+    {
+        "blockId": "14",
+        "subName": "Lehae"
+    },
+    {
+        "blockId": "15",
+        "subName": "Lenaron AH"
+    },
+    {
+        "blockId": "14",
+        "subName": "Lenasia "
+    },
+    {
+        "blockId": "7",
+        "subName": "Lenasia Ext"
+    },
+    {
+        "blockId": "4",
+        "subName": "Lenasia Ext 24"
+    },
+    {
+        "blockId": "4",
+        "subName": "Lenasia South"
+    },
+    {
+        "blockId": "5",
+        "subName": "Lewisham"
+    },
+    {
+        "blockId": "5",
+        "subName": "Liefde n Vrede"
+    },
+    {
+        "blockId": "12",
+        "subName": "Lindberg Park"
+    },
+    {
+        "blockId": "2",
+        "subName": "Linden"
+    },
+    {
+        "blockId": "9",
+        "subName": "Linden Ext"
+    },
+    {
+        "blockId": "16",
+        "subName": "Lindhaven"
+    },
+    {
+        "blockId": "15",
+        "subName": "Linksfield"
+    },
+    {
+        "blockId": "13",
+        "subName": "Linksfield Ridge"
+    },
+    {
+        "blockId": "12",
+        "subName": "Linmeyer"
+    },
+    {
+        "blockId": "10",
+        "subName": "Liquid Telecommunications"
+    },
+    {
+        "blockId": "11",
+        "subName": "LittleFalls"
+    },
+    {
+        "blockId": "8",
+        "subName": "Lombardy East"
+    },
+    {
+        "blockId": "8",
+        "subName": "Lombardy East Ext"
+    },
+    {
+        "blockId": "8",
+        "subName": "Lombardy West"
+    },
+    {
+        "blockId": "12",
+        "subName": "Longdale"
+    },
+    {
+        "blockId": "6",
+        "subName": "Longlake"
+    },
+    {
+        "blockId": "6",
+        "subName": "Longlake Ext"
+    },
+    {
+        "blockId": "6",
+        "subName": "Longmeadow"
+    },
+    {
+        "blockId": "6",
+        "subName": "Longmeadow Business Estate"
+    },
+    {
+        "blockId": "10",
+        "subName": "Lorentzville"
+    },
+    {
+        "blockId": "8",
+        "subName": "Lyndhurst"
+    },
+    {
+        "blockId": "14",
+        "subName": "Malanshof"
+    },
+    {
+        "blockId": "9",
+        "subName": "Malrboro"
+    },
+    {
+        "blockId": "10",
+        "subName": "Malvern"
+    },
+    {
+        "blockId": "5",
+        "subName": "Malvern"
+    },
+    {
+        "blockId": "16",
+        "subName": "Manufacta"
+    },
+    {
+        "blockId": "4",
+        "subName": "Maraisburg"
+    },
+    {
+        "blockId": "13",
+        "subName": "Marshalls Town"
+    },
+    {
+        "blockId": "6",
+        "subName": "Marshalls Town"
+    },
+    {
+        "blockId": "3",
+        "subName": "Martindale"
+    },
+    {
+        "blockId": "15",
+        "subName": "Maryvale"
+    },
+    {
+        "blockId": "16",
+        "subName": "Matholesville"
+    },
+    {
+        "blockId": "5",
+        "subName": "Mayfair"
+    },
+    {
+        "blockId": "5",
+        "subName": "Mayfield Park"
+    },
+    {
+        "blockId": "14",
+        "subName": "Mayibuye\u00a0Park"
+    },
+    {
+        "blockId": "10",
+        "subName": "Meadowhurst"
+    },
+    {
+        "blockId": "12",
+        "subName": "Mechanical Workshop"
+    },
+    {
+        "blockId": "8",
+        "subName": "Melrose"
+    },
+    {
+        "blockId": "8",
+        "subName": "Melrose Arch"
+    },
+    {
+        "blockId": "8",
+        "subName": "Melrose Estate"
+    },
+    {
+        "blockId": "15",
+        "subName": "Melrose Estate"
+    },
+    {
+        "blockId": "15",
+        "subName": "Melrose Ext 1"
+    },
+    {
+        "blockId": "15",
+        "subName": "Melrose"
+    },
+    {
+        "blockId": "8",
+        "subName": "Melrose Ext 2"
+    },
+    {
+        "blockId": "8",
+        "subName": "Melrose North"
+    },
+    {
+        "blockId": "3",
+        "subName": "Melville Ext"
+    },
+    {
+        "blockId": "4",
+        "subName": "Meredale"
+    },
+    {
+        "blockId": "5",
+        "subName": "Micor Industrial"
+    },
+    {
+        "blockId": "8",
+        "subName": "Migson Manor"
+    },
+    {
+        "blockId": "11",
+        "subName": "Migson Manor"
+    },
+    {
+        "blockId": "8",
+        "subName": "Migson Triangle"
+    },
+    {
+        "blockId": "11",
+        "subName": "Migson Triangle"
+    },
+    {
+        "blockId": "11",
+        "subName": "Mill Hill"
+    },
+    {
+        "blockId": "10",
+        "subName": "Mill Hill Ext"
+    },
+    {
+        "blockId": "5",
+        "subName": "Milpark"
+    },
+    {
+        "blockId": "15",
+        "subName": "Misgund"
+    },
+    {
+        "blockId": "6",
+        "subName": "Modderfontein"
+    },
+    {
+        "blockId": "12",
+        "subName": "Moffatview"
+    },
+    {
+        "blockId": "4",
+        "subName": "Mondeor"
+    },
+    {
+        "blockId": "13",
+        "subName": "Mondeor North"
+    },
+    {
+        "blockId": "3",
+        "subName": "Montclare"
+    },
+    {
+        "blockId": "2",
+        "subName": "Montgomery Park"
+    },
+    {
+        "blockId": "16",
+        "subName": "Montroux"
+    },
+    {
+        "blockId": "8",
+        "subName": "Moodey Hill Ext"
+    },
+    {
+        "blockId": "14",
+        "subName": "Moret"
+    },
+    {
+        "blockId": "15",
+        "subName": "Mountainview"
+    },
+    {
+        "blockId": "8",
+        "subName": "Mountainview"
+    },
+    {
+        "blockId": "5",
+        "subName": "MTN Campus"
+    },
+    {
+        "blockId": "5",
+        "subName": "Mulbarton"
+    },
+    {
+        "blockId": "2",
+        "subName": "Multi Choice"
+    },
+    {
+        "blockId": "7",
+        "subName": "Nancefield"
+    },
+    {
+        "blockId": "15",
+        "subName": "Naturena"
+    },
+    {
+        "blockId": "4",
+        "subName": "New Brighton"
+    },
+    {
+        "blockId": "16",
+        "subName": "New Canada"
+    },
+    {
+        "blockId": "10",
+        "subName": "New Centre"
+    },
+    {
+        "blockId": "10",
+        "subName": "New Doornfontein"
+    },
+    {
+        "blockId": "3",
+        "subName": "Newclare"
+    },
+    {
+        "blockId": "3",
+        "subName": "Newlands"
+    },
+    {
+        "blockId": "6",
+        "subName": "Newtown"
+    },
+    {
+        "blockId": "16",
+        "subName": "Noordgesig"
+    },
+    {
+        "blockId": "10",
+        "subName": "Noordhang Ext"
+    },
+    {
+        "blockId": "16",
+        "subName": "Noordwyk"
+    },
+    {
+        "blockId": "10",
+        "subName": "North Riding A.H"
+    },
+    {
+        "blockId": "1",
+        "subName": "NORTH RIDING ESTATES"
+    },
+    {
+        "blockId": "10",
+        "subName": "North Riding "
+    },
+    {
+        "blockId": "2",
+        "subName": "Northcliff Ext"
+    },
+    {
+        "blockId": "3",
+        "subName": "Northcliff"
+    },
+    {
+        "blockId": "12",
+        "subName": "Northcliff"
+    },
+    {
+        "blockId": "16",
+        "subName": "Northcliff Ext 7-9"
+    },
+    {
+        "blockId": "1",
+        "subName": "NORTHGATE"
+    },
+    {
+        "blockId": "1",
+        "subName": "Northriding"
+    },
+    {
+        "blockId": "1",
+        "subName": "North Riding Ext"
+    },
+    {
+        "blockId": "1",
+        "subName": "Northumberland"
+    },
+    {
+        "blockId": "1",
+        "subName": "Northwold"
+    },
+    {
+        "blockId": "1",
+        "subName": "Northwold Gardens"
+    },
+    {
+        "blockId": "1",
+        "subName": "Northworld Ext"
+    },
+    {
+        "blockId": "8",
+        "subName": "Norwood"
+    },
+    {
+        "blockId": "12",
+        "subName": "Oakdene"
+    },
+    {
+        "blockId": "15",
+        "subName": "Oaklands"
+    },
+    {
+        "blockId": "8",
+        "subName": "Oaklands"
+    },
+    {
+        "blockId": "10",
+        "subName": "Observatory"
+    },
+    {
+        "blockId": "15",
+        "subName": "Oerder Park"
+    },
+    {
+        "blockId": "7",
+        "subName": "Oliefantsvlei"
+    },
+    {
+        "blockId": "10",
+        "subName": "Olivedale"
+    },
+    {
+        "blockId": "5",
+        "subName": "Ontdekkers Park"
+    },
+    {
+        "blockId": "12",
+        "subName": "Oospoort Ext 1"
+    },
+    {
+        "blockId": "13",
+        "subName": "Ophirton"
+    },
+    {
+        "blockId": "15",
+        "subName": "Orange Grove"
+    },
+    {
+        "blockId": "15",
+        "subName": "Orchards"
+    },
+    {
+        "blockId": "13",
+        "subName": "Ormonde"
+    },
+    {
+        "blockId": "12",
+        "subName": "Paarlshoop"
+    },
+    {
+        "blockId": "5",
+        "subName": "Pageview"
+    },
+    {
+        "blockId": "11",
+        "subName": "Panorama"
+    },
+    {
+        "blockId": "10",
+        "subName": "Park Central"
+    },
+    {
+        "blockId": "2",
+        "subName": "Parkhurst"
+    },
+    {
+        "blockId": "14",
+        "subName": "Parklane Clinic"
+    },
+    {
+        "blockId": "4",
+        "subName": "PARKMORE EXT.1"
+    },
+    {
+        "blockId": "14",
+        "subName": "Parktown"
+    },
+    {
+        "blockId": "2",
+        "subName": "Parktown North"
+    },
+    {
+        "blockId": "6",
+        "subName": "Parktown West"
+    },
+    {
+        "blockId": "2",
+        "subName": "Parkview"
+    },
+    {
+        "blockId": "14",
+        "subName": "Parkwood"
+    },
+    {
+        "blockId": "14",
+        "subName": "Parkwood East"
+    },
+    {
+        "blockId": "2",
+        "subName": "Parkwood West"
+    },
+    {
+        "blockId": "15",
+        "subName": "Patlynn"
+    },
+    {
+        "blockId": "4",
+        "subName": "Patlynn AH"
+    },
+    {
+        "blockId": "16",
+        "subName": "Pennyville"
+    },
+    {
+        "blockId": "8",
+        "subName": "Percelia Estate"
+    },
+    {
+        "blockId": "10",
+        "subName": "Petervale"
+    },
+    {
+        "blockId": "14",
+        "subName": "Phomolong"
+    },
+    {
+        "blockId": "2",
+        "subName": "Pine Park"
+    },
+    {
+        "blockId": "12",
+        "subName": "Pioneer"
+    },
+    {
+        "blockId": "11",
+        "subName": "Poortview"
+    },
+    {
+        "blockId": "15",
+        "subName": "PPC Cement Jupiter"
+    },
+    {
+        "blockId": "3",
+        "subName": "President Park"
+    },
+    {
+        "blockId": "14",
+        "subName": "President Ridge"
+    },
+    {
+        "blockId": "16",
+        "subName": "Princess"
+    },
+    {
+        "blockId": "12",
+        "subName": "Production Park"
+    },
+    {
+        "blockId": "12",
+        "subName": "Prolecon"
+    },
+    {
+        "blockId": "12",
+        "subName": "Quellerina"
+    },
+    {
+        "blockId": "14",
+        "subName": "Rabie Ridge"
+    },
+    {
+        "blockId": "7",
+        "subName": "Race Course"
+    },
+    {
+        "blockId": "11",
+        "subName": "Radiokop"
+    },
+    {
+        "blockId": "8",
+        "subName": "Raedene"
+    },
+    {
+        "blockId": "14",
+        "subName": "RandPark Ridge"
+    },
+    {
+        "blockId": "16",
+        "subName": "RandjiesPark"
+    },
+    {
+        "blockId": "14",
+        "subName": "RandPark"
+    },
+    {
+        "blockId": "16",
+        "subName": "Randpark"
+    },
+    {
+        "blockId": "14",
+        "subName": "RandPark Ridge Ext"
+    },
+    {
+        "blockId": "16",
+        "subName": "Randpark Ridge"
+    },
+    {
+        "blockId": "8",
+        "subName": "Raumarais Park"
+    },
+    {
+        "blockId": "16",
+        "subName": "Reefhaven"
+    },
+    {
+        "blockId": "12",
+        "subName": "Regency"
+    },
+    {
+        "blockId": "12",
+        "subName": "Regents Park"
+    },
+    {
+        "blockId": "8",
+        "subName": "Rembrandt Park"
+    },
+    {
+        "blockId": "8",
+        "subName": "Rembrandt Ridge"
+    },
+    {
+        "blockId": "2",
+        "subName": "Residale"
+    },
+    {
+        "blockId": "12",
+        "subName": "Reuven"
+    },
+    {
+        "blockId": "12",
+        "subName": "Rewlatch"
+    },
+    {
+        "blockId": "10",
+        "subName": "Reynolds View"
+    },
+    {
+        "blockId": "12",
+        "subName": "Ridgeway"
+    },
+    {
+        "blockId": "13",
+        "subName": "Ridgeway North"
+    },
+    {
+        "blockId": "12",
+        "subName": "Ridgeway South"
+    },
+    {
+        "blockId": "7",
+        "subName": "Rietfontein AH"
+    },
+    {
+        "blockId": "14",
+        "subName": "Ris Park"
+    },
+    {
+        "blockId": "15",
+        "subName": "Rispark"
+    },
+    {
+        "blockId": "5",
+        "subName": "Rispark AH"
+    },
+    {
+        "blockId": "3",
+        "subName": "Rivasdale"
+    },
+    {
+        "blockId": "8",
+        "subName": "River Park"
+    },
+    {
+        "blockId": "12",
+        "subName": "Riverlea"
+    },
+    {
+        "blockId": "8",
+        "subName": "Riviera"
+    },
+    {
+        "blockId": "13",
+        "subName": "Robertsham"
+    },
+    {
+        "blockId": "4",
+        "subName": "Robertville"
+    },
+    {
+        "blockId": "16",
+        "subName": "Robin Acres"
+    },
+    {
+        "blockId": "16",
+        "subName": "Robindale"
+    },
+    {
+        "blockId": "5",
+        "subName": "Roodekrans"
+    },
+    {
+        "blockId": "16",
+        "subName": "Roodepoort CBD"
+    },
+    {
+        "blockId": "5",
+        "subName": "Roodepoort"
+    },
+    {
+        "blockId": "12",
+        "subName": "Roseacre"
+    },
+    {
+        "blockId": "1",
+        "subName": "Rosebank"
+    },
+    {
+        "blockId": "8",
+        "subName": "Rosebank East"
+    },
+    {
+        "blockId": "1",
+        "subName": "Rosebank Mall"
+    },
+    {
+        "blockId": "12",
+        "subName": "Rosettenville"
+    },
+    {
+        "blockId": "12",
+        "subName": "Rosherville"
+    },
+    {
+        "blockId": "5",
+        "subName": "Rossmore Ext"
+    },
+    {
+        "blockId": "12",
+        "subName": "Rossmore"
+    },
+    {
+        "blockId": "2",
+        "subName": "Rothesay Ave"
+    },
+    {
+        "blockId": "15",
+        "subName": "Rouxville"
+    },
+    {
+        "blockId": "11",
+        "subName": "Ruimsig"
+    },
+    {
+        "blockId": "14",
+        "subName": "Ruiterhof"
+    },
+    {
+        "blockId": "15",
+        "subName": "RWB Eikenhof"
+    },
+    {
+        "blockId": "5",
+        "subName": "SABC"
+    },
+    {
+        "blockId": "16",
+        "subName": "Sagewood ext.14"
+    },
+    {
+        "blockId": "10",
+        "subName": "Salisbury Claims"
+    },
+    {
+        "blockId": "8",
+        "subName": "SANDHURST Ext"
+    },
+    {
+        "blockId": "4",
+        "subName": "SANDHURST"
+    },
+    {
+        "blockId": "15",
+        "subName": "Sandringham"
+    },
+    {
+        "blockId": "1",
+        "subName": "SAPS Hillbrow"
+    },
+    {
+        "blockId": "8",
+        "subName": "Savoy"
+    },
+    {
+        "blockId": "1",
+        "subName": "Saxonwold East"
+    },
+    {
+        "blockId": "2",
+        "subName": "Saxonwold West"
+    },
+    {
+        "blockId": "10",
+        "subName": "Selby"
+    },
+    {
+        "blockId": "4",
+        "subName": "Selwyn"
+    },
+    {
+        "blockId": "5",
+        "subName": "Selwyn"
+    },
+    {
+        "blockId": "9",
+        "subName": "Setswetla"
+    },
+    {
+        "blockId": "1",
+        "subName": "Sharonlea"
+    },
+    {
+        "blockId": "16",
+        "subName": "Sharonlea Ext"
+    },
+    {
+        "blockId": "10",
+        "subName": "Siemert"
+    },
+    {
+        "blockId": "8",
+        "subName": "Silvamont"
+    },
+    {
+        "blockId": "5",
+        "subName": "Silverfields"
+    },
+    {
+        "blockId": "7",
+        "subName": "Slovo Park"
+    },
+    {
+        "blockId": "15",
+        "subName": "Soccer City"
+    },
+    {
+        "blockId": "10",
+        "subName": "SonneGlans Ext"
+    },
+    {
+        "blockId": "14",
+        "subName": "SonneGlans"
+    },
+    {
+        "blockId": "14",
+        "subName": "SonneGlans Ext"
+    },
+    {
+        "blockId": "3",
+        "subName": "Sophiatown"
+    },
+    {
+        "blockId": "4",
+        "subName": "South Gate"
+    },
+    {
+        "blockId": "12",
+        "subName": "South Hills"
+    },
+    {
+        "blockId": "5",
+        "subName": "South Kensington"
+    },
+    {
+        "blockId": "12",
+        "subName": "Southcrest"
+    },
+    {
+        "blockId": "13",
+        "subName": "Southdale"
+    },
+    {
+        "blockId": "15",
+        "subName": "Southfork"
+    },
+    {
+        "blockId": "14",
+        "subName": "Soweto Military Base"
+    },
+    {
+        "blockId": "12",
+        "subName": "Spes Bona"
+    },
+    {
+        "blockId": "12",
+        "subName": "Springfield"
+    },
+    {
+        "blockId": "12",
+        "subName": "Stafford"
+    },
+    {
+        "blockId": "12",
+        "subName": "Steeldale"
+    },
+    {
+        "blockId": "4",
+        "subName": "Stormill"
+    },
+    {
+        "blockId": "11",
+        "subName": "Strubens Valley"
+    },
+    {
+        "blockId": "14",
+        "subName": "Strydom Park"
+    },
+    {
+        "blockId": "4",
+        "subName": "Suideroord"
+    },
+    {
+        "blockId": "1",
+        "subName": "Sundowner"
+    },
+    {
+        "blockId": "8",
+        "subName": "Sunningdale"
+    },
+    {
+        "blockId": "5",
+        "subName": "Sunnyside"
+    },
+    {
+        "blockId": "15",
+        "subName": "Sydenham"
+    },
+    {
+        "blockId": "8",
+        "subName": "Talboton"
+    },
+    {
+        "blockId": "12",
+        "subName": "The Gables"
+    },
+    {
+        "blockId": "15",
+        "subName": "The Gardens"
+    },
+    {
+        "blockId": "12",
+        "subName": "The Hill"
+    },
+    {
+        "blockId": "15",
+        "subName": "Theta"
+    },
+    {
+        "blockId": "6",
+        "subName": "Thorn Hill"
+    },
+    {
+        "blockId": "1",
+        "subName": "Thuso House"
+    },
+    {
+        "blockId": "12",
+        "subName": "Towerby"
+    },
+    {
+        "blockId": "12",
+        "subName": "Townsview"
+    },
+    {
+        "blockId": "11",
+        "subName": "Tresjolie"
+    },
+    {
+        "blockId": "3",
+        "subName": "Triomf"
+    },
+    {
+        "blockId": "12",
+        "subName": "Trojan"
+    },
+    {
+        "blockId": "10",
+        "subName": "Troyville Ext"
+    },
+    {
+        "blockId": "5",
+        "subName": "Troyville"
+    },
+    {
+        "blockId": "9",
+        "subName": "Tsutsumani"
+    },
+    {
+        "blockId": "12",
+        "subName": "Tulisa Park"
+    },
+    {
+        "blockId": "12",
+        "subName": "Turf Club"
+    },
+    {
+        "blockId": "12",
+        "subName": "Turffontein"
+    },
+    {
+        "blockId": "5",
+        "subName": "Uitsaaisentrum"
+    },
+    {
+        "blockId": "14",
+        "subName": "UJ Soweto Campus"
+    },
+    {
+        "blockId": "8",
+        "subName": "Unaville"
+    },
+    {
+        "blockId": "11",
+        "subName": "Unaville"
+    },
+    {
+        "blockId": "12",
+        "subName": "Unigrey"
+    },
+    {
+        "blockId": "3",
+        "subName": "University of Johannesburg (RAU)"
+    },
+    {
+        "blockId": "1",
+        "subName": "Upper Houghton"
+    },
+    {
+        "blockId": "16",
+        "subName": "Valeriedene"
+    },
+    {
+        "blockId": "10",
+        "subName": "Vandia Grove"
+    },
+    {
+        "blockId": "9",
+        "subName": "Vasco Da Gama"
+    },
+    {
+        "blockId": "15",
+        "subName": "Victoria"
+    },
+    {
+        "blockId": "2",
+        "subName": "Victory Park"
+    },
+    {
+        "blockId": "9",
+        "subName": "Victory Park Ext"
+    },
+    {
+        "blockId": "8",
+        "subName": "View Crest"
+    },
+    {
+        "blockId": "10",
+        "subName": "Village Deep"
+    },
+    {
+        "blockId": "10",
+        "subName": "Village Main"
+    },
+    {
+        "blockId": "4",
+        "subName": "Vlakfontein"
+    },
+    {
+        "blockId": "5",
+        "subName": "Vrededorp"
+    },
+    {
+        "blockId": "5",
+        "subName": "Vredepark"
+    },
+    {
+        "blockId": "15",
+        "subName": "Water Park"
+    },
+    {
+        "blockId": "2",
+        "subName": "Waterval Estate"
+    },
+    {
+        "blockId": "16",
+        "subName": "Waterval Estate Ext"
+    },
+    {
+        "blockId": "8",
+        "subName": "Waverley"
+    },
+    {
+        "blockId": "11",
+        "subName": "Weltevreden Park"
+    },
+    {
+        "blockId": "12",
+        "subName": "Wemmer"
+    },
+    {
+        "blockId": "16",
+        "subName": "West Gate"
+    },
+    {
+        "blockId": "12",
+        "subName": "West Lake"
+    },
+    {
+        "blockId": "16",
+        "subName": "West Park"
+    },
+    {
+        "blockId": "12",
+        "subName": "West Turffontein Ext"
+    },
+    {
+        "blockId": "12",
+        "subName": "West Turffontein"
+    },
+    {
+        "blockId": "3",
+        "subName": "Westbury"
+    },
+    {
+        "blockId": "2",
+        "subName": "Westcliff Ext"
+    },
+    {
+        "blockId": "3",
+        "subName": "Westdene"
+    },
+    {
+        "blockId": "6",
+        "subName": "WestField"
+    },
+    {
+        "blockId": "6",
+        "subName": "Westgate"
+    },
+    {
+        "blockId": "6",
+        "subName": "Westlake View"
+    },
+    {
+        "blockId": "5",
+        "subName": "White Ridge"
+    },
+    {
+        "blockId": "8",
+        "subName": "Whitney Gardens"
+    },
+    {
+        "blockId": "8",
+        "subName": "Wierda Valley"
+    },
+    {
+        "blockId": "11",
+        "subName": "Wilgeheuwel"
+    },
+    {
+        "blockId": "11",
+        "subName": "Willowbrook"
+    },
+    {
+        "blockId": "15",
+        "subName": "Willowdene"
+    },
+    {
+        "blockId": "5",
+        "subName": "WilroPark"
+    },
+    {
+        "blockId": "13",
+        "subName": "Winchester Hills"
+    },
+    {
+        "blockId": "12",
+        "subName": "Winchester Hills Ext"
+    },
+    {
+        "blockId": "16",
+        "subName": "Windsor"
+    },
+    {
+        "blockId": "10",
+        "subName": "Windsorway"
+    },
+    {
+        "blockId": "8",
+        "subName": "Winston Ridge"
+    },
+    {
+        "blockId": "16",
+        "subName": "Witpoortjie"
+    },
+    {
+        "blockId": "6",
+        "subName": "Wits"
+    },
+    {
+        "blockId": "13",
+        "subName": "Wolhuter"
+    },
+    {
+        "blockId": "12",
+        "subName": "Wychwood"
+    },
+    {
+        "blockId": "8",
+        "subName": "Wynberg"
+    },
+    {
+        "blockId": "13",
+        "subName": "Yeoville"
+    },
+    {
+        "blockId": "14",
+        "subName": "Zakariya Park"
+    },
+    {
+        "blockId": "3",
+        "subName": "Zonkizizwe"
+    },
+    {
+        "blockId": "11",
+        "subName": "Zonnehoeve"
+    }
 ]

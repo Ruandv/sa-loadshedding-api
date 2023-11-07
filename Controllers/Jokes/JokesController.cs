@@ -1,10 +1,4 @@
-﻿using Controllers.Logging;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using Services;
-using Swashbuckle.AspNetCore.Annotations;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 namespace Controllers.Jokes
 {
@@ -29,6 +23,7 @@ namespace Controllers.Jokes
         [SwaggerOperation(Summary = "Gets one of the jokes")]
         public async Task<IActionResult> GetStatus()
         {
+            _logger.LogInformation("Generating a JOKE!!!");
             var res = await _jokesService.GetJoke();
             return Ok(res);
         }
