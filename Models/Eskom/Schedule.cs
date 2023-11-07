@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System;
+﻿using System;
 using System.Text.Json.Serialization;
 
 namespace Models.Eskom
@@ -41,8 +40,6 @@ namespace Models.Eskom
         public int Day29 { get; set; }
         public int Day30 { get; set; }
         public int Day31 { get; set; }
-
-
     }
 
     public class ScheduleDto
@@ -60,7 +57,7 @@ namespace Models.Eskom
 
         public override string ToString()
         {
-            return Stage.ToString() + " " + DayOfMonth.ToString("dd") + " "+ Start.ToString() + " " + End.ToString() + " ";
+            return Stage.ToString() + " " + DayOfMonth.ToString("dd") + " " + Start.ToString() + " " + End.ToString() + " ";
         }
     }
 }
