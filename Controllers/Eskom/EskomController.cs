@@ -128,6 +128,11 @@ namespace Controllers.Eskom
                     st = res.Where(x => x.Stage <= stage && x.DayOfMonth.Day == item.stage_start_timestamp.Day && x.DayOfMonth.AddTicks(x.Start.Ticks) >= item.stage_start_timestamp).ToList();
                 }
             }
+            DatTimeToday.ForEach(n =>
+            {
+                var r = st.Find(x => x == n);
+                st.Remove(r);
+            });
             DatTimeToday.AddRange(st);
 
             return Ok(DatTimeToday);
