@@ -31,5 +31,14 @@ namespace Controllers.Jokes
             var res = await _jokesService.GetJoke();
             return Ok(res);
         }
+
+        [HttpGet("GetImage")]
+        [ProducesResponseType(typeof(int), 200)]
+        [SwaggerOperation(Summary = "Gets an image from the url supplied")]
+        public async Task<IActionResult> GetImage(string url)
+        {
+            var res = await _jokesService.GetImage(url);
+            return Ok(res);
+        }
     }
 }

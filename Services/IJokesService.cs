@@ -7,5 +7,6 @@ namespace Services
     public interface IJokesService
     {
         Task<JokeDto> GetJoke();
+        Task<string> GetImage(string url);
     }
 }
