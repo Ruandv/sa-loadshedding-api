@@ -34,11 +34,11 @@ namespace Services
                     response.EnsureSuccessStatusCode();
 
                     byte[] fileBytes = await response.Content.ReadAsByteArrayAsync();
-                    // svae the Byte[] to a file called image.jpg
+
                     var guid = Guid.NewGuid().ToString();
                     File.WriteAllBytes("./services/data/" + guid + ".jpg", fileBytes);
-                    return guid + ".jpg";
-                    //return Convert.ToBase64String(fileBytes);
+                    //return guid + ".jpg";
+                    return Convert.ToBase64String(fileBytes);
                 }
                 catch (HttpRequestException ex)
                 {
