@@ -353,3 +353,4 @@ MigrationBackup/
 /Data/uninstalled.json
 /Data/*.*
 /Cache/*.*
+*.jpg
